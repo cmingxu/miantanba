@@ -1,0 +1,9 @@
+<div class="top_info">
+  <ul>
+    <li> <%=link_to session[:display_name],{:controller=>"pages",:action=>"show_user",:display_name=>session[:display_name]}%></li>
+    <li><%=link_to "消息通知",{:controller=>"users",:action=>"message"}%></li>
+    <li><%=link_to "设置",{:controller=>"users",:action=>"setting"}%></li>
+    <li><%=link_to "帮助",{:controller=>"help",:action=>"index"}%></li>
+    <li><%=link_to "退出",{:controller=>"login",:action=>"logout"}%></li>
+  </ul>
+</div>

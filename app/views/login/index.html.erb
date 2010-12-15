@@ -1,0 +1,31 @@
+<div class="errorMsg">
+  <% if flash[:error] %>
+    <%=flash[:error] %>
+  <% end %>
+</div>
+<% form_for(:user ,:url => {:action => :login},:html => {:id=>"login_form",:class=>"",:method => :post}) do  %>
+  <ul>
+    <li>
+      <div class="desc">
+        邮箱
+      </div>
+      <%= text_field_tag :email, params[:email],:class=>"field text required"%>
+    </li>
+    <li>
+      <div class="desc">
+        密码
+      </div>
+      <%= password_field_tag :password, params[:password],:class=>"field text required"%>
+      <%= link_to "忘记密码", {:controller => :pages, :action => :forgot_password} %>
+    </li>
+    <li>
+      <%= check_box_tag 'persist', 1, true %>在这台电脑上记住我
+    </li>
+    <li>
+      <%= submit_tag  "登录",{:class=>"btTxt",:id=>"saveForm"} %>
+    </li>
+    <li class="extra">
+      还不是会员？<%=link_to "立刻加入",{:controller=>:users,:action=>:signup}%>
+    </li>
+  </ul>
+<%end%>
