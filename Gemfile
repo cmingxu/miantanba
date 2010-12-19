@@ -22,8 +22,6 @@ group :development do
   gem "map_by_method"
 end
 
-
-
 # Deploy with Capistrano
 # gem 'capistrano'
 #gem "jquery-rails"
