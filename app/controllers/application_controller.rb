@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => '92d95606680c0ccf692470918c78acc4'
+
+  before_filter :check_city
   
   # 从cookies中自动登陆
   def login_from_cookies
@@ -47,6 +49,15 @@ class ApplicationController < ActionController::Base
   #加载父类
   def load_parent
     Locale
+  end
+
+  # 确定城市 
+  def check_city
+    @current_city = City.first
+  end
+
+  def current_city
+    @current_city
   end
   
 end

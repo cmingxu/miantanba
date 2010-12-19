@@ -1,0 +1,8 @@
+<% @activities.each do |activity| %>
+<dl>
+  <dt><%= activity.title %>
+  <%=activity.locale %>
+  </dt>
+  <dd><%= activity.start_time %></dd>
+</dl>
+<% end %>

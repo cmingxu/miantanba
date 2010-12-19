@@ -5,6 +5,7 @@ class CreateActivities < ActiveRecord::Migration
       t.string :title #主题
       t.text :topic #主要议题
       t.integer :locale_id #地点
+      t.integer :city_id #城市 
       t.string :contact #联系方式
       t.integer :category_id
       t.text :about #参会须知

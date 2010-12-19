@@ -1,4 +1,6 @@
 class Activity < ActiveRecord::Base
+  belongs_to :city
+  
   #发起身份
   REAL_NAME = 1
   VIRTUAL_NAME = 2
@@ -21,5 +23,9 @@ class Activity < ActiveRecord::Base
 
   validates :title,:topic,:contact,:about,:price,:price_return,:price_intro,:reserve_intro,:reserve_num,:presence=>true
   validates :price,:price_return,:numericality => true
+
+  def self.hot(city)
+    where(:city_id => city)
+  end
   
 end
