@@ -126,6 +126,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] gem_plugin (v0.2.3, C:/Ruby187/lib/ruby/gems/1.8/gems/gem_plugin-0.2.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] cgi_multipart_eof_fix (v2.5.0, C:/Ruby187/lib/ruby/gems/1.8/gems/cgi_multipart_eof_fix-2.5.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v0.2.6, C:/Ruby187/lib/ruby/gems/1.8/gems/jquery-rails-0.2.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4, C:/Ruby187/lib/ruby/gems/1.8/gems/nokogiri-1.4.4-x86-mingw32)" level="application" />
   </component>
 </module>
 

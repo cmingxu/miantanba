@@ -15,11 +15,17 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
   create_table "activities", :force => true do |t|
     t.integer  "user_id"
     t.string   "title"
-    t.text     "topic"
-    t.integer  "locale_id"
-    t.string   "contact"
+    t.text     "description"
     t.integer  "category_id"
+    t.integer  "city_id"
+    t.integer  "area_id"
+    t.integer  "street_id"
+    t.string   "address_desc"
+    t.string   "contact"
     t.text     "about"
+    t.integer  "status"
+    t.datetime "start_time"
+    t.datetime "end_time"
     t.integer  "price"
     t.integer  "price_return"
     t.text     "price_intro"
@@ -31,15 +37,13 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
     t.integer  "reserve_num"
     t.integer  "group_id"
     t.integer  "aptitude"
-    t.integer  "status"
-    t.datetime "start_time"
-    t.datetime "end_time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "categories", :force => true do |t|
     t.string   "name"
+    t.string   "code"
     t.integer  "parent_id"
     t.string   "type"
     t.datetime "created_at"
@@ -71,14 +75,15 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
   end
 
   create_table "groups", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "authorize"
-    t.string   "contactor"
+    t.integer  "owner_id"
+    t.string   "name"
+    t.text     "description"
+    t.string   "contact"
     t.string   "phone"
     t.integer  "level"
     t.string   "real_name"
-    t.string   "virtual_name"
     t.text     "purpose"
+    t.integer  "authorize"
     t.string   "shorter"
     t.integer  "industry_id"
     t.datetime "created_at"
@@ -101,10 +106,12 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
 
   create_table "locales", :force => true do |t|
     t.string   "name"
+    t.string   "code"
+    t.string   "short_code"
+    t.string   "type"
     t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "type"
   end
 
   create_table "messages", :force => true do |t|
@@ -135,15 +142,20 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "display_name"
-    t.string   "real_name"
-    t.string   "virtual_name"
+    t.string   "login"
     t.string   "password"
-    t.integer  "level"
+    t.string   "real_name"
     t.string   "email"
-    t.integer  "locale_id"
+    t.integer  "city_id"
+    t.integer  "area_id"
+    t.integer  "street_id"
+    t.string   "address_desc"
     t.integer  "gender"
     t.date     "birthday"
+    t.integer  "status"
+    t.string   "activate_code"
+    t.datetime "last_login_at"
+    t.integer  "level"
     t.string   "company"
     t.string   "department"
     t.string   "job"
@@ -153,9 +165,6 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
     t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "active_code"
-    t.integer  "is_actived"
-    t.datetime "last_login_at"
   end
 
 end

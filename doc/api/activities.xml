@@ -1,0 +1,42 @@
+<!-- total-count属性表示总共有多少条数据，以给客户端分页显示提供指导 -->
+<activities total-count="183">
+  <!-- 若干个activity元素，代表若干活动 -->
+  <activity url="http://api.miantanba.com/activities/123.xml">
+    <!-- 活动id，由服务器端生成。-->
+    <id></id>
+    <!-- 该活动详细信息的url，如"http://api.miantanba.com/activities/123" -->
+    <url></url>
+    <!-- 活动标题 -->
+    <title></title>
+    <!-- 活动摘要,不超过20个字，可为空。 -->
+    <summary></summary>
+    <!-- 活动分类，如"婚庆"，"会展"，具体见categories.xml的定义 -->
+    <category></category>
+    <!-- 活动举办地的纬度，为一小数，如112.8。可为空。 -->
+    <latitude></latitude>
+    <!-- 活动举办地的经度,为一小数，如108.8。可为空。 -->
+    <longitude></longitude>
+    <!-- 活动场地的文字描述，如"国展"。可为空。 -->
+    <venue></venue>
+    <!-- 活动场地的具体地址，如"朝阳区花家地街4号" -->
+    <adress></adress>
+    <!-- 城市名，如"beijing"。具体见cities.xml -->
+    <city></city>
+    <!-- 联系人姓名，如"李大伟" -->
+    <contact-name></contact-name>
+    <!-- 联系电话,如"010-69882102" -->
+    <contact-phone></contact-phone>
+    <!-- 活动开始时间,如"2010-12-01 13:00:00" -->
+    <start_time></start_time>
+    <!-- 活动结束时间,如"2010-12-01 16:00:00"。可为空，表示一天。 -->
+    <end_time></end_time>
+    <!-- 活动价格，如"20"。可为空。 -->
+    <price></price>
+    <!-- 活动打折前价格，如"50"。可为空 -->
+    <original-price></original-price>
+    <!-- 活动状态,可为"open", "finished" -->
+    <status></status>
+  </activity>
+
+  <!-- 后接若干activity 元素-->
+</activities>

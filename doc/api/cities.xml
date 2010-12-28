@@ -1,0 +1,15 @@
+<cities>
+  <!-- 若干城市，每一个城市是一个city元素 -->
+  <city>
+    <!-- 城市编码，目前为城市名称的拼音，如"beijing", "shanghai" -->
+    <code></code>
+    <!-- 城市名称，如“北京”，“上海” -->
+    <name></name>
+    <!-- 城市中心点纬度,如118.8 -->
+    <latitude></latitude>
+    <!-- 城市中心点经度，如88.8-->
+    <longitude></longitude>
+    <!-- 城市地图放大倍数，如2 -->
+    <zoom></zoom>
+  </city>
+</cities>

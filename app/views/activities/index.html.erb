@@ -1,7 +1,11 @@
 <% @activities.each do |activity| %>
 <dl>
   <dt><%= activity.title %>
-  <%=activity.locale %>
+  <%=activity.locale.area.city.name %>-
+  <%=activity.locale.area.name %>-
+  <%=activity.locale.name %>
+
+
   </dt>
   <dd><%= activity.start_time %></dd>
 </dl>

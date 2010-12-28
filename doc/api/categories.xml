@@ -1,0 +1,16 @@
+<categories>
+  <!-- 若干个category元素，每一个代表一个活动分类 -->
+  <category>
+    <!-- 活动分类的编码，为中文名的拼音，如"huizhan" -->
+    <code></code>
+    <!-- 活动分类的中文字，如"会展" -->
+    <name></name>
+    <!-- 该分类下的子分类。可为空 -->
+    <children>
+      <category>
+        <code></code>
+        <name></name>
+      </category>
+    </children>
+  </category>
+</categories>
