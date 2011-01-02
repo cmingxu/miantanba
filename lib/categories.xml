@@ -1,0 +1,114 @@
+<categories name="">
+    <categories name="会展">
+        <categories name="供需展销"></categories>
+
+        <categories name="人才招聘"></categories>
+
+        <categories name="产品发布"></categories>
+
+        <categories name="技术大会"></categories>
+
+        <categories name="展览展示"></categories>
+
+        <categories name="招商引资"></categories>
+
+        <categories name="其他"></categories>
+    </categories>
+
+    <categories name="公益">
+        <categories name="互助募捐"></categories>
+
+        <categories name="义务献血"></categories>
+
+        <categories name="医疗咨询"></categories>
+
+        <categories name="志愿活动"></categories>
+
+        <categories name="公益劳动"></categories>
+
+        <categories name="听证庭审"></categories>
+
+        <categories name="其他"></categories>
+    </categories>
+
+    <categories name="学习">
+        <categories name="培训讲座"></categories>
+
+        <categories name="学术研讨"></categories>
+
+        <categories name="专业论坛"></categories>
+
+        <categories name="技术沙龙"></categories>
+
+        <categories name="技能比赛"></categories>
+
+        <categories name="心得交流"></categories>
+
+        <categories name="其他"></categories>
+    </categories>
+
+    <categories name="聚会">
+        <categories name="同学聚会"></categories>
+
+        <categories name="生日聚会"></categories>
+
+        <categories name="聚餐宴会"></categories>
+
+        <categories name="K歌泡吧"></categories>
+
+        <categories name="酒会舞会"></categories>
+
+        <categories name="典礼仪式"></categories>
+
+        <categories name="其他"></categories>
+    </categories>
+
+    <categories name="文体">
+        <categories name="文体演出"></categories>
+
+        <categories name="比赛选拔"></categories>
+
+        <categories name="电影游戏"></categories>
+
+        <categories name="庙会游园"></categories>
+
+        <categories name="灯会晚会"></categories>
+
+        <categories name="节日庆会"></categories>
+
+        <categories name="其他"></categories>
+    </categories>
+
+    <categories name="商务">
+        <categories name="企业年会"></categories>
+
+        <categories name="部门例会"></categories>
+
+        <categories name="项目汇报"></categories>
+
+        <categories name="开业奠基"></categories>
+
+        <categories name="商务沙龙"></categories>
+
+        <categories name="业务洽谈"></categories>
+
+        <categories name="其他"></categories>
+    </categories>
+
+    <categories name="交友">
+        <categories name="婚恋鹊桥"></categories>
+
+        <categories name="私密约会"></categories>
+
+        <categories name="兴趣交友"></categories>
+
+        <categories name="联谊活动"></categories>
+
+        <categories name="旅游健身"></categories>
+
+        <categories name="运动棋牌"></categories>
+
+        <categories name="其他"></categories>
+    </categories>
+</categories>
+      

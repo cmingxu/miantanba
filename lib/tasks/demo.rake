@@ -1,4 +1,11 @@
 namespace :demo do
+  task :test => :environment do 
+    s= Activity.first.title
+    f = File.open("d:/a.txt", "w")
+    f.write(s)
+    f.close
+  end
+  
   namespace :clear do
     task :cities do
       City.delete_all

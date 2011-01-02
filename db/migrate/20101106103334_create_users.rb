@@ -6,14 +6,14 @@ class CreateUsers < ActiveRecord::Migration
       t.string :real_name
       t.string :email
       t.integer :city_id
-      t.integer  :area_id
+      t.integer :area_id
       t.integer :street_id
       t.string  :address_desc
       t.integer :gender
       t.date :birthday
 
       t.integer  :status
-      t.string    :activate_code
+      t.string   :activate_code
 
       t.datetime  :last_login_at
       

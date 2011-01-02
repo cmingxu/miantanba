@@ -1,6 +1,8 @@
 class Activity < ActiveRecord::Base
-#  belongs_to :city
-#  belongs_to :locale
+  belongs_to :city
+  belongs_to :area
+  belongs_to :street
+  
 #
 #  #发起身份
 #  REAL_NAME = 1

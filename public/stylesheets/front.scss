@@ -1,5 +1,41 @@
-.activity{
+dl.activity{
+    border:1px solid #eee;
+    padding:5px 0;
+    font-size: 12px;
+    &:hover{
+        background-color:#fafcff;
+    }
+
     dt{
-        border:1px solid #ccc;
+        float:left;
+        padding: 0 5px;
+    }
+
+    a.title{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    a.title:hover{
+        color: #e40000;
+        text-decoration: underline;
+    }
+
+    a.addr{
+        color: #666;
+        padding: 0 1px;
+    }
+
+    a.addr:hover{
+        color: #000;
+    }
+
+    a{
+        color: #2244dd;
+        text-decoration: none;
+    }
+
+    .time{
+        float: right;
     }
 }

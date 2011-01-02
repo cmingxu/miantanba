@@ -1,0 +1,4248 @@
+<locales name="">
+    <locales name="北京">
+        <locales name="朝阳">
+            <locales name="团结湖"></locales>
+
+            <locales name="燕莎"></locales>
+
+            <locales name="国展"></locales>
+
+            <locales name="望京"></locales>
+
+            <locales name="国贸"></locales>
+
+            <locales name="三元桥"></locales>
+
+            <locales name="红庙"></locales>
+
+            <locales name="十里堡"></locales>
+
+            <locales name="东八里庄"></locales>
+
+            <locales name="劲松"></locales>
+
+            <locales name="亚运村"></locales>
+
+            <locales name="朝阳公园"></locales>
+
+            <locales name="酒仙桥"></locales>
+
+            <locales name="北沙滩"></locales>
+
+            <locales name="定福庄"></locales>
+
+            <locales name="管庄"></locales>
+
+            <locales name="双井"></locales>
+
+            <locales name="潘家园"></locales>
+
+            <locales name="东大桥"></locales>
+
+            <locales name="安贞"></locales>
+
+            <locales name="西坝河"></locales>
+
+            <locales name="芍药居"></locales>
+
+            <locales name="垡头"></locales>
+
+            <locales name="十八里店"></locales>
+
+            <locales name="大山子"></locales>
+
+            <locales name="北工大"></locales>
+
+            <locales name="亚运村小营"></locales>
+
+            <locales name="小红门"></locales>
+
+            <locales name="朝青"></locales>
+
+            <locales name="首都机场"></locales>
+
+            <locales name="石佛营"></locales>
+
+            <locales name="马甸"></locales>
+
+            <locales name="柳芳"></locales>
+
+            <locales name="来广营"></locales>
+
+            <locales name="花家地"></locales>
+
+            <locales name="广渠路"></locales>
+
+            <locales name="工体"></locales>
+
+            <locales name="高碑店"></locales>
+
+            <locales name="豆各庄"></locales>
+
+            <locales name="东坝"></locales>
+
+            <locales name="CBD"></locales>
+
+            <locales name="朝阳门"></locales>
+
+            <locales name="常营"></locales>
+
+            <locales name="奥林匹克公园"></locales>
+
+            <locales name="安慧桥"></locales>
+
+            <locales name="亚奥"></locales>
+
+            <locales name="北苑"></locales>
+
+            <locales name="百子湾"></locales>
+
+            <locales name="大望路"></locales>
+
+            <locales name="双桥"></locales>
+
+            <locales name="甘露园"></locales>
+
+            <locales name="欢乐谷"></locales>
+
+            <locales name="四惠"></locales>
+
+            <locales name="惠新西街"></locales>
+
+            <locales name="媒体村"></locales>
+        </locales>
+
+        <locales name="海淀">
+            <locales name="公主坟"></locales>
+
+            <locales name="北京大学"></locales>
+
+            <locales name="双榆树"></locales>
+
+            <locales name="中关村"></locales>
+
+            <locales name="北太平庄"></locales>
+
+            <locales name="魏公村"></locales>
+
+            <locales name="大钟寺"></locales>
+
+            <locales name="五道口"></locales>
+
+            <locales name="学院路"></locales>
+
+            <locales name="蓟门桥"></locales>
+
+            <locales name="航天桥"></locales>
+
+            <locales name="二里庄"></locales>
+
+            <locales name="知春路"></locales>
+
+            <locales name="车道沟"></locales>
+
+            <locales name="上地"></locales>
+
+            <locales name="圆明园"></locales>
+
+            <locales name="甘家口"></locales>
+
+            <locales name="农大"></locales>
+
+            <locales name="牡丹园"></locales>
+
+            <locales name="定慧寺"></locales>
+
+            <locales name="紫竹桥"></locales>
+
+            <locales name="皂君庙"></locales>
+
+            <locales name="万柳"></locales>
+
+            <locales name="西三旗"></locales>
+
+            <locales name="清河"></locales>
+
+            <locales name="小西天"></locales>
+
+            <locales name="西山"></locales>
+
+            <locales name="苏州桥"></locales>
+
+            <locales name="马连洼"></locales>
+
+            <locales name="车公庄"></locales>
+
+            <locales name="颐和园"></locales>
+
+            <locales name="黄庄"></locales>
+
+            <locales name="四季青"></locales>
+
+            <locales name="玉泉路"></locales>
+
+            <locales name="五棵松"></locales>
+
+            <locales name="军博"></locales>
+
+            <locales name="清华园"></locales>
+
+            <locales name="万泉河"></locales>
+
+            <locales name="万寿寺"></locales>
+
+            <locales name="八里庄"></locales>
+
+            <locales name="西二旗"></locales>
+
+            <locales name="永定路"></locales>
+
+            <locales name="世纪城"></locales>
+
+            <locales name="交大东路"></locales>
+        </locales>
+
+        <locales name="丰台">
+            <locales name="方庄"></locales>
+
+            <locales name="西罗园"></locales>
+
+            <locales name="六里桥"></locales>
+
+            <locales name="洋桥"></locales>
+
+            <locales name="西客站"></locales>
+
+            <locales name="角门"></locales>
+
+            <locales name="木樨园"></locales>
+
+            <locales name="赵公口"></locales>
+
+            <locales name="马家堡"></locales>
+
+            <locales name="刘家窑"></locales>
+
+            <locales name="菜户营"></locales>
+
+            <locales name="成寿寺"></locales>
+
+            <locales name="大红门"></locales>
+
+            <locales name="西局"></locales>
+
+            <locales name="北大地"></locales>
+
+            <locales name="科技园区"></locales>
+
+            <locales name="卢沟桥"></locales>
+
+            <locales name="草桥"></locales>
+
+            <locales name="嘉园"></locales>
+
+            <locales name="左安门"></locales>
+
+            <locales name="岳各庄"></locales>
+
+            <locales name="玉泉营"></locales>
+
+            <locales name="右安门"></locales>
+
+            <locales name="青塔"></locales>
+
+            <locales name="蒲黄榆"></locales>
+
+            <locales name="丽泽桥"></locales>
+
+            <locales name="长辛店"></locales>
+
+            <locales name="云岗"></locales>
+
+            <locales name="花乡"></locales>
+
+            <locales name="和义"></locales>
+
+            <locales name="丰台体育馆"></locales>
+
+            <locales name="东高地"></locales>
+
+            <locales name="新发地"></locales>
+
+            <locales name="太平桥"></locales>
+
+            <locales name="七里庄"></locales>
+
+            <locales name="五里店"></locales>
+
+            <locales name="宋家庄"></locales>
+
+            <locales name="看丹桥"></locales>
+        </locales>
+
+        <locales name="东城">
+            <locales name="王府井"></locales>
+
+            <locales name="灯市口"></locales>
+
+            <locales name="东四十条"></locales>
+
+            <locales name="东直门"></locales>
+
+            <locales name="安定门"></locales>
+
+            <locales name="雍和宫"></locales>
+
+            <locales name="和平里"></locales>
+
+            <locales name="建国门"></locales>
+
+            <locales name="北新桥"></locales>
+
+            <locales name="东四"></locales>
+
+            <locales name="交道口"></locales>
+
+            <locales name="东单"></locales>
+
+            <locales name="金宝街"></locales>
+        </locales>
+
+        <locales name="西城">
+            <locales name="复兴门"></locales>
+
+            <locales name="阜成门"></locales>
+
+            <locales name="西单"></locales>
+
+            <locales name="木樨地"></locales>
+
+            <locales name="德胜门"></locales>
+
+            <locales name="三里河"></locales>
+
+            <locales name="月坛"></locales>
+
+            <locales name="金融街"></locales>
+
+            <locales name="六铺炕"></locales>
+
+            <locales name="积水潭"></locales>
+
+            <locales name="展览路"></locales>
+
+            <locales name="西便门"></locales>
+
+            <locales name="什刹海"></locales>
+
+            <locales name="官园"></locales>
+
+            <locales name="车公庄"></locales>
+
+            <locales name="鼓楼大街"></locales>
+
+            <locales name="地安门"></locales>
+
+            <locales name="礼士路"></locales>
+
+            <locales name="小马厂"></locales>
+
+            <locales name="新街口"></locales>
+
+            <locales name="西直门"></locales>
+        </locales>
+
+        <locales name="崇文">
+            <locales name="东花市"></locales>
+
+            <locales name="崇文门"></locales>
+
+            <locales name="光明楼"></locales>
+
+            <locales name="天坛"></locales>
+
+            <locales name="广渠门内"></locales>
+
+            <locales name="永定门"></locales>
+
+            <locales name="龙潭湖"></locales>
+
+            <locales name="前门"></locales>
+
+            <locales name="磁器口"></locales>
+        </locales>
+
+        <locales name="宣武">
+            <locales name="长椿街"></locales>
+
+            <locales name="广安门"></locales>
+
+            <locales name="陶然亭"></locales>
+
+            <locales name="天宁寺"></locales>
+
+            <locales name="白纸坊"></locales>
+
+            <locales name="马连道"></locales>
+
+            <locales name="牛街"></locales>
+
+            <locales name="虎坊桥"></locales>
+
+            <locales name="大栅栏"></locales>
+
+            <locales name="宣武门"></locales>
+
+            <locales name="大观园"></locales>
+
+            <locales name="先农坛"></locales>
+
+            <locales name="白广路"></locales>
+        </locales>
+
+        <locales name="石景山">
+            <locales name="老古城"></locales>
+
+            <locales name="苹果园"></locales>
+
+            <locales name="八角"></locales>
+
+            <locales name="鲁谷"></locales>
+
+            <locales name="杨庄"></locales>
+
+            <locales name="模式口"></locales>
+
+            <locales name="八宝山"></locales>
+
+            <locales name="古城"></locales>
+
+            <locales name="八大处"></locales>
+
+            <locales name="石景山"></locales>
+
+            <locales name="永乐"></locales>
+
+            <locales name="老山"></locales>
+
+            <locales name="高井"></locales>
+
+            <locales name="金顶街"></locales>
+        </locales>
+
+        <locales name="昌平">
+            <locales name="立水桥"></locales>
+
+            <locales name="小汤山"></locales>
+
+            <locales name="回龙观"></locales>
+
+            <locales name="天通苑"></locales>
+
+            <locales name="北七家"></locales>
+
+            <locales name="霍营"></locales>
+
+            <locales name="沙河"></locales>
+
+            <locales name="南口"></locales>
+
+            <locales name="百善镇"></locales>
+
+            <locales name="昌平县城"></locales>
+
+            <locales name="阳坊"></locales>
+        </locales>
+
+        <locales name="通州">
+            <locales name="西上园"></locales>
+
+            <locales name="梨园"></locales>
+
+            <locales name="通州北苑"></locales>
+
+            <locales name="临河里"></locales>
+
+            <locales name="新华大街"></locales>
+
+            <locales name="新华联"></locales>
+
+            <locales name="果园"></locales>
+
+            <locales name="北关"></locales>
+
+            <locales name="玉桥"></locales>
+
+            <locales name="乔庄"></locales>
+
+            <locales name="九棵树"></locales>
+
+            <locales name="运河大街"></locales>
+
+            <locales name="武夷花园"></locales>
+
+            <locales name="玉带河"></locales>
+
+            <locales name="焦王庄"></locales>
+
+            <locales name="潞苑"></locales>
+
+            <locales name="马驹桥"></locales>
+        </locales>
+
+        <locales name="大兴">
+            <locales name="西红门"></locales>
+
+            <locales name="黄村"></locales>
+
+            <locales name="亦庄"></locales>
+
+            <locales name="旧宫"></locales>
+        </locales>
+
+        <locales name="顺义">
+            <locales name="温榆河"></locales>
+
+            <locales name="顺义城"></locales>
+
+            <locales name="空港工业区"></locales>
+
+            <locales name="马坡"></locales>
+
+            <locales name="京顺高速路"></locales>
+
+            <locales name="天竺"></locales>
+
+            <locales name="中央别墅区"></locales>
+
+            <locales name="后沙峪"></locales>
+        </locales>
+
+        <locales name="怀柔">
+            <locales name="怀柔"></locales>
+        </locales>
+
+        <locales name="房山">
+            <locales name="窦店"></locales>
+
+            <locales name="琉璃河"></locales>
+
+            <locales name="良乡"></locales>
+
+            <locales name="行宫"></locales>
+
+            <locales name="周口店"></locales>
+
+            <locales name="房山城关"></locales>
+
+            <locales name="太平庄"></locales>
+
+            <locales name="燕山"></locales>
+
+            <locales name="闫村"></locales>
+
+            <locales name="青龙湖"></locales>
+
+            <locales name="韩村河"></locales>
+
+            <locales name="长阳"></locales>
+        </locales>
+
+        <locales name="门头沟">
+            <locales name="大峪"></locales>
+
+            <locales name="双峪"></locales>
+
+            <locales name="永定镇"></locales>
+
+            <locales name="三家店"></locales>
+
+            <locales name="河滩"></locales>
+
+            <locales name="东辛房"></locales>
+
+            <locales name="城子"></locales>
+        </locales>
+
+        <locales name="密云">
+            <locales name="密云"></locales>
+        </locales>
+
+        <locales name="平谷">
+            <locales name="平谷"></locales>
+        </locales>
+
+        <locales name="延庆">
+            <locales name="八达岭"></locales>
+
+            <locales name="张山营"></locales>
+        </locales>
+
+        <locales name="周边">
+            <locales name="燕郊"></locales>
+
+            <locales name="香河"></locales>
+
+            <locales name="固安"></locales>
+
+            <locales name="涿州"></locales>
+        </locales>
+    </locales>
+
+    <locales name="成都">
+        <locales name="武侯">
+            <locales name="桐梓林"></locales>
+
+            <locales name="小天竺"></locales>
+
+            <locales name="成都体院"></locales>
+
+            <locales name="磨子桥"></locales>
+
+            <locales name="武侯大道"></locales>
+
+            <locales name="肖家河"></locales>
+
+            <locales name="棕北小区"></locales>
+
+            <locales name="武侯祠大街"></locales>
+
+            <locales name="玉林"></locales>
+
+            <locales name="广福桥"></locales>
+
+            <locales name="高升桥"></locales>
+
+            <locales name="红牌楼"></locales>
+
+            <locales name="火车南站"></locales>
+
+            <locales name="中央花园"></locales>
+
+            <locales name="内双楠"></locales>
+
+            <locales name="外双楠"></locales>
+
+            <locales name="航空路"></locales>
+        </locales>
+
+        <locales name="锦江">
+            <locales name="春熙路"></locales>
+
+            <locales name="东大街"></locales>
+
+            <locales name="海椒市"></locales>
+
+            <locales name="合江亭"></locales>
+
+            <locales name="锦华路"></locales>
+
+            <locales name="静居寺路"></locales>
+
+            <locales name="莲桂路"></locales>
+
+            <locales name="盐市口"></locales>
+
+            <locales name="龙舟路"></locales>
+
+            <locales name="水碾河"></locales>
+
+            <locales name="东风大桥"></locales>
+
+            <locales name="东光小区"></locales>
+
+            <locales name="顺江路"></locales>
+
+            <locales name="四川师大"></locales>
+
+            <locales name="新南门"></locales>
+
+            <locales name="九眼桥"></locales>
+
+            <locales name="红星路"></locales>
+        </locales>
+
+        <locales name="青羊">
+            <locales name="浣花小区"></locales>
+
+            <locales name="草堂"></locales>
+
+            <locales name="通惠门"></locales>
+
+            <locales name="中医学院"></locales>
+
+            <locales name="贝森"></locales>
+
+            <locales name="长顺街"></locales>
+
+            <locales name="骡马市"></locales>
+
+            <locales name="顺城街"></locales>
+
+            <locales name="府南新区"></locales>
+
+            <locales name="青羊大道"></locales>
+
+            <locales name="西南财大"></locales>
+
+            <locales name="光华大道"></locales>
+
+            <locales name="金沙"></locales>
+
+            <locales name="石人小区"></locales>
+        </locales>
+
+        <locales name="金牛">
+            <locales name="黄忠小区"></locales>
+
+            <locales name="沙湾会展"></locales>
+
+            <locales name="九里堤"></locales>
+
+            <locales name="蜀汉路"></locales>
+
+            <locales name="营门口"></locales>
+
+            <locales name="李家沱"></locales>
+
+            <locales name="梁家巷"></locales>
+
+            <locales name="西南交大"></locales>
+
+            <locales name="高笋塘"></locales>
+
+            <locales name="茶店子"></locales>
+
+            <locales name="抚琴小区"></locales>
+
+            <locales name="火车北站"></locales>
+        </locales>
+
+        <locales name="成华">
+            <locales name="新鸿路"></locales>
+
+            <locales name="玉双路"></locales>
+
+            <locales name="八里庄"></locales>
+
+            <locales name="电子科大"></locales>
+
+            <locales name="府青路"></locales>
+
+            <locales name="建设路"></locales>
+
+            <locales name="新华公园"></locales>
+
+            <locales name="双桥子"></locales>
+
+            <locales name="万年场"></locales>
+
+            <locales name="猛追湾"></locales>
+        </locales>
+
+        <locales name="高新">
+            <locales name="芳草街"></locales>
+
+            <locales name="紫荆小区"></locales>
+
+            <locales name="创业路"></locales>
+
+            <locales name="南延线"></locales>
+
+            <locales name="神仙树"></locales>
+        </locales>
+
+        <locales name="龙泉驿">
+            <locales name="龙泉驿"></locales>
+        </locales>
+
+        <locales name="双流">
+            <locales name="双流"></locales>
+
+            <locales name="华阳"></locales>
+
+            <locales name="航空港"></locales>
+        </locales>
+
+        <locales name="温江">
+            <locales name="温江"></locales>
+        </locales>
+
+        <locales name="郫县">
+            <locales name="郫县"></locales>
+
+            <locales name="犀浦"></locales>
+        </locales>
+
+        <locales name="其他">
+            <locales name="新都"></locales>
+
+            <locales name="崇州"></locales>
+
+            <locales name="彭州"></locales>
+
+            <locales name="邛崃"></locales>
+
+            <locales name="金堂"></locales>
+
+            <locales name="青白江"></locales>
+
+            <locales name="都江堰"></locales>
+
+            <locales name="大邑"></locales>
+
+            <locales name="蒲江"></locales>
+
+            <locales name="新津"></locales>
+        </locales>
+    </locales>
+
+    <locales name="重庆">
+        <locales name="渝中">
+            <locales name="解放碑"></locales>
+
+            <locales name="北区路"></locales>
+
+            <locales name="李子坝"></locales>
+
+            <locales name="两路口"></locales>
+
+            <locales name="大坪"></locales>
+
+            <locales name="解放路"></locales>
+
+            <locales name="朝天门"></locales>
+
+            <locales name="上清寺"></locales>
+        </locales>
+
+        <locales name="江北">
+            <locales name="建西路"></locales>
+
+            <locales name="建东路"></locales>
+
+            <locales name="铁山坪"></locales>
+
+            <locales name="北滨路"></locales>
+
+            <locales name="南桥寺"></locales>
+
+            <locales name="石马河"></locales>
+
+            <locales name="五红路"></locales>
+
+            <locales name="红旗河沟"></locales>
+
+            <locales name="大石坝"></locales>
+
+            <locales name="五里店"></locales>
+
+            <locales name="观音桥"></locales>
+
+            <locales name="寸滩"></locales>
+        </locales>
+
+        <locales name="渝北">
+            <locales name="北部新区"></locales>
+
+            <locales name="加州新牌坊"></locales>
+
+            <locales name="冉家坝"></locales>
+
+            <locales name="花卉园"></locales>
+
+            <locales name="龙头寺"></locales>
+
+            <locales name="两路空港"></locales>
+
+            <locales name="龙溪镇"></locales>
+
+            <locales name="回兴"></locales>
+
+            <locales name="汽博中心"></locales>
+        </locales>
+
+        <locales name="南岸">
+            <locales name="南坪"></locales>
+
+            <locales name="南滨路"></locales>
+
+            <locales name="经开区"></locales>
+
+            <locales name="弹子石"></locales>
+
+            <locales name="铜元局"></locales>
+
+            <locales name="学府路"></locales>
+
+            <locales name="南坪东路"></locales>
+
+            <locales name="上新街"></locales>
+
+            <locales name="黄桷桠"></locales>
+
+            <locales name="茶园新区"></locales>
+
+            <locales name="回龙工业园"></locales>
+        </locales>
+
+        <locales name="沙坪坝">
+            <locales name="三峡广场"></locales>
+
+            <locales name="凤天路"></locales>
+
+            <locales name="小龙坎"></locales>
+
+            <locales name="沙滨路"></locales>
+
+            <locales name="杨公桥"></locales>
+
+            <locales name="双碑"></locales>
+
+            <locales name="大学城"></locales>
+
+            <locales name="土湾"></locales>
+        </locales>
+
+        <locales name="九龙坡">
+            <locales name="杨家坪"></locales>
+
+            <locales name="石坪桥"></locales>
+
+            <locales name="高新区"></locales>
+
+            <locales name="黄桷坪"></locales>
+
+            <locales name="谢家湾"></locales>
+
+            <locales name="二郎"></locales>
+
+            <locales name="白市驿"></locales>
+
+            <locales name="西彭"></locales>
+
+            <locales name="陈家坪"></locales>
+        </locales>
+
+        <locales name="大渡口">
+            <locales name="九宫庙"></locales>
+
+            <locales name="区府"></locales>
+
+            <locales name="双山"></locales>
+
+            <locales name="马王乡"></locales>
+        </locales>
+
+        <locales name="巴南">
+            <locales name="界石"></locales>
+
+            <locales name="一品"></locales>
+
+            <locales name="鱼洞"></locales>
+
+            <locales name="李家沱"></locales>
+        </locales>
+
+        <locales name="北碚">
+            <locales name="童家溪"></locales>
+
+            <locales name="城北新区"></locales>
+
+            <locales name="城南新区"></locales>
+
+            <locales name="老城区"></locales>
+        </locales>
+
+        <locales name="其他">
+            <locales name="合川"></locales>
+
+            <locales name="双桥"></locales>
+
+            <locales name="涪陵"></locales>
+
+            <locales name="璧山"></locales>
+
+            <locales name="江津"></locales>
+
+            <locales name="万州"></locales>
+
+            <locales name="潼南"></locales>
+
+            <locales name="铜梁"></locales>
+
+            <locales name="綦江"></locales>
+
+            <locales name="永川"></locales>
+
+            <locales name="南川"></locales>
+
+            <locales name="荣昌"></locales>
+
+            <locales name="长寿"></locales>
+
+            <locales name="开县"></locales>
+
+            <locales name="梁平"></locales>
+        </locales>
+    </locales>
+
+    <locales name="长沙">
+        <locales name="岳麓">
+            <locales name="枫林一路"></locales>
+
+            <locales name="高叶塘"></locales>
+
+            <locales name="观沙岭"></locales>
+
+            <locales name="金星大道"></locales>
+
+            <locales name="麓谷"></locales>
+
+            <locales name="麓山别墅"></locales>
+
+            <locales name="南山苏迪亚诺"></locales>
+
+            <locales name="普瑞斯堡"></locales>
+
+            <locales name="汽车西站"></locales>
+
+            <locales name="溁湾镇"></locales>
+
+            <locales name="商学院"></locales>
+
+            <locales name="省人防办"></locales>
+
+            <locales name="市政府"></locales>
+
+            <locales name="桐梓坡路"></locales>
+
+            <locales name="望月湖"></locales>
+
+            <locales name="湘雅三医院"></locales>
+
+            <locales name="咸嘉湖"></locales>
+
+            <locales name="窑坡"></locales>
+
+            <locales name="银盆岭路"></locales>
+
+            <locales name="左家垅"></locales>
+        </locales>
+
+        <locales name="天心">
+            <locales name="白沙路"></locales>
+
+            <locales name="城南路"></locales>
+
+            <locales name="红星"></locales>
+
+            <locales name="黄兴路步行街"></locales>
+
+            <locales name="解放西路"></locales>
+
+            <locales name="南湖路"></locales>
+
+            <locales name="南门口"></locales>
+
+            <locales name="坡子街"></locales>
+
+            <locales name="省政府"></locales>
+
+            <locales name="书院路"></locales>
+
+            <locales name="司门口"></locales>
+
+            <locales name="新开铺"></locales>
+
+            <locales name="友谊路"></locales>
+
+            <locales name="侯家塘"></locales>
+
+            <locales name="涂家冲"></locales>
+        </locales>
+
+        <locales name="雨花">
+            <locales name="长岭"></locales>
+
+            <locales name="长沙卷烟厂"></locales>
+
+            <locales name="赤岗冲"></locales>
+
+            <locales name="东塘"></locales>
+
+            <locales name="高桥大市场"></locales>
+
+            <locales name="侯家塘"></locales>
+
+            <locales name="井湾子路"></locales>
+
+            <locales name="黎托"></locales>
+
+            <locales name="砂子塘"></locales>
+
+            <locales name="识字岭"></locales>
+
+            <locales name="树木岭"></locales>
+
+            <locales name="同升湖"></locales>
+
+            <locales name="窑岭"></locales>
+
+            <locales name="雨花亭"></locales>
+
+            <locales name="左家塘"></locales>
+
+            <locales name="汽车南站"></locales>
+
+            <locales name="韶山南路"></locales>
+
+            <locales name="体育新城"></locales>
+        </locales>
+
+        <locales name="开福">
+            <locales name="国防科大"></locales>
+
+            <locales name="省展览馆"></locales>
+
+            <locales name="松桂园"></locales>
+
+            <locales name="四方坪"></locales>
+
+            <locales name="伍家岭"></locales>
+
+            <locales name="湘春路"></locales>
+
+            <locales name="湘江世纪城"></locales>
+
+            <locales name="湘雅医院"></locales>
+
+            <locales name="中山路"></locales>
+
+            <locales name="烈士公园"></locales>
+
+            <locales name="兴汉门"></locales>
+
+            <locales name="浏阳河"></locales>
+        </locales>
+
+        <locales name="芙蓉">
+            <locales name="蔡锷南路"></locales>
+
+            <locales name="芙蓉广场"></locales>
+
+            <locales name="火车站"></locales>
+
+            <locales name="华海电脑城"></locales>
+
+            <locales name="韭菜园"></locales>
+
+            <locales name="马王堆"></locales>
+
+            <locales name="梦泽园"></locales>
+
+            <locales name="人民东路"></locales>
+
+            <locales name="韶山北路"></locales>
+
+            <locales name="万家丽广场"></locales>
+
+            <locales name="五一大道"></locales>
+
+            <locales name="杨家山"></locales>
+
+            <locales name="银港水晶城"></locales>
+
+            <locales name="袁家岭"></locales>
+
+            <locales name="德政园"></locales>
+
+            <locales name="火星镇"></locales>
+        </locales>
+
+        <locales name="星沙">
+            <locales name="板仓路"></locales>
+
+            <locales name="碧桂园"></locales>
+
+            <locales name="开元东路"></locales>
+
+            <locales name="凉塘路"></locales>
+
+            <locales name="泉塘"></locales>
+
+            <locales name="山水芙蓉"></locales>
+
+            <locales name="天华路"></locales>
+
+            <locales name="星沙大道"></locales>
+
+            <locales name="幸福里"></locales>
+
+            <locales name="中南汽车世界"></locales>
+
+            <locales name="漓湘路"></locales>
+        </locales>
+    </locales>
+
+    <locales name="大连">
+        <locales name="西岗">
+            <locales name="鞍山路"></locales>
+
+            <locales name="沈阳路"></locales>
+
+            <locales name="五四路"></locales>
+
+            <locales name="黄河路"></locales>
+
+            <locales name="新开路"></locales>
+
+            <locales name="五一广场"></locales>
+
+            <locales name="香炉礁"></locales>
+
+            <locales name="胜利桥"></locales>
+
+            <locales name="奥林匹克广场"></locales>
+
+            <locales name="八一路"></locales>
+
+            <locales name="大菜市"></locales>
+
+            <locales name="长春路"></locales>
+
+            <locales name="长江路"></locales>
+
+            <locales name="北京街"></locales>
+
+            <locales name="人民广场"></locales>
+
+            <locales name="胜利路"></locales>
+        </locales>
+
+        <locales name="中山">
+            <locales name="三八广场"></locales>
+
+            <locales name="中山广场"></locales>
+
+            <locales name="港湾广场"></locales>
+
+            <locales name="华乐广场"></locales>
+
+            <locales name="武昌街"></locales>
+
+            <locales name="民主广场"></locales>
+
+            <locales name="虎滩路"></locales>
+
+            <locales name="友好广场"></locales>
+
+            <locales name="二七广场"></locales>
+
+            <locales name="迎宾路"></locales>
+
+            <locales name="中南路"></locales>
+
+            <locales name="解放路"></locales>
+
+            <locales name="大连外国语学院"></locales>
+
+            <locales name="桃源街"></locales>
+
+            <locales name="秀月街"></locales>
+
+            <locales name="青云街"></locales>
+        </locales>
+
+        <locales name="沙河口">
+            <locales name="东北路"></locales>
+
+            <locales name="兴工街"></locales>
+
+            <locales name="西安路"></locales>
+
+            <locales name="黄河路"></locales>
+
+            <locales name="五一路"></locales>
+
+            <locales name="南沙街"></locales>
+
+            <locales name="春柳"></locales>
+
+            <locales name="马栏"></locales>
+
+            <locales name="绿波"></locales>
+
+            <locales name="锦绣"></locales>
+
+            <locales name="车家村"></locales>
+
+            <locales name="黑石礁"></locales>
+
+            <locales name="星海"></locales>
+
+            <locales name="五四广场"></locales>
+
+            <locales name="孙家沟"></locales>
+        </locales>
+
+        <locales name="甘井子">
+            <locales name="山东路"></locales>
+
+            <locales name="甘井子公园"></locales>
+
+            <locales name="辛寨子"></locales>
+
+            <locales name="革镇堡"></locales>
+
+            <locales name="华东路"></locales>
+
+            <locales name="华北路"></locales>
+
+            <locales name="泡崖"></locales>
+
+            <locales name="大连湾"></locales>
+
+            <locales name="泉水"></locales>
+
+            <locales name="王家桥"></locales>
+
+            <locales name="华南"></locales>
+
+            <locales name="南关岭"></locales>
+
+            <locales name="金家街"></locales>
+
+            <locales name="大纺"></locales>
+
+            <locales name="松江路"></locales>
+
+            <locales name="机场新区"></locales>
+
+            <locales name="周水前"></locales>
+
+            <locales name="红凌路"></locales>
+
+            <locales name="西山水库"></locales>
+
+            <locales name="营城子"></locales>
+
+            <locales name="促进路"></locales>
+        </locales>
+
+        <locales name="高新园区">
+            <locales name="凌水路"></locales>
+
+            <locales name="七贤岭"></locales>
+
+            <locales name="数码路"></locales>
+
+            <locales name="软件园"></locales>
+
+            <locales name="龙王塘"></locales>
+
+            <locales name="河口"></locales>
+
+            <locales name="七贤路"></locales>
+        </locales>
+
+        <locales name="旅顺口">
+            <locales name="营顺路"></locales>
+
+            <locales name="向阳街"></locales>
+
+            <locales name="旅顺北路"></locales>
+
+            <locales name="港湾街"></locales>
+
+            <locales name="友谊路"></locales>
+
+            <locales name="白玉山"></locales>
+
+            <locales name="旅顺南路"></locales>
+
+            <locales name="水师营街"></locales>
+
+            <locales name="世界和平公园"></locales>
+        </locales>
+
+        <locales name="金州">
+            <locales name="斯大林路"></locales>
+
+            <locales name="国防路"></locales>
+
+            <locales name="金兴路"></locales>
+
+            <locales name="胜利路"></locales>
+
+            <locales name="解放广场"></locales>
+
+            <locales name="体育场"></locales>
+        </locales>
+
+        <locales name="开发区">
+            <locales name="保税区"></locales>
+
+            <locales name="红梅小区"></locales>
+
+            <locales name="金源小区"></locales>
+
+            <locales name="金马路"></locales>
+
+            <locales name="金石滩"></locales>
+
+            <locales name="小窑湾"></locales>
+
+            <locales name="十里岗"></locales>
+
+            <locales name="小孤山"></locales>
+
+            <locales name="东北街"></locales>
+
+            <locales name="辽河西路"></locales>
+
+            <locales name="倚山里"></locales>
+
+            <locales name="湾里"></locales>
+
+            <locales name="东山"></locales>
+
+            <locales name="海滨路"></locales>
+        </locales>
+
+        <locales name="其他">
+            <locales name="长海县"></locales>
+
+            <locales name="普兰店"></locales>
+
+            <locales name="瓦房店"></locales>
+
+            <locales name="庄河市"></locales>
+        </locales>
+    </locales>
+
+    <locales name="佛山">
+        <locales name="顺德区">
+            <locales name="陈村"></locales>
+
+            <locales name="乐从"></locales>
+
+            <locales name="龙江"></locales>
+
+            <locales name="北滘"></locales>
+
+            <locales name="大良"></locales>
+
+            <locales name="容桂"></locales>
+
+            <locales name="伦教"></locales>
+
+            <locales name="勒流"></locales>
+
+            <locales name="均安"></locales>
+
+            <locales name="杏坛"></locales>
+
+            <locales name="容奇"></locales>
+        </locales>
+
+        <locales name="禅城区">
+            <locales name="湖景"></locales>
+
+            <locales name="福升"></locales>
+
+            <locales name="绿景"></locales>
+
+            <locales name="唐园"></locales>
+
+            <locales name="亲仁"></locales>
+
+            <locales name="祖庙"></locales>
+
+            <locales name="弼塘"></locales>
+
+            <locales name="石湾"></locales>
+
+            <locales name="张槎"></locales>
+
+            <locales name="普澜"></locales>
+
+            <locales name="魁奇"></locales>
+        </locales>
+
+        <locales name="三水区">
+            <locales name="芦苞"></locales>
+
+            <locales name="大塘"></locales>
+
+            <locales name="六和"></locales>
+
+            <locales name="白泥"></locales>
+
+            <locales name="乐平"></locales>
+
+            <locales name="河口"></locales>
+
+            <locales name="西南"></locales>
+
+            <locales name="金本"></locales>
+
+            <locales name="新华路"></locales>
+
+            <locales name="南边"></locales>
+        </locales>
+
+        <locales name="南海区">
+            <locales name="狮山"></locales>
+
+            <locales name="罗村"></locales>
+
+            <locales name="城市广场"></locales>
+
+            <locales name="南海大道北"></locales>
+
+            <locales name="朝安"></locales>
+
+            <locales name="天佑"></locales>
+
+            <locales name="南海广场"></locales>
+
+            <locales name="大沥"></locales>
+
+            <locales name="盐步"></locales>
+
+            <locales name="平洲"></locales>
+
+            <locales name="千灯湖"></locales>
+
+            <locales name="黄岐"></locales>
+        </locales>
+
+        <locales name="高明区">
+            <locales name="富湾"></locales>
+
+            <locales name="杨梅"></locales>
+
+            <locales name="合水"></locales>
+
+            <locales name="更楼"></locales>
+
+            <locales name="明城"></locales>
+
+            <locales name="人和"></locales>
+
+            <locales name="新圩"></locales>
+
+            <locales name="荷城"></locales>
+
+            <locales name="三洲"></locales>
+
+            <locales name="西安"></locales>
+        </locales>
+    </locales>
+
+    <locales name="广州">
+        <locales name="天河">
+            <locales name="珠江新城"></locales>
+
+            <locales name="后天河北"></locales>
+
+            <locales name="车陂"></locales>
+
+            <locales name="天河北"></locales>
+
+            <locales name="天河南"></locales>
+
+            <locales name="岗顶"></locales>
+
+            <locales name="天河公园"></locales>
+
+            <locales name="员村"></locales>
+
+            <locales name="东圃"></locales>
+
+            <locales name="粤垦"></locales>
+
+            <locales name="沙太"></locales>
+        </locales>
+
+        <locales name="越秀">
+            <locales name="淘金"></locales>
+
+            <locales name="五羊新城"></locales>
+
+            <locales name="东风东"></locales>
+
+            <locales name="东山"></locales>
+
+            <locales name="东川路"></locales>
+
+            <locales name="小北"></locales>
+
+            <locales name="北京路"></locales>
+
+            <locales name="解放北"></locales>
+
+            <locales name="解放南"></locales>
+
+            <locales name="二沙岛"></locales>
+
+            <locales name="大沙头"></locales>
+
+            <locales name="建设路"></locales>
+        </locales>
+
+        <locales name="荔湾">
+            <locales name="西关"></locales>
+
+            <locales name="陈家祠"></locales>
+
+            <locales name="南岸"></locales>
+
+            <locales name="芳村"></locales>
+
+            <locales name="窖口"></locales>
+
+            <locales name="东风西"></locales>
+
+            <locales name="环市西"></locales>
+
+            <locales name="黄沙"></locales>
+
+            <locales name="中山八路"></locales>
+        </locales>
+
+        <locales name="海珠">
+            <locales name="赤岗"></locales>
+
+            <locales name="广州大道南"></locales>
+
+            <locales name="新港西"></locales>
+
+            <locales name="南洲"></locales>
+
+            <locales name="宝岗"></locales>
+
+            <locales name="滨江东"></locales>
+
+            <locales name="江南西"></locales>
+
+            <locales name="江燕路"></locales>
+
+            <locales name="东晓"></locales>
+
+            <locales name="工业大道北"></locales>
+
+            <locales name="工业大道南"></locales>
+
+            <locales name="前进路"></locales>
+
+            <locales name="昌岗路"></locales>
+        </locales>
+
+        <locales name="白云">
+            <locales name="机场路"></locales>
+
+            <locales name="黄石"></locales>
+
+            <locales name="三元里"></locales>
+
+            <locales name="白云大道"></locales>
+
+            <locales name="同和"></locales>
+
+            <locales name="同德围"></locales>
+
+            <locales name="罗冲围"></locales>
+
+            <locales name="新市"></locales>
+
+            <locales name="金沙洲"></locales>
+
+            <locales name="桂花岗"></locales>
+        </locales>
+
+        <locales name="番禺">
+            <locales name="洛溪"></locales>
+
+            <locales name="祈福"></locales>
+
+            <locales name="大石"></locales>
+
+            <locales name="华南"></locales>
+
+            <locales name="南浦"></locales>
+
+            <locales name="市桥北"></locales>
+
+            <locales name="市桥南"></locales>
+
+            <locales name="钟村"></locales>
+
+            <locales name="石基"></locales>
+
+            <locales name="市桥东"></locales>
+
+            <locales name="市桥西"></locales>
+
+            <locales name="顺德碧桂园"></locales>
+        </locales>
+
+        <locales name="增城">
+            <locales name="广园东"></locales>
+
+            <locales name="新塘"></locales>
+        </locales>
+
+        <locales name="花都">
+            <locales name="新区"></locales>
+
+            <locales name="旧区"></locales>
+
+            <locales name="狮岭"></locales>
+
+            <locales name="清远"></locales>
+        </locales>
+
+        <locales name="黄埔">
+            <locales name="黄埔区府"></locales>
+
+            <locales name="开发区"></locales>
+        </locales>
+
+        <locales name="南沙">
+            <locales name="南沙"></locales>
+        </locales>
+
+        <locales name="萝岗">
+            <locales name="萝岗"></locales>
+        </locales>
+
+        <locales name="从化">
+            <locales name="从化"></locales>
+        </locales>
+    </locales>
+
+    <locales name="杭州">
+        <locales name="拱墅">
+            <locales name="香积寺路"></locales>
+
+            <locales name="德胜路"></locales>
+
+            <locales name="拱宸桥"></locales>
+
+            <locales name="湖墅"></locales>
+
+            <locales name="和睦"></locales>
+
+            <locales name="潮王路"></locales>
+
+            <locales name="大关"></locales>
+
+            <locales name="密渡桥路"></locales>
+
+            <locales name="石祥路"></locales>
+
+            <locales name="莫干山路"></locales>
+        </locales>
+
+        <locales name="江干">
+            <locales name="采荷"></locales>
+
+            <locales name="凤起东路"></locales>
+
+            <locales name="闸弄口"></locales>
+
+            <locales name="九堡"></locales>
+
+            <locales name="笕桥"></locales>
+
+            <locales name="景芳"></locales>
+
+            <locales name="凯旋"></locales>
+
+            <locales name="三里亭"></locales>
+
+            <locales name="四季青"></locales>
+
+            <locales name="濮家新村"></locales>
+
+            <locales name="南肖埠"></locales>
+
+            <locales name="钱江新城"></locales>
+
+            <locales name="近江"></locales>
+
+            <locales name="下沙"></locales>
+        </locales>
+
+        <locales name="上城">
+            <locales name="丰乐桥"></locales>
+
+            <locales name="复兴路"></locales>
+
+            <locales name="富春江路"></locales>
+
+            <locales name="清江路"></locales>
+
+            <locales name="清波"></locales>
+
+            <locales name="望江"></locales>
+
+            <locales name="吴山"></locales>
+
+            <locales name="雄镇楼"></locales>
+
+            <locales name="平海路"></locales>
+
+            <locales name="解放桥"></locales>
+
+            <locales name="葵巷"></locales>
+
+            <locales name="南星"></locales>
+
+            <locales name="湖滨"></locales>
+
+            <locales name="小营"></locales>
+        </locales>
+
+        <locales name="西湖">
+            <locales name="文三西路"></locales>
+
+            <locales name="文三路"></locales>
+
+            <locales name="文二路"></locales>
+
+            <locales name="留下"></locales>
+
+            <locales name="文一路"></locales>
+
+            <locales name="文二西路"></locales>
+
+            <locales name="保俶路"></locales>
+
+            <locales name="转塘"></locales>
+
+            <locales name="西溪"></locales>
+
+            <locales name="翠苑"></locales>
+
+            <locales name="三墩"></locales>
+
+            <locales name="古荡"></locales>
+
+            <locales name="文一西路"></locales>
+
+            <locales name="黄龙"></locales>
+
+            <locales name="教工路"></locales>
+
+            <locales name="古墩路"></locales>
+        </locales>
+
+        <locales name="下城">
+            <locales name="长庆"></locales>
+
+            <locales name="朝晖"></locales>
+
+            <locales name="德胜"></locales>
+
+            <locales name="打铁关"></locales>
+
+            <locales name="凤起路"></locales>
+
+            <locales name="施家桥"></locales>
+
+            <locales name="武林"></locales>
+
+            <locales name="新华路"></locales>
+
+            <locales name="宝善桥"></locales>
+
+            <locales name="潮鸣"></locales>
+
+            <locales name="建国路"></locales>
+
+            <locales name="石桥"></locales>
+
+            <locales name="延安路"></locales>
+
+            <locales name="中山北路"></locales>
+
+            <locales name="众安桥"></locales>
+
+            <locales name="体育场路"></locales>
+
+            <locales name="东新"></locales>
+
+            <locales name="艮山门"></locales>
+
+            <locales name="孩儿巷"></locales>
+
+            <locales name="庆春门"></locales>
+
+            <locales name="天水"></locales>
+
+            <locales name="中北桥"></locales>
+
+            <locales name="三塘"></locales>
+        </locales>
+
+        <locales name="滨江">
+            <locales name="中兴"></locales>
+
+            <locales name="浦沿"></locales>
+
+            <locales name="西兴"></locales>
+
+            <locales name="彩虹城"></locales>
+
+            <locales name="长河"></locales>
+        </locales>
+
+        <locales name="萧山">
+            <locales name="城厢"></locales>
+
+            <locales name="北干"></locales>
+
+            <locales name="闻堰"></locales>
+        </locales>
+
+        <locales name="余杭">
+            <locales name="临平"></locales>
+
+            <locales name="闲林"></locales>
+
+            <locales name="老余杭"></locales>
+
+            <locales name="良渚"></locales>
+
+            <locales name="崇贤"></locales>
+
+            <locales name="星桥"></locales>
+        </locales>
+
+        <locales name="临安">
+            <locales name="临安"></locales>
+        </locales>
+
+        <locales name="富阳">
+            <locales name="富春"></locales>
+        </locales>
+
+        <locales name="建德">
+            <locales name="建德"></locales>
+        </locales>
+
+        <locales name="桐庐">
+            <locales name="桐庐"></locales>
+        </locales>
+
+        <locales name="淳安">
+            <locales name="淳安"></locales>
+        </locales>
+    </locales>
+
+    <locales name="济南">
+        <locales name="市中">
+            <locales name="大观园"></locales>
+
+            <locales name="杆石桥"></locales>
+
+            <locales name="四里村"></locales>
+
+            <locales name="魏家庄"></locales>
+
+            <locales name="二七新村"></locales>
+
+            <locales name="七里山"></locales>
+
+            <locales name="六里山"></locales>
+
+            <locales name="舜玉路"></locales>
+
+            <locales name="泺源"></locales>
+
+            <locales name="王官庄"></locales>
+
+            <locales name="舜耕"></locales>
+
+            <locales name="白马山"></locales>
+
+            <locales name="七贤"></locales>
+
+            <locales name="十六里河"></locales>
+
+            <locales name="兴隆"></locales>
+
+            <locales name="党家"></locales>
+
+            <locales name="陡沟"></locales>
+        </locales>
+
+        <locales name="天桥">
+            <locales name="制锦市"></locales>
+
+            <locales name="北坦"></locales>
+
+            <locales name="纬北路"></locales>
+
+            <locales name="天桥东街"></locales>
+
+            <locales name="官扎营"></locales>
+
+            <locales name="宝华"></locales>
+
+            <locales name="堤口路"></locales>
+
+            <locales name="无影山"></locales>
+
+            <locales name="南村"></locales>
+
+            <locales name="北村"></locales>
+
+            <locales name="药山"></locales>
+
+            <locales name="北园"></locales>
+
+            <locales name="泺口"></locales>
+
+            <locales name="大桥"></locales>
+
+            <locales name="桑梓店"></locales>
+        </locales>
+
+        <locales name="槐荫">
+            <locales name="五里沟"></locales>
+
+            <locales name="西市场"></locales>
+
+            <locales name="南辛庄"></locales>
+
+            <locales name="振兴街"></locales>
+
+            <locales name="营市街"></locales>
+
+            <locales name="中大槐树"></locales>
+
+            <locales name="道德街"></locales>
+
+            <locales name="青年公园"></locales>
+
+            <locales name="段店北路"></locales>
+
+            <locales name="匡山"></locales>
+
+            <locales name="张庄路"></locales>
+
+            <locales name="美里湖"></locales>
+
+            <locales name="段店"></locales>
+
+            <locales name="吴家堡"></locales>
+        </locales>
+
+        <locales name="历下">
+            <locales name="解放路"></locales>
+
+            <locales name="司里街"></locales>
+
+            <locales name="趵突泉"></locales>
+
+            <locales name="泉城路"></locales>
+
+            <locales name="东门"></locales>
+
+            <locales name="东关"></locales>
+
+            <locales name="文化东路"></locales>
+
+            <locales name="建筑新村"></locales>
+
+            <locales name="甸柳新村"></locales>
+
+            <locales name="和平路"></locales>
+
+            <locales name="姚家"></locales>
+        </locales>
+
+        <locales name="历城">
+            <locales name="山大路"></locales>
+
+            <locales name="洪家楼"></locales>
+
+            <locales name="东风"></locales>
+
+            <locales name="全福"></locales>
+
+            <locales name="王舍人"></locales>
+
+            <locales name="港沟"></locales>
+
+            <locales name="董家"></locales>
+
+            <locales name="唐王"></locales>
+
+            <locales name="遥墙"></locales>
+
+            <locales name="华山"></locales>
+
+            <locales name="郭店"></locales>
+
+            <locales name="西营"></locales>
+
+            <locales name="柳埠"></locales>
+
+            <locales name="仲宫"></locales>
+
+            <locales name="彩石"></locales>
+        </locales>
+
+        <locales name="长清">
+            <locales name="长清"></locales>
+        </locales>
+
+        <locales name="高新">
+            <locales name="中心区"></locales>
+
+            <locales name="汉峪片区"></locales>
+
+            <locales name="奥体中心"></locales>
+
+            <locales name="出口加工区"></locales>
+
+            <locales name="孙村新区"></locales>
+        </locales>
+
+        <locales name="章丘">
+            <locales name="章丘市"></locales>
+        </locales>
+
+        <locales name="平阴">
+            <locales name="平阴"></locales>
+        </locales>
+
+        <locales name="济阳">
+            <locales name="济阳"></locales>
+        </locales>
+
+        <locales name="商河">
+            <locales name="商河"></locales>
+        </locales>
+    </locales>
+
+    <locales name="南京">
+        <locales name="江宁">
+            <locales name="百家湖"></locales>
+
+            <locales name="将军大道"></locales>
+
+            <locales name="岔路口"></locales>
+
+            <locales name="开发区"></locales>
+
+            <locales name="东山镇"></locales>
+
+            <locales name="科学园"></locales>
+
+            <locales name="汤山镇"></locales>
+
+            <locales name="禄口"></locales>
+
+            <locales name="麒麟门"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="鼓楼">
+            <locales name="北京西路"></locales>
+
+            <locales name="三牌楼"></locales>
+
+            <locales name="上海路"></locales>
+
+            <locales name="五台山"></locales>
+
+            <locales name="草场门"></locales>
+
+            <locales name="凤凰西街"></locales>
+
+            <locales name="湖南路"></locales>
+
+            <locales name="清凉门"></locales>
+
+            <locales name="龙江"></locales>
+
+            <locales name="中央路"></locales>
+
+            <locales name="汉中门"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="白下">
+            <locales name="新街口"></locales>
+
+            <locales name="大光路"></locales>
+
+            <locales name="瑞金路"></locales>
+
+            <locales name="月牙湖"></locales>
+
+            <locales name="光华门"></locales>
+
+            <locales name="朝天宫"></locales>
+
+            <locales name="海福巷"></locales>
+
+            <locales name="莫愁路"></locales>
+
+            <locales name="五老村"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="玄武">
+            <locales name="珠江路"></locales>
+
+            <locales name="北京东路"></locales>
+
+            <locales name="后宰门"></locales>
+
+            <locales name="锁金村"></locales>
+
+            <locales name="卫岗"></locales>
+
+            <locales name="孝陵卫"></locales>
+
+            <locales name="丹凤街"></locales>
+
+            <locales name="樱驼花园"></locales>
+
+            <locales name="月苑"></locales>
+
+            <locales name="红山"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="建邺">
+            <locales name="集庆门大街"></locales>
+
+            <locales name="南湖"></locales>
+
+            <locales name="水西门"></locales>
+
+            <locales name="茶南"></locales>
+
+            <locales name="奥体"></locales>
+
+            <locales name="南苑"></locales>
+
+            <locales name="兴隆"></locales>
+
+            <locales name="应天大街"></locales>
+
+            <locales name="江东门"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="秦淮">
+            <locales name="夫子庙"></locales>
+
+            <locales name="集庆路"></locales>
+
+            <locales name="大明路"></locales>
+
+            <locales name="三山街"></locales>
+
+            <locales name="洪家园"></locales>
+
+            <locales name="秦虹"></locales>
+
+            <locales name="来凤"></locales>
+
+            <locales name="钓鱼台"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="下关">
+            <locales name="三汊河"></locales>
+
+            <locales name="建宁路"></locales>
+
+            <locales name="热河南路"></locales>
+
+            <locales name="大桥南路"></locales>
+
+            <locales name="金陵小区"></locales>
+
+            <locales name="五塘广场"></locales>
+
+            <locales name="小市"></locales>
+
+            <locales name="和燕路"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="雨花台">
+            <locales name="安德门"></locales>
+
+            <locales name="能仁里"></locales>
+
+            <locales name="小行"></locales>
+
+            <locales name="宁南"></locales>
+
+            <locales name="西善桥"></locales>
+
+            <locales name="雨花新村"></locales>
+
+            <locales name="铁心桥"></locales>
+
+            <locales name="板桥"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="浦口">
+            <locales name="桥北"></locales>
+
+            <locales name="浦珠路"></locales>
+
+            <locales name="泰山新村"></locales>
+
+            <locales name="江浦街道"></locales>
+
+            <locales name="盘城"></locales>
+
+            <locales name="沿江"></locales>
+
+            <locales name="顶山"></locales>
+
+            <locales name="高新区"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="栖霞">
+            <locales name="迈皋桥"></locales>
+
+            <locales name="马群"></locales>
+
+            <locales name="晓庄"></locales>
+
+            <locales name="仙林"></locales>
+
+            <locales name="尧化门"></locales>
+
+            <locales name="燕子矶"></locales>
+
+            <locales name="龙潭镇"></locales>
+
+            <locales name="长营村"></locales>
+
+            <locales name="纬一路"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="六合">
+            <locales name="六合"></locales>
+        </locales>
+
+        <locales name="溧水">
+            <locales name="溧水"></locales>
+        </locales>
+
+        <locales name="高淳">
+            <locales name="高淳"></locales>
+        </locales>
+    </locales>
+
+    <locales name="青岛">
+        <locales name="市南区">
+            <locales name="八大湖"></locales>
+
+            <locales name="巴黎春天"></locales>
+
+            <locales name="东海路"></locales>
+
+            <locales name="二轻新村"></locales>
+
+            <locales name="浮山所"></locales>
+
+            <locales name="广电大厦"></locales>
+
+            <locales name="火车站"></locales>
+
+            <locales name="福州南路"></locales>
+
+            <locales name="青岛大学"></locales>
+
+            <locales name="五四广场"></locales>
+
+            <locales name="西镇"></locales>
+
+            <locales name="辛家庄"></locales>
+
+            <locales name="湛山"></locales>
+
+            <locales name="中山路"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="市北区">
+            <locales name="错埠岭"></locales>
+
+            <locales name="大港"></locales>
+
+            <locales name="浮山后"></locales>
+
+            <locales name="海泊桥"></locales>
+
+            <locales name="华阳路"></locales>
+
+            <locales name="即墨路"></locales>
+
+            <locales name="辽宁路"></locales>
+
+            <locales name="啤酒街"></locales>
+
+            <locales name="市北家乐福"></locales>
+
+            <locales name="台东"></locales>
+
+            <locales name="杨家群"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="四方区">
+            <locales name="北岭"></locales>
+
+            <locales name="长途站"></locales>
+
+            <locales name="抚顺路"></locales>
+
+            <locales name="海琴广场"></locales>
+
+            <locales name="河西"></locales>
+
+            <locales name="理工大学"></locales>
+
+            <locales name="双山"></locales>
+
+            <locales name="水清沟"></locales>
+
+            <locales name="兴隆路"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="李沧区">
+            <locales name="沧口公园"></locales>
+
+            <locales name="河南庄"></locales>
+
+            <locales name="黑龙江路"></locales>
+
+            <locales name="李村公园"></locales>
+
+            <locales name="楼山路"></locales>
+
+            <locales name="十梅庵"></locales>
+
+            <locales name="书院路"></locales>
+
+            <locales name="振华路"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="崂山区">
+            <locales name="高科园"></locales>
+
+            <locales name="海尔路"></locales>
+
+            <locales name="姜哥庄"></locales>
+
+            <locales name="崂山区政府"></locales>
+
+            <locales name="李山东路"></locales>
+
+            <locales name="青岛二中"></locales>
+
+            <locales name="沙子口"></locales>
+
+            <locales name="山东头"></locales>
+
+            <locales name="石老人"></locales>
+
+            <locales name="松岭路"></locales>
+
+            <locales name="王家村"></locales>
+
+            <locales name="颐中体育馆"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="城阳区">
+            <locales name="流亭"></locales>
+
+            <locales name="夏庄"></locales>
+
+            <locales name="惜福镇"></locales>
+
+            <locales name="正阳路"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="即墨市">
+            <locales name="即墨市"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="胶南市">
+            <locales name="胶南市"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="胶州市">
+            <locales name="胶州市"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="莱西市">
+            <locales name="莱西市"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="平度市">
+            <locales name="平度市"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+
+        <locales name="黄岛区">
+            <locales name="其他"></locales>
+
+            <locales name="辛安"></locales>
+
+            <locales name="红石崖"></locales>
+
+            <locales name="长江路"></locales>
+
+            <locales name="柳花泊"></locales>
+
+            <locales name="薛家岛"></locales>
+
+            <locales name="黄岛"></locales>
+        </locales>
+    </locales>
+
+    <locales name="上海">
+        <locales name="浦东">
+            <locales name="陆家嘴"></locales>
+
+            <locales name="联洋"></locales>
+
+            <locales name="碧云"></locales>
+
+            <locales name="世纪公园"></locales>
+
+            <locales name="塘桥"></locales>
+
+            <locales name="杨东"></locales>
+
+            <locales name="源深"></locales>
+
+            <locales name="洋泾"></locales>
+
+            <locales name="金桥"></locales>
+
+            <locales name="张江"></locales>
+
+            <locales name="世博滨江"></locales>
+
+            <locales name="南码头"></locales>
+
+            <locales name="上南"></locales>
+
+            <locales name="三林"></locales>
+
+            <locales name="六里"></locales>
+
+            <locales name="花木"></locales>
+
+            <locales name="北蔡"></locales>
+
+            <locales name="浦东外环"></locales>
+
+            <locales name="外高桥"></locales>
+
+            <locales name="曹路"></locales>
+
+            <locales name="唐镇"></locales>
+
+            <locales name="川沙"></locales>
+        </locales>
+
+        <locales name="闵行">
+            <locales name="莘庄"></locales>
+
+            <locales name="春申"></locales>
+
+            <locales name="梅陇"></locales>
+
+            <locales name="七宝"></locales>
+
+            <locales name="古美罗阳"></locales>
+
+            <locales name="华漕"></locales>
+
+            <locales name="静安新城"></locales>
+
+            <locales name="浦江"></locales>
+
+            <locales name="颛桥"></locales>
+
+            <locales name="龙柏金汇"></locales>
+
+            <locales name="金虹桥"></locales>
+
+            <locales name="江川路"></locales>
+
+            <locales name="吴泾"></locales>
+
+            <locales name="马桥"></locales>
+
+            <locales name="航华"></locales>
+        </locales>
+
+        <locales name="徐汇">
+            <locales name="淮海西路"></locales>
+
+            <locales name="徐家汇"></locales>
+
+            <locales name="肇嘉浜路"></locales>
+
+            <locales name="万体馆"></locales>
+
+            <locales name="斜土路"></locales>
+
+            <locales name="龙华"></locales>
+
+            <locales name="上海南站"></locales>
+
+            <locales name="田林"></locales>
+
+            <locales name="康健"></locales>
+
+            <locales name="华东理工"></locales>
+
+            <locales name="长桥"></locales>
+
+            <locales name="华泾"></locales>
+
+            <locales name="复兴中路"></locales>
+        </locales>
+
+        <locales name="普陀">
+            <locales name="长寿路"></locales>
+
+            <locales name="中远两湾城"></locales>
+
+            <locales name="武宁"></locales>
+
+            <locales name="长风"></locales>
+
+            <locales name="曹杨"></locales>
+
+            <locales name="真光"></locales>
+
+            <locales name="万里"></locales>
+
+            <locales name="长征"></locales>
+
+            <locales name="甘泉宜川"></locales>
+
+            <locales name="桃浦"></locales>
+
+            <locales name="真如"></locales>
+
+            <locales name="光新"></locales>
+        </locales>
+
+        <locales name="长宁">
+            <locales name="古北"></locales>
+
+            <locales name="中山公园"></locales>
+
+            <locales name="虹桥路"></locales>
+
+            <locales name="镇宁路"></locales>
+
+            <locales name="新华路"></locales>
+
+            <locales name="天山"></locales>
+
+            <locales name="仙霞"></locales>
+
+            <locales name="动物园"></locales>
+
+            <locales name="北新泾"></locales>
+        </locales>
+
+        <locales name="静安">
+            <locales name="南京西路"></locales>
+
+            <locales name="静安寺"></locales>
+
+            <locales name="江宁路"></locales>
+
+            <locales name="曹家渡"></locales>
+        </locales>
+
+        <locales name="黄浦">
+            <locales name="人民广场"></locales>
+
+            <locales name="南京东路"></locales>
+
+            <locales name="豫园"></locales>
+
+            <locales name="老西门"></locales>
+
+            <locales name="蓬莱公园"></locales>
+
+            <locales name="董家渡"></locales>
+
+            <locales name="黄浦滨江"></locales>
+        </locales>
+
+        <locales name="卢湾">
+            <locales name="淮海中路"></locales>
+
+            <locales name="新天地"></locales>
+
+            <locales name="复兴公园"></locales>
+
+            <locales name="打浦桥"></locales>
+
+            <locales name="五里桥"></locales>
+
+            <locales name="世博滨江"></locales>
+        </locales>
+
+        <locales name="虹口">
+            <locales name="北外滩"></locales>
+
+            <locales name="临平路"></locales>
+
+            <locales name="四川北路"></locales>
+
+            <locales name="鲁迅公园"></locales>
+
+            <locales name="和平公园"></locales>
+
+            <locales name="曲阳"></locales>
+
+            <locales name="凉城"></locales>
+
+            <locales name="江湾镇"></locales>
+        </locales>
+
+        <locales name="闸北">
+            <locales name="新客站"></locales>
+
+            <locales name="西藏北路"></locales>
+
+            <locales name="大宁绿地"></locales>
+
+            <locales name="闸北公园"></locales>
+
+            <locales name="汶水路"></locales>
+
+            <locales name="彭浦"></locales>
+        </locales>
+
+        <locales name="杨浦">
+            <locales name="东外滩"></locales>
+
+            <locales name="五角场"></locales>
+
+            <locales name="周家嘴路"></locales>
+
+            <locales name="控江路"></locales>
+
+            <locales name="黄兴公园"></locales>
+
+            <locales name="杨浦公园"></locales>
+
+            <locales name="杨浦大桥"></locales>
+
+            <locales name="中原社区"></locales>
+
+            <locales name="新江湾城"></locales>
+
+            <locales name="鞍山"></locales>
+        </locales>
+
+        <locales name="宝山">
+            <locales name="大华"></locales>
+
+            <locales name="上大"></locales>
+
+            <locales name="共康"></locales>
+
+            <locales name="泗塘"></locales>
+
+            <locales name="高境"></locales>
+
+            <locales name="淞南"></locales>
+
+            <locales name="顾村"></locales>
+
+            <locales name="东城区"></locales>
+
+            <locales name="罗店"></locales>
+
+            <locales name="月浦"></locales>
+
+            <locales name="杨行"></locales>
+
+            <locales name="共富"></locales>
+
+            <locales name="通河"></locales>
+
+            <locales name="淞宝"></locales>
+
+            <locales name="罗泾"></locales>
+
+            <locales name="张庙"></locales>
+
+            <locales name="大场"></locales>
+        </locales>
+
+        <locales name="松江">
+            <locales name="九亭"></locales>
+
+            <locales name="松江新城"></locales>
+
+            <locales name="新桥"></locales>
+
+            <locales name="松江城区"></locales>
+
+            <locales name="泗泾"></locales>
+
+            <locales name="莘闵"></locales>
+
+            <locales name="松江老城"></locales>
+
+            <locales name="佘山"></locales>
+        </locales>
+
+        <locales name="南汇">
+            <locales name="康桥"></locales>
+
+            <locales name="周浦"></locales>
+
+            <locales name="航头"></locales>
+
+            <locales name="临港新城"></locales>
+
+            <locales name="惠南"></locales>
+
+            <locales name="新场"></locales>
+
+            <locales name="祝桥"></locales>
+        </locales>
+
+        <locales name="嘉定">
+            <locales name="安亭"></locales>
+
+            <locales name="南翔"></locales>
+
+            <locales name="嘉定城区"></locales>
+
+            <locales name="丰庄"></locales>
+
+            <locales name="江桥新城"></locales>
+
+            <locales name="嘉定镇"></locales>
+
+            <locales name="真新"></locales>
+
+            <locales name="菊园新区"></locales>
+        </locales>
+
+        <locales name="青浦">
+            <locales name="重固"></locales>
+
+            <locales name="白鹤"></locales>
+
+            <locales name="徐泾"></locales>
+
+            <locales name="赵巷"></locales>
+
+            <locales name="青浦新城"></locales>
+
+            <locales name="朱家角"></locales>
+
+            <locales name="青浦北部"></locales>
+        </locales>
+
+        <locales name="奉贤">
+            <locales name="南桥"></locales>
+
+            <locales name="海湾旅游区"></locales>
+
+            <locales name="奉城"></locales>
+
+            <locales name="柘林"></locales>
+
+            <locales name="庄行"></locales>
+
+            <locales name="海湾"></locales>
+
+            <locales name="金汇"></locales>
+        </locales>
+
+        <locales name="金山">
+            <locales name="石化"></locales>
+
+            <locales name="朱泾"></locales>
+
+            <locales name="枫泾"></locales>
+
+            <locales name="金山新城"></locales>
+
+            <locales name="亭林"></locales>
+
+            <locales name="漕泾"></locales>
+
+            <locales name="金山中部"></locales>
+        </locales>
+
+        <locales name="崇明">
+            <locales name="崇明"></locales>
+
+            <locales name="崇明新城"></locales>
+
+            <locales name="堡镇"></locales>
+
+            <locales name="陈家镇"></locales>
+
+            <locales name="横沙岛"></locales>
+
+            <locales name="长兴岛"></locales>
+
+            <locales name="崇明其他"></locales>
+        </locales>
+
+        <locales name="昆山">
+            <locales name="玉山"></locales>
+
+            <locales name="巴城"></locales>
+
+            <locales name="周市"></locales>
+
+            <locales name="陆家"></locales>
+
+            <locales name="花桥"></locales>
+
+            <locales name="淀山湖"></locales>
+
+            <locales name="张浦"></locales>
+
+            <locales name="周庄"></locales>
+
+            <locales name="千灯"></locales>
+
+            <locales name="锦溪"></locales>
+        </locales>
+    </locales>
+
+    <locales name="深圳">
+        <locales name="福田">
+            <locales name="八卦岭"></locales>
+
+            <locales name="上步"></locales>
+
+            <locales name="华强"></locales>
+
+            <locales name="莲花"></locales>
+
+            <locales name="皇岗"></locales>
+
+            <locales name="新洲"></locales>
+
+            <locales name="福田中心区"></locales>
+
+            <locales name="景田"></locales>
+
+            <locales name="香蜜湖"></locales>
+
+            <locales name="梅林"></locales>
+
+            <locales name="车公庙"></locales>
+
+            <locales name="保税区"></locales>
+
+            <locales name="园岭"></locales>
+
+            <locales name="华强南"></locales>
+        </locales>
+
+        <locales name="罗湖">
+            <locales name="莲塘"></locales>
+
+            <locales name="黄贝岭"></locales>
+
+            <locales name="水库"></locales>
+
+            <locales name="布心"></locales>
+
+            <locales name="翠竹"></locales>
+
+            <locales name="笋岗"></locales>
+
+            <locales name="人民南"></locales>
+
+            <locales name="东门"></locales>
+
+            <locales name="蔡屋围"></locales>
+
+            <locales name="银湖"></locales>
+
+            <locales name="泥岗"></locales>
+
+            <locales name="洪湖"></locales>
+        </locales>
+
+        <locales name="南山">
+            <locales name="华侨城"></locales>
+
+            <locales name="科技园"></locales>
+
+            <locales name="西丽"></locales>
+
+            <locales name="南头"></locales>
+
+            <locales name="南油"></locales>
+
+            <locales name="前海"></locales>
+
+            <locales name="后海"></locales>
+
+            <locales name="蛇口"></locales>
+
+            <locales name="南山中心区"></locales>
+        </locales>
+
+        <locales name="盐田">
+            <locales name="梅沙"></locales>
+
+            <locales name="沙头角"></locales>
+        </locales>
+
+        <locales name="宝安">
+            <locales name="宝安中心区"></locales>
+
+            <locales name="龙华"></locales>
+
+            <locales name="西乡"></locales>
+
+            <locales name="新安"></locales>
+
+            <locales name="观澜"></locales>
+
+            <locales name="松岗"></locales>
+
+            <locales name="福永"></locales>
+
+            <locales name="沙井"></locales>
+
+            <locales name="桃源居"></locales>
+        </locales>
+
+        <locales name="龙岗">
+            <locales name="坂田"></locales>
+
+            <locales name="布吉"></locales>
+
+            <locales name="横岗"></locales>
+
+            <locales name="龙岗中心城"></locales>
+
+            <locales name="南澳"></locales>
+        </locales>
+    </locales>
+
+    <locales name="石家庄">
+        <locales name="长安">
+            <locales name="白佛"></locales>
+
+            <locales name="北二环外"></locales>
+
+            <locales name="东二环外"></locales>
+
+            <locales name="丰收路"></locales>
+
+            <locales name="广安"></locales>
+
+            <locales name="光华路"></locales>
+
+            <locales name="和平东路"></locales>
+
+            <locales name="建北"></locales>
+
+            <locales name="建华"></locales>
+
+            <locales name="建明"></locales>
+
+            <locales name="青园街"></locales>
+
+            <locales name="热电厂"></locales>
+
+            <locales name="省博物馆"></locales>
+
+            <locales name="谈固"></locales>
+
+            <locales name="体育北大街"></locales>
+
+            <locales name="土贤庄"></locales>
+
+            <locales name="沿东"></locales>
+
+            <locales name="育才"></locales>
+
+            <locales name="跃进路"></locales>
+
+            <locales name="翟营"></locales>
+
+            <locales name="中山东路"></locales>
+        </locales>
+
+        <locales name="开发区">
+            <locales name="长江大道"></locales>
+
+            <locales name="黄河大道"></locales>
+
+            <locales name="经济技术开发区"></locales>
+
+            <locales name="精英中学"></locales>
+
+            <locales name="昆仑大街"></locales>
+
+            <locales name="天山大街"></locales>
+
+            <locales name="天山海世界"></locales>
+
+            <locales name="五十四中学"></locales>
+
+            <locales name="湘江道"></locales>
+        </locales>
+
+        <locales name="鹿泉市">
+            <locales name="联合大学城"></locales>
+
+            <locales name="鹿泉市"></locales>
+
+            <locales name="铜冶"></locales>
+
+            <locales name="上庄"></locales>
+        </locales>
+
+        <locales name="桥东">
+            <locales name="北道岔"></locales>
+
+            <locales name="北二环外"></locales>
+
+            <locales name="长征街"></locales>
+
+            <locales name="大经"></locales>
+
+            <locales name="东风西路"></locales>
+
+            <locales name="东平路"></locales>
+
+            <locales name="和平东路"></locales>
+
+            <locales name="槐安东路"></locales>
+
+            <locales name="槐中路"></locales>
+
+            <locales name="汇通路"></locales>
+
+            <locales name="佳农市场"></locales>
+
+            <locales name="建设北大街"></locales>
+
+            <locales name="建设南大街"></locales>
+
+            <locales name="柳辛庄"></locales>
+
+            <locales name="南二环外"></locales>
+
+            <locales name="平安北大街"></locales>
+
+            <locales name="平安公园"></locales>
+
+            <locales name="平安南大街"></locales>
+
+            <locales name="桥东区政府"></locales>
+
+            <locales name="胜利北街"></locales>
+
+            <locales name="胜南石纺路"></locales>
+
+            <locales name="四中路"></locales>
+
+            <locales name="塔南路"></locales>
+
+            <locales name="西古城"></locales>
+
+            <locales name="休门"></locales>
+
+            <locales name="义堂"></locales>
+
+            <locales name="中山东路"></locales>
+        </locales>
+
+        <locales name="桥西">
+            <locales name="北杜"></locales>
+
+            <locales name="滨河"></locales>
+
+            <locales name="城角"></locales>
+
+            <locales name="东五里"></locales>
+
+            <locales name="宫家庄"></locales>
+
+            <locales name="工农路"></locales>
+
+            <locales name="红旗大街"></locales>
+
+            <locales name="槐西"></locales>
+
+            <locales name="火车站"></locales>
+
+            <locales name="建国路"></locales>
+
+            <locales name="简良"></locales>
+
+            <locales name="老动物园"></locales>
+
+            <locales name="南长街"></locales>
+
+            <locales name="南二环外"></locales>
+
+            <locales name="师范街"></locales>
+
+            <locales name="石铜路"></locales>
+
+            <locales name="水产西街"></locales>
+
+            <locales name="维明街"></locales>
+
+            <locales name="西二环外"></locales>
+
+            <locales name="西里街"></locales>
+
+            <locales name="西三教"></locales>
+
+            <locales name="新华路南"></locales>
+
+            <locales name="新石"></locales>
+
+            <locales name="友谊"></locales>
+
+            <locales name="玉村"></locales>
+
+            <locales name="裕西"></locales>
+
+            <locales name="振头"></locales>
+
+            <locales name="中华南大街"></locales>
+
+            <locales name="中山西路"></locales>
+
+            <locales name="自强路"></locales>
+        </locales>
+
+        <locales name="新华">
+            <locales name="柏林"></locales>
+
+            <locales name="北二环外"></locales>
+
+            <locales name="北荣街"></locales>
+
+            <locales name="北新街"></locales>
+
+            <locales name="北苑"></locales>
+
+            <locales name="电大街"></locales>
+
+            <locales name="二中"></locales>
+
+            <locales name="革新街"></locales>
+
+            <locales name="高柱"></locales>
+
+            <locales name="和平西路"></locales>
+
+            <locales name="合作路"></locales>
+
+            <locales name="红军大街"></locales>
+
+            <locales name="红星街"></locales>
+
+            <locales name="纪念碑"></locales>
+
+            <locales name="九中街"></locales>
+
+            <locales name="联盟路"></locales>
+
+            <locales name="联强"></locales>
+
+            <locales name="老动物园"></locales>
+
+            <locales name="宁安路"></locales>
+
+            <locales name="水上公园"></locales>
+
+            <locales name="水源街"></locales>
+
+            <locales name="石岗"></locales>
+
+            <locales name="泰华街"></locales>
+
+            <locales name="天苑维明街"></locales>
+
+            <locales name="西二环外"></locales>
+
+            <locales name="西焦"></locales>
+
+            <locales name="西三庄"></locales>
+
+            <locales name="新华路"></locales>
+
+            <locales name="兴凯路"></locales>
+
+            <locales name="友谊街口"></locales>
+
+            <locales name="赵陵铺"></locales>
+        </locales>
+
+        <locales name="裕华">
+            <locales name="大马村"></locales>
+
+            <locales name="东二环外"></locales>
+
+            <locales name="东风路"></locales>
+
+            <locales name="东岗"></locales>
+
+            <locales name="东苑"></locales>
+
+            <locales name="方村"></locales>
+
+            <locales name="富强"></locales>
+
+            <locales name="槐北"></locales>
+
+            <locales name="槐底"></locales>
+
+            <locales name="槐中"></locales>
+
+            <locales name="金马"></locales>
+
+            <locales name="建华南大街"></locales>
+
+            <locales name="尖岭"></locales>
+
+            <locales name="南二环外"></locales>
+
+            <locales name="南货厂"></locales>
+
+            <locales name="南焦"></locales>
+
+            <locales name="青园"></locales>
+
+            <locales name="胜南"></locales>
+
+            <locales name="世纪公园"></locales>
+
+            <locales name="石门"></locales>
+
+            <locales name="四十中学"></locales>
+
+            <locales name="孙村"></locales>
+
+            <locales name="体育南大街"></locales>
+
+            <locales name="塔冢"></locales>
+
+            <locales name="谈固大街"></locales>
+
+            <locales name="位同"></locales>
+
+            <locales name="银通"></locales>
+
+            <locales name="裕东"></locales>
+
+            <locales name="裕华路"></locales>
+
+            <locales name="翟营大街"></locales>
+
+            <locales name="卓达"></locales>
+        </locales>
+
+        <locales name="正定">
+            <locales name="国际小商品市场"></locales>
+
+            <locales name="滹沱河"></locales>
+
+            <locales name="正定"></locales>
+        </locales>
+
+        <locales name="其他区县">
+            <locales name="平山"></locales>
+
+            <locales name="藁城"></locales>
+
+            <locales name="栾城"></locales>
+        </locales>
+    </locales>
+
+    <locales name="苏州">
+        <locales name="园区">
+            <locales name="东环路"></locales>
+
+            <locales name="娄葑"></locales>
+
+            <locales name="湖东"></locales>
+
+            <locales name="湖西"></locales>
+
+            <locales name="独墅湖"></locales>
+
+            <locales name="胜浦"></locales>
+
+            <locales name="唯亭"></locales>
+
+            <locales name="青剑湖"></locales>
+        </locales>
+
+        <locales name="新区">
+            <locales name="狮山"></locales>
+
+            <locales name="横塘"></locales>
+
+            <locales name="阳山"></locales>
+
+            <locales name="浒墅关"></locales>
+
+            <locales name="通安"></locales>
+
+            <locales name="东渚"></locales>
+
+            <locales name="镇湖"></locales>
+
+            <locales name="科技城"></locales>
+
+            <locales name="枫桥"></locales>
+        </locales>
+
+        <locales name="平江">
+            <locales name="桃花坞"></locales>
+
+            <locales name="平江路"></locales>
+
+            <locales name="娄门"></locales>
+
+            <locales name="城北街道"></locales>
+
+            <locales name="苏锦街道"></locales>
+
+            <locales name="观前"></locales>
+        </locales>
+
+        <locales name="沧浪">
+            <locales name="双塔"></locales>
+
+            <locales name="南门"></locales>
+
+            <locales name="葑门"></locales>
+
+            <locales name="吴门桥"></locales>
+
+            <locales name="友新"></locales>
+
+            <locales name="胥江"></locales>
+        </locales>
+
+        <locales name="金闾">
+            <locales name="彩香"></locales>
+
+            <locales name="石路"></locales>
+
+            <locales name="虎丘"></locales>
+
+            <locales name="留园"></locales>
+
+            <locales name="白洋湾"></locales>
+        </locales>
+
+        <locales name="吴中">
+            <locales name="木渎"></locales>
+
+            <locales name="苏苑"></locales>
+
+            <locales name="龙西"></locales>
+
+            <locales name="长桥"></locales>
+
+            <locales name="城南"></locales>
+
+            <locales name="开发区"></locales>
+
+            <locales name="郭巷"></locales>
+
+            <locales name="甪直"></locales>
+
+            <locales name="胥口"></locales>
+
+            <locales name="横泾"></locales>
+
+            <locales name="临湖"></locales>
+
+            <locales name="东山"></locales>
+
+            <locales name="西山"></locales>
+
+            <locales name="香山"></locales>
+
+            <locales name="光福"></locales>
+
+            <locales name="越溪"></locales>
+        </locales>
+
+        <locales name="相城">
+            <locales name="陆慕"></locales>
+
+            <locales name="元和"></locales>
+
+            <locales name="开发区"></locales>
+
+            <locales name="黄桥"></locales>
+
+            <locales name="太平"></locales>
+
+            <locales name="渭塘"></locales>
+
+            <locales name="阳澄湖"></locales>
+
+            <locales name="北桥"></locales>
+
+            <locales name="黄埭"></locales>
+
+            <locales name="望亭"></locales>
+        </locales>
+
+        <locales name="吴江">
+            <locales name="松陵"></locales>
+
+            <locales name="盛泽"></locales>
+
+            <locales name="同里"></locales>
+
+            <locales name="汾湖"></locales>
+
+            <locales name="平望"></locales>
+
+            <locales name="横扇"></locales>
+
+            <locales name="七都"></locales>
+
+            <locales name="震泽"></locales>
+
+            <locales name="桃源"></locales>
+        </locales>
+
+        <locales name="昆山">
+            <locales name="玉山"></locales>
+
+            <locales name="巴城"></locales>
+
+            <locales name="周市"></locales>
+
+            <locales name="陆家"></locales>
+
+            <locales name="花桥"></locales>
+
+            <locales name="淀山湖"></locales>
+
+            <locales name="张浦"></locales>
+
+            <locales name="周庄"></locales>
+
+            <locales name="千灯"></locales>
+
+            <locales name="锦溪"></locales>
+        </locales>
+
+        <locales name="太仓">
+            <locales name="太仓"></locales>
+        </locales>
+
+        <locales name="常熟">
+            <locales name="常熟"></locales>
+        </locales>
+
+        <locales name="张家港">
+            <locales name="张家港"></locales>
+        </locales>
+    </locales>
+
+    <locales name="天津">
+        <locales name="和平">
+            <locales name="南市"></locales>
+
+            <locales name="南营门"></locales>
+
+            <locales name="劝业场"></locales>
+
+            <locales name="体育馆"></locales>
+
+            <locales name="小白楼"></locales>
+
+            <locales name="新兴街"></locales>
+        </locales>
+
+        <locales name="河西">
+            <locales name="大营门"></locales>
+
+            <locales name="挂甲寺"></locales>
+
+            <locales name="梅江"></locales>
+
+            <locales name="天塔"></locales>
+
+            <locales name="友谊路"></locales>
+
+            <locales name="陈塘庄"></locales>
+
+            <locales name="尖山"></locales>
+
+            <locales name="马场道"></locales>
+
+            <locales name="桃园街"></locales>
+
+            <locales name="下瓦房"></locales>
+
+            <locales name="越秀路"></locales>
+
+            <locales name="梅江南"></locales>
+
+            <locales name="小海地"></locales>
+        </locales>
+
+        <locales name="南开">
+            <locales name="广开"></locales>
+
+            <locales name="兴南街"></locales>
+
+            <locales name="嘉陵道"></locales>
+
+            <locales name="鼓楼"></locales>
+
+            <locales name="王顶堤"></locales>
+
+            <locales name="长虹街"></locales>
+
+            <locales name="向阳路"></locales>
+
+            <locales name="华苑"></locales>
+
+            <locales name="学府街"></locales>
+
+            <locales name="体育中心"></locales>
+
+            <locales name="天拖南"></locales>
+
+            <locales name="八里台"></locales>
+
+            <locales name="万兴街"></locales>
+        </locales>
+
+        <locales name="河北">
+            <locales name="鸿顺里"></locales>
+
+            <locales name="江都路"></locales>
+
+            <locales name="宁园街"></locales>
+
+            <locales name="王串场"></locales>
+
+            <locales name="新开河"></locales>
+
+            <locales name="光复道"></locales>
+
+            <locales name="建昌道"></locales>
+
+            <locales name="靖江路"></locales>
+
+            <locales name="铁东路"></locales>
+
+            <locales name="望海楼"></locales>
+
+            <locales name="月牙河"></locales>
+        </locales>
+
+        <locales name="河东">
+            <locales name="程林街"></locales>
+
+            <locales name="大王庄"></locales>
+
+            <locales name="东新街"></locales>
+
+            <locales name="富民路"></locales>
+
+            <locales name="上杭路"></locales>
+
+            <locales name="向阳楼"></locales>
+
+            <locales name="中山门"></locales>
+
+            <locales name="常州道"></locales>
+
+            <locales name="春华街"></locales>
+
+            <locales name="大直沽"></locales>
+
+            <locales name="二号桥"></locales>
+
+            <locales name="鲁山道"></locales>
+
+            <locales name="唐口"></locales>
+
+            <locales name="张贵庄"></locales>
+        </locales>
+
+        <locales name="红桥">
+            <locales name="丁字沽"></locales>
+
+            <locales name="铃铛阁"></locales>
+
+            <locales name="邵公庄"></locales>
+
+            <locales name="西沽"></locales>
+
+            <locales name="咸阳北路"></locales>
+
+            <locales name="大胡同"></locales>
+
+            <locales name="芥园道"></locales>
+
+            <locales name="三条石"></locales>
+
+            <locales name="双环邨"></locales>
+
+            <locales name="西于庄"></locales>
+        </locales>
+
+        <locales name="西青">
+            <locales name="大寺"></locales>
+
+            <locales name="李七庄"></locales>
+
+            <locales name="南河镇"></locales>
+
+            <locales name="青泊洼农场"></locales>
+
+            <locales name="王稳庄"></locales>
+
+            <locales name="辛口镇"></locales>
+
+            <locales name="杨柳青"></locales>
+
+            <locales name="张家窝"></locales>
+
+            <locales name="中北镇"></locales>
+        </locales>
+
+        <locales name="津南">
+            <locales name="八里台镇"></locales>
+
+            <locales name="北闸口镇"></locales>
+
+            <locales name="葛沽镇"></locales>
+
+            <locales name="双港镇"></locales>
+
+            <locales name="双桥河镇"></locales>
+
+            <locales name="咸水沽镇"></locales>
+
+            <locales name="小站镇"></locales>
+
+            <locales name="辛庄镇"></locales>
+        </locales>
+
+        <locales name="东丽">
+            <locales name="么六桥乡"></locales>
+
+            <locales name="地毯路"></locales>
+
+            <locales name="华明镇"></locales>
+
+            <locales name="赤土镇"></locales>
+
+            <locales name="军粮城"></locales>
+
+            <locales name="津塘路"></locales>
+
+            <locales name="新立镇"></locales>
+
+            <locales name="利津路"></locales>
+
+            <locales name="大毕庄"></locales>
+
+            <locales name="先锋路"></locales>
+        </locales>
+
+        <locales name="北辰">
+            <locales name="津京公路"></locales>
+
+            <locales name="西堤头"></locales>
+
+            <locales name="青光镇"></locales>
+
+            <locales name="天穆镇"></locales>
+
+            <locales name="北仓镇"></locales>
+
+            <locales name="大张庄镇"></locales>
+
+            <locales name="新村街"></locales>
+
+            <locales name="集贤街"></locales>
+
+            <locales name="双口镇"></locales>
+
+            <locales name="宜兴埠"></locales>
+
+            <locales name="红光农场"></locales>
+
+            <locales name="小淀镇"></locales>
+
+            <locales name="双街镇"></locales>
+        </locales>
+
+        <locales name="其他">
+            <locales name="蓟县"></locales>
+
+            <locales name="武清"></locales>
+
+            <locales name="汉沽"></locales>
+
+            <locales name="宝坻"></locales>
+
+            <locales name="静海"></locales>
+
+            <locales name="宁河"></locales>
+        </locales>
+
+        <locales name="塘沽">
+            <locales name="渤海石油"></locales>
+
+            <locales name="大梁子街"></locales>
+
+            <locales name="杭州道"></locales>
+
+            <locales name="解放路"></locales>
+
+            <locales name="塘沽新村街"></locales>
+
+            <locales name="新城镇"></locales>
+
+            <locales name="新河街"></locales>
+
+            <locales name="北塘街"></locales>
+
+            <locales name="东大沽"></locales>
+
+            <locales name="西大沽"></locales>
+
+            <locales name="工农村"></locales>
+
+            <locales name="胡家园"></locales>
+
+            <locales name="三槐路"></locales>
+
+            <locales name="向阳街"></locales>
+
+            <locales name="新港街"></locales>
+        </locales>
+
+        <locales name="开发区">
+            <locales name="第二大街"></locales>
+
+            <locales name="第三大街"></locales>
+
+            <locales name="第四大街"></locales>
+
+            <locales name="第五大街"></locales>
+
+            <locales name="第一大街"></locales>
+
+            <locales name="开发区"></locales>
+
+            <locales name="鲲鹏街"></locales>
+        </locales>
+
+        <locales name="大港">
+            <locales name="大港生活区"></locales>
+
+            <locales name="大港油田"></locales>
+
+            <locales name="港星里"></locales>
+
+            <locales name="古林街"></locales>
+
+            <locales name="太平镇"></locales>
+
+            <locales name="霞光街"></locales>
+
+            <locales name="迎宾街"></locales>
+
+            <locales name="小王庄镇"></locales>
+
+            <locales name="永明街"></locales>
+        </locales>
+    </locales>
+
+    <locales name="武汉">
+        <locales name="江岸">
+            <locales name="二七百步亭"></locales>
+
+            <locales name="黄埔惠济"></locales>
+
+            <locales name="后湖"></locales>
+
+            <locales name="江汉路"></locales>
+
+            <locales name="三阳路"></locales>
+
+            <locales name="台北香港路"></locales>
+
+            <locales name="竹叶山花桥"></locales>
+        </locales>
+
+        <locales name="江汉">
+            <locales name="复兴村常码头"></locales>
+
+            <locales name="红旗渠"></locales>
+
+            <locales name="六渡桥"></locales>
+
+            <locales name="唐家墩"></locales>
+
+            <locales name="武广万松园"></locales>
+
+            <locales name="西北湖"></locales>
+
+            <locales name="杨汊湖"></locales>
+        </locales>
+
+        <locales name="武昌">
+            <locales name="东湖东亭"></locales>
+
+            <locales name="积玉桥"></locales>
+
+            <locales name="南湖花园"></locales>
+
+            <locales name="水果湖"></locales>
+
+            <locales name="司门口"></locales>
+
+            <locales name="武泰闸烽火"></locales>
+
+            <locales name="小东门"></locales>
+
+            <locales name="徐东"></locales>
+
+            <locales name="徐家棚"></locales>
+
+            <locales name="阅马场首义"></locales>
+
+            <locales name="中北路"></locales>
+
+            <locales name="中南丁字桥"></locales>
+        </locales>
+
+        <locales name="硚口">
+            <locales name="宝丰崇仁"></locales>
+
+            <locales name="古田"></locales>
+
+            <locales name="汉正街"></locales>
+
+            <locales name="宗关简易"></locales>
+        </locales>
+
+        <locales name="汉阳">
+            <locales name="七里庙"></locales>
+
+            <locales name="王家湾"></locales>
+
+            <locales name="鹦鹉大道"></locales>
+
+            <locales name="钟家村"></locales>
+
+            <locales name="蔡甸"></locales>
+
+            <locales name="沌口"></locales>
+        </locales>
+
+        <locales name="洪山">
+            <locales name="光谷关山"></locales>
+
+            <locales name="街道口"></locales>
+
+            <locales name="珞狮南路"></locales>
+
+            <locales name="卓刀泉"></locales>
+        </locales>
+
+        <locales name="青山">
+            <locales name="钢都花园"></locales>
+
+            <locales name="红钢城"></locales>
+
+            <locales name="建二"></locales>
+        </locales>
+
+        <locales name="东西湖">
+            <locales name="常青花园"></locales>
+
+            <locales name="金银湖"></locales>
+
+            <locales name="吴家山"></locales>
+        </locales>
+
+        <locales name="其他">
+            <locales name="黄陂"></locales>
+
+            <locales name="新洲"></locales>
+
+            <locales name="汉南"></locales>
+
+            <locales name="蔡甸"></locales>
+
+            <locales name="江夏"></locales>
+
+            <locales name="其他"></locales>
+        </locales>
+    </locales>
+
+    <locales name="无锡">
+        <locales name="崇安">
+            <locales name="崇安寺"></locales>
+
+            <locales name="通江"></locales>
+
+            <locales name="广瑞路"></locales>
+
+            <locales name="上马墩"></locales>
+
+            <locales name="江海"></locales>
+
+            <locales name="广益"></locales>
+        </locales>
+
+        <locales name="南长">
+            <locales name="迎龙桥"></locales>
+
+            <locales name="南禅寺"></locales>
+
+            <locales name="清名桥"></locales>
+
+            <locales name="金星"></locales>
+
+            <locales name="金匮"></locales>
+
+            <locales name="扬名"></locales>
+        </locales>
+
+        <locales name="北塘">
+            <locales name="黄巷"></locales>
+
+            <locales name="山北"></locales>
+
+            <locales name="北大街"></locales>
+
+            <locales name="惠山"></locales>
+        </locales>
+
+        <locales name="锡山">
+            <locales name="东亭"></locales>
+
+            <locales name="安镇"></locales>
+
+            <locales name="东北塘"></locales>
+
+            <locales name="羊尖"></locales>
+
+            <locales name="鹅湖"></locales>
+
+            <locales name="锡北"></locales>
+
+            <locales name="东港"></locales>
+        </locales>
+
+        <locales name="惠山">
+            <locales name="堰桥"></locales>
+
+            <locales name="长安"></locales>
+
+            <locales name="钱桥"></locales>
+
+            <locales name="前洲"></locales>
+
+            <locales name="玉祁"></locales>
+
+            <locales name="洛社"></locales>
+
+            <locales name="阳山"></locales>
+        </locales>
+
+        <locales name="滨湖">
+            <locales name="河埒"></locales>
+
+            <locales name="荣巷"></locales>
+
+            <locales name="蠡园"></locales>
+
+            <locales name="蠡湖"></locales>
+
+            <locales name="太湖"></locales>
+
+            <locales name="滨湖"></locales>
+
+            <locales name="华庄"></locales>
+
+            <locales name="雪浪"></locales>
+
+            <locales name="马山"></locales>
+
+            <locales name="胡埭"></locales>
+        </locales>
+
+        <locales name="新区">
+            <locales name="旺庄"></locales>
+
+            <locales name="硕放"></locales>
+
+            <locales name="江溪"></locales>
+
+            <locales name="新安"></locales>
+
+            <locales name="梅村"></locales>
+
+            <locales name="鸿山"></locales>
+        </locales>
+
+        <locales name="江阴">
+            <locales name="江阴"></locales>
+        </locales>
+
+        <locales name="宜兴">
+            <locales name="宜兴"></locales>
+        </locales>
+    </locales>
+
+    <locales name="西安">
+        <locales name="城北">
+            <locales name="北大明宫"></locales>
+
+            <locales name="北二环"></locales>
+
+            <locales name="北稍门"></locales>
+
+            <locales name="方新村"></locales>
+
+            <locales name="红庙坡"></locales>
+
+            <locales name="火车站"></locales>
+
+            <locales name="经开区"></locales>
+
+            <locales name="龙首村"></locales>
+
+            <locales name="太华路"></locales>
+
+            <locales name="未央湖"></locales>
+
+            <locales name="辛家庙"></locales>
+
+            <locales name="张家堡"></locales>
+
+            <locales name="泾河工业园"></locales>
+
+            <locales name="朱宏路"></locales>
+        </locales>
+
+        <locales name="城南">
+            <locales name="草场坡"></locales>
+
+            <locales name="大雁塔"></locales>
+
+            <locales name="明德门"></locales>
+
+            <locales name="南二环"></locales>
+
+            <locales name="曲江新区"></locales>
+
+            <locales name="三森"></locales>
+
+            <locales name="陕师大"></locales>
+
+            <locales name="太乙路"></locales>
+
+            <locales name="文艺路"></locales>
+
+            <locales name="小寨"></locales>
+
+            <locales name="友谊东路"></locales>
+
+            <locales name="朱雀路"></locales>
+
+            <locales name="南门"></locales>
+
+            <locales name="吉祥村"></locales>
+
+            <locales name="赛格电脑城"></locales>
+
+            <locales name="省人民医院"></locales>
+
+            <locales name="和平门"></locales>
+        </locales>
+
+        <locales name="城东"></locales>
+    </locales>
+</locales>
+      

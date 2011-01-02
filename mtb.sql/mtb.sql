@@ -88,7 +88,8 @@ CREATE TABLE  `miantanba`.`categories` (
 
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
 LOCK TABLES `categories` WRITE;
-INSERT INTO `miantanba`.`categories` VALUES  (1,'会展',NULL,NULL,'2010-11-21 02:40:51','2010-11-21 02:40:51'),
+INSERT INTO `miantanba`.`categories` VALUES
+ (1,'会展',NULL,NULL,'2010-11-21 02:40:51','2010-11-21 02:40:51'),
  (2,'供需展销',1,NULL,'2010-11-21 02:40:51','2010-11-21 02:40:51'),
  (3,'人才招聘',1,NULL,'2010-11-21 02:40:51','2010-11-21 02:40:51'),
  (4,'产品发布',1,NULL,'2010-11-21 02:40:51','2010-11-21 02:40:51'),

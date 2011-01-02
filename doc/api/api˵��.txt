@@ -1,0 +1,68 @@
+API的域名： api.miantanba.com
+建议客户端将它设置为常量或配置项。
+
+使用HTTP协议请求以下的网址将会返回对应的内容。
+注：返回内容为xml格式。如需要，可返回json格式。
+-------------
+列表：
+GET /activities
+同 GET /activities/beijing
+
+GET /activities/{city}?page=3&per_pge=20
+某城市的活动列表。
+
+page为页号，per_page为每页显示条数，具体见搜索部分，均为可选。
+
+返回内容的具体格式见activities.xml的说明。
+
+-------------
+搜索：
+GET /activities/search?q=关键字&city=beijing&lat=108.2&lng=112.3&zoom=2&category=婚庆,会展&type=activity&page=3
+对关键字进行搜索，返回活动列表。
+
+q为搜索关键字。
+city代表城市，城市名的拼音。
+lat与lng分别代表纬度和经度，zoom代表放大倍数，意义与google map相同，三者合起来表示搜索的区域范围。如不提供，取城市中心点和默认放大倍数。
+category代表活动分类，多个分类用逗号隔开。
+type默认为activity，即搜搜活动。
+page为页号，第一页为1，留空则返回第1页。
+per_page为每页返回的活动条数，默认为20。可通过per_page设置为其它数值，最多不超过200。
+
+以上参数均为可选项。
+
+返回内容具体格式见search.xml。
+可用于普通搜索或地图的区域搜索。
+
+------------
+查看一个活动的详细信息
+GET /activities/{id}
+
+返回内容具体格式见activity.xml(注：比列表中的活动信息字段稍多一些）。
+
+------------ 元数据 ---------------------
+本段包含城市、活动分类的定义。建议客户端取到数据后，在本地缓存起来。
+
+----
+城市列表
+GET  /cities
+
+见cities.xml
+
+----
+活动分类列表
+GET /categories
+
+见categories.xml
+
+-----
+登录:
+POST /login
+数据 login=帐号&password=密码
+
+返回200 OK，表示登录成功.
+<login>
+  <token></token>
+</login>
+
+
+
