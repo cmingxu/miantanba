@@ -54,7 +54,11 @@ Mtb::Application.routes.draw do
 
   match ':city', :controller => 'activities', :action => 'index'
 
-  resources :activities
+  resources :activities do
+   collection do
+     get :map
+   end
+  end
   
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
