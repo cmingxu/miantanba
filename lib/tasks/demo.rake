@@ -71,6 +71,15 @@ namespace :demo do
 　　　　 2. 工作繁忙而没有时间结交异性朋友
 联系我时请说明是在58同城看到的，谢谢！"
                     )
+      Activity.create(:title => '心理学专业，交个朋友',
+                      :user_id => sliu,
+                      :category_id => jiaoyou,
+                      :city_id => beijing,
+                      :start_time => '2010-10-5',
+                      :end_time => '2011-04-22',
+                      :address_desc => '清华大学',
+                      :description => "感兴趣的都可交个朋友也行"
+      )
     end
   end
 end

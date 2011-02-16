@@ -1,4 +1,11 @@
 module ApplicationHelper
+  def ftime(time)
+    time && time.strftime("%Y-%m-%d %H:%M")
+  end
+
+  def fdate(time)
+    time && time.strftime("%Y-%m-%d")
+  end
 
   def errors_for(object, message=nil)
     html = ""

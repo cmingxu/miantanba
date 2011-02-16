@@ -1,0 +1,49 @@
+<style>
+    .pub_time {
+        font-size: 90%;
+        color: #666;
+    }
+
+    ul.meta{
+        list-style: none;
+    }
+    ul.meta dt, ul.meta dd{
+        display: inline;
+    }
+    ul.meta dt{
+        width: 200px;
+        display: inline-block;
+    }
+</style>
+<h1><%= @activity.title %></h1>
+<div class="pub_time">
+  生效时间：<%= ftime(@activity.start_time) %> - <%= ftime(@activity.end_time) %>
+</div>
+
+<ul class="meta">
+  <li>
+    <dl>
+      <dt>地点：</dt>
+      <dd><%= @activity.address_desc %></dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>联系人：</dt>
+      <dd><%= @activity.contact_person %></dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>联系方式：</dt>
+      <dd><%= @activity.contact %></dd>
+    </dl>
+  </li>
+</ul>
+
+<div>
+  <h3>详细信息</h3>
+  <div>
+    <pre><%= @activity.description%></pre>
+  </div>
+</div>
