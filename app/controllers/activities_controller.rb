@@ -3,6 +3,10 @@ class ActivitiesController < ApplicationController
     @activities = Activity.hot(current_city)
   end
 
+  def show
+    
+  end
+
   def map
     render :layout => 'map_layout'
   end

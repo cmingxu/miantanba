@@ -5,12 +5,15 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'nokogiri'
 gem 'jquery-rails'
+#gem 'mysql2'
 gem 'mysql2'
 
 # Use unicorn as the web server
-gem "mongrel"
-gem "cgi_multipart_eof_fix"
-gem "fastthread"
+#gem "mongrel"
+#gem "cgi_multipart_eof_fix"
+#gem "fastthread"
+
+gem 'thin'
 
 gem "calendar_date_select"
 
