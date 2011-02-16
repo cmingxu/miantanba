@@ -1,3 +1,28 @@
+.header .top_info{
+    float:right;
+}
+.header span.title{
+    display: inline-block;
+    color: #00f;
+    position: relative;
+    top: -20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.header .changeCity{
+    display: inline-block;
+}
+
+.cities{
+    display: none;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    padding: 4px;
+    margin: 4px;
+    position: absolute;
+}
+
+
 dl.activity {
   border: 1px solid #eee;
   padding: 5px 0;

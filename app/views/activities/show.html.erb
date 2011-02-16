@@ -11,13 +11,22 @@
         display: inline;
     }
     ul.meta dt{
-        width: 200px;
+        width: 100px;
         display: inline-block;
     }
+    h1{
+        color: #00f;
+    }
+    .title{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 4px;
+    }
 </style>
+<div class="title">
 <h1><%= @activity.title %></h1>
 <div class="pub_time">
   生效时间：<%= ftime(@activity.start_time) %> - <%= ftime(@activity.end_time) %>
+</div>
 </div>
 
 <ul class="meta">

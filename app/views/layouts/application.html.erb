@@ -1,16 +1,25 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE HTML>
+<html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <%= render :partial =>  'layouts/title' %>
+    <title>面谈吧</title>
     <%=stylesheet_link_tag "site" %>
     <%=stylesheet_link_tag "front" %>
     <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag "jquery.cookie.js" %>
+    <%= javascript_include_tag "front" %>
     <%= yield :head %>
   </head>
   <body>
     <div class="container">
-      <%=render :partial=>"layouts/top_info"%>
+      <div class="header">
+        <img src="/images/logo.png" />
+        <div class="changeCity">
+          <%= current_city.name %> <a href="#" id="changeCityLink">切换城市</a>
+          <%= render :partial => 'layouts/cities' %>
+        </div>
+        <span class="title">走出门，面谈吧，活动等你来参加</span>
+        <%=render :partial=>"layouts/top_info"%>
+      </div>
       <div class="main">
         <%=yield %>
       </div>

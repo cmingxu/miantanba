@@ -3,6 +3,8 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
+  helper_method :current_city
+  
   before_filter :login_from_cookies
   before_filter :set_thread_data
   before_filter :load_parent
