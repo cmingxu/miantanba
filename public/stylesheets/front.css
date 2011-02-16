@@ -1,3 +1,6 @@
+.header{
+    overflow: auto;
+}
 .header .top_info{
     float:right;
 }
@@ -21,6 +24,11 @@
     margin: 4px;
     position: absolute;
 }
+
+.newActivityLink{
+    float:right;
+}
+
 
 
 dl.activity {

@@ -1,0 +1,76 @@
+<%= errors_for @activity %>
+<% form_for(:activities, :url => {:action => :create}, :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f| %>
+    <ul>
+      <li>
+        <div class="desc">
+          主题<span class="req">*</span>
+        </div>
+        <%= f.text_field :title, :class=>"field text required" %>
+      </li>
+      <li>
+        <div class="desc">
+          时间<span class="req">*</span>
+        </div>
+        <%= f.text_field :start_time %>
+        <%= f.text_field :end_time %>
+      </li>
+      <li>
+        <div class="desc">
+          地点<span class="req">*</span>
+        </div>
+        <%= f.text_field :address_desc, :class=>"field text required" %>
+      </li>
+      <li>
+        <div class="desc">
+          类型<span class="req">*</span>
+        </div>
+        <%= select(nil, :sup, @categories.collect { |sup| [sup.name, sup.id] }, {}, {:id=>:sup, :name=>:sup_id, :onchange => remote_function(
+                :method => "put",
+                :with => "'parent_id=' + value",
+                :url => {:action => :change_category})}) %>
+      </li>
+      <li>
+        <div class="desc">
+          详细描述<span class="req">*</span>
+        </div>
+        <%= f.text_area :description %>
+      </li>
+      <li>
+        <div class="desc">
+          联系方式<span class="req">*</span>
+        </div>
+        <%= f.text_field :contact %>
+      </li>
+      <li>
+        <div class="desc">
+          参会须知<span class="req">*</span>
+        </div>
+        <%= f.text_area :about %>
+      </li>
+      <li>
+        <div class="desc">
+          预约说明<span class="req">*</span>
+        </div>
+        <%= f.text_area :reserve_intro %>
+      </li>
+      <li>
+        <div class="desc">
+          预约人数限制<span class="req">*</span>
+        </div>
+        <%= f.text_field :reserve_num, :value=>0 %> <span class="gray">0为不限人数</span>
+      </li>
+      <li>
+        <div class="desc">
+          参加费用<span class="req">*</span>
+        </div>
+        <div>标准定价：<%= f.text_field :price, :value=>0 %> 个面子/人/次</div>
+        <div> 签到返还：<%= f.text_field :price_return, :value=>0 %> 个面子/人/次</div>
+        <div>相关说明：<%= f.text_area :price_intro %></div>
+      </li>
+      <li>
+        <div class="desc">
+          <%= submit_tag "提交", {:class=>"btTxt", :id=>"saveForm"} %>
+        </div>
+      </li>
+    </ul>
+<% end %>
