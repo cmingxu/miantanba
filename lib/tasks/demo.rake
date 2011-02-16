@@ -30,8 +30,8 @@ namespace :demo do
     end
 
     task :cities => :environment do
-      City.create(:name => '北京', :code => 'beijing', :short_code => 'bj')
-      City.create(:name => '上海', :code => 'shanghai', :short_code => 'sh')
+      City.create(:name => '北京', :code => 'beijing', :short_code => 'bj', :lng => 116.41667, :lat => 39.91667)
+      City.create(:name => '上海', :code => 'shanghai', :short_code => 'sh', :lng => 121.43333, :lat => 34.50000)
     end
 
     task :categories => :environment do

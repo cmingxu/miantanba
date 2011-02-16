@@ -6,6 +6,9 @@ class CreateLocales < ActiveRecord::Migration
       t.string  :short_code
       t.string  :type
       t.integer :parent_id
+
+      t.float :lng
+      t.float :lat
       t.timestamps
     end
   end

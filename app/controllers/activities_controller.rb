@@ -8,6 +8,6 @@ class ActivitiesController < ApplicationController
   end
 
   def map
-    render :layout => 'map_layout'
+    @activities = Activity.hot(current_city)
   end
 end

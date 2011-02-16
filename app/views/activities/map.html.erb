@@ -1,39 +1,106 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=zh-CN"></script>
+<style>
+    .activityMapList .activity {
+        border-bottom: 1px solid #ccc;
+        padding: 6px 2px;
+    }
+
+    .activityMapList .activity .title {
+        font-size: 14px;
+        color: #00c;
+    }
+
+    .activityMapList .activity .address_desc, .activityMapList .activity .time {
+        font-size: 11px;
+        color: #666;
+    }
+    .mapActivity {
+        padding: 6px 2px;
+        width: 400px;
+    }
+
+    .mapActivity .title {
+        font-size: 14px;
+        color: #00c;
+    }
+
+    .mapActivity .address_desc, .mapActivity .time {
+        font-size: 11px;
+        color: #666;
+    }
+    .mapActivity .buttons{
+        margin-top: 6px;
+        border-top: 1px solid #ccc;
+        padding: 4px;
+        overflow: auto;
+    }
+
+    .mapActivity .buttons a{
+        float:right;
+    }
+</style>
+
+<div style="width:19%;float:left;" class="activityMapList">
+  <% @activities.each do |activity| %>
+      <div class="activity">
+        <div class="title"><%= activity.title %></div>
+        <div class="address_desc"><%= activity.address_desc %></div>
+        <div class="time"><%= ftime(activity.start_time) %> - <%= ftime(activity.end_time) %></div>
+      </div>
+  <% end %>
+</div>
 <div style="float:left;width:80%;height:600px;border:1px solid #000;" id="map">
 
 </div>
-<div style="width:19%;float:left;">
-
-</div>
-
 
 <script type="text/javascript">
+    var lat = <%= current_city.lat%>;
+    var lng = <%= current_city.lng%>;
+    var activities = <%= raw @activities.to_json%>;
     var map = null;
     function initMap() {
         var mapDom = document.getElementById("map");
-        var center = new google.maps.LatLng(30.16, 120.12);
+        var center = new google.maps.LatLng(lat, lng);
         var initOptions = {
             zoom: 11,
             center: center,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             mapTypeControl: false
         };
-        map = new google.maps.Map(mapDom,initOptions);
+        map = new google.maps.Map(mapDom, initOptions);
 
-        var marker = new google.maps.Marker({
-            position: center,
-            map: map,
-            title: "这是活动标题"
+//        var marker = new google.maps.Marker({
+//            position: center,
+//            map: map,
+//            title: "这是活动标题"
+//        });
+//
+//        var infoWindow = new google.maps.InfoWindow({
+//            content: "这是<b>活动</b>内容"
+//        });
+//
+//        google.maps.event.addListener(marker, "click", function() {
+//            infoWindow.open(map, marker);
+//        });
+        var infoWindow = new google.maps.InfoWindow();
+        $(activities).each(function() {
+            var activity = this.activity;
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(activity.lat, activity.lng),
+                map: map,
+                title: "这是活动标题"
+            });
+            var content = '<div class="mapActivity">' +
+            '<div class="title"><a href="/activities/' activity.id + '" target="_blank">' + activity.title + '</a></div>' +
+            '<div class="address_desc">' + activity.address_desc + '</div>' +
+            '<div class="time">' + activity.start_time + '-' + activity.end_time + '</div>' +
+            '<div class="buttons"><a href="/activities/' + activity.id + '" target="_blank">查看详情</a></div>'
+            '</div>';
+            google.maps.event.addListener(marker, "click", function() {
+                infoWindow.setContent(content);
+                infoWindow.open(map, marker);
+            });
         });
-
-        var infoWindow = new google.maps.InfoWindow({
-            content: "这是<b>活动</b>内容"
-        });
-
-        google.maps.event.addListener(marker, "click", function(){
-            infoWindow.open(map, marker); 
-        });
-
 
     }
     $(document).ready(initMap);

@@ -13,6 +13,9 @@ class CreateActivities < ActiveRecord::Migration
       t.string :contact #联系方式
       t.text :about #参会须知
 
+      t.float :lat #纬度
+      t.float :lng #经度
+
       t.integer :status #活动状态(审核通过，未通过)
 
       t.timestamp :start_time #开始时间
