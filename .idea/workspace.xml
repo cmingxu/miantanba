@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/activities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/map.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/map.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20101106112346_create_locales.rb" afterPath="$PROJECT_DIR$/db/migrate/20101106112346_create_locales.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" afterPath="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/demo.rake" afterPath="$PROJECT_DIR$/lib/tasks/demo.rake" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +38,7 @@
       <file leaf-file-name="map.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/activities/map.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="86" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.28063944">
+            <state line="93" column="57" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.28063944">
               <folding />
             </state>
           </provider>
@@ -723,7 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/activities/map.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="86" selection-start="2806" selection-end="2806" vertical-scroll-proportion="0.28063944">
+        <state line="93" column="57" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.28063944">
           <folding />
         </state>
       </provider>
