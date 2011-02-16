@@ -38,7 +38,7 @@
       <file leaf-file-name="map.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/activities/map.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="57" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.28063944">
+            <state line="46" column="3" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.3516874">
               <folding />
             </state>
           </provider>
@@ -718,7 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/activities/map.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="57" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.28063944">
+        <state line="46" column="3" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.3516874">
           <folding />
         </state>
       </provider>

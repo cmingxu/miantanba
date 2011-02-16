@@ -39,11 +39,18 @@
         float:right;
     }
 </style>
+<script type="text/javascript">
+  function focusMarker(activityId){
+      var marker = markers[activityId];
+      map.setCenter(marker.getPosition());
+      google.maps.event.trigger(marker, 'click');
+  }
+</script>
 
 <div style="width:19%;float:left;" class="activityMapList">
   <% @activities.each do |activity| %>
       <div class="activity">
-        <div class="title"><%= activity.title %></div>
+        <div class="title"><a href="#" onclick="focusMarker(<%= activity.id%>);return false;"><%= activity.title %></a></div>
         <div class="address_desc"><%= activity.address_desc %></div>
         <div class="time"><%= ftime(activity.start_time) %> - <%= ftime(activity.end_time) %></div>
       </div>
@@ -57,6 +64,7 @@
     var lat = <%= current_city.lat%>;
     var lng = <%= current_city.lng%>;
     var activities = <%= raw @activities.to_json%>;
+    var markers =  {};
     var map = null;
     function initMap() {
         var mapDom = document.getElementById("map");
@@ -90,6 +98,7 @@
                 map: map,
                 title: "这是活动标题"
             });
+            markers[activity.id] = marker;
             var content = '<div class="mapActivity">' +
             '<div class="title"><a href="/activities/' + activity.id + '" target="_blank">' + activity.title + '</a></div>' +
             '<div class="address_desc">' + activity.address_desc + '</div>' +
