@@ -61,5 +61,13 @@ class ApplicationController < ActionController::Base
   def current_city
     @current_city
   end
+
+  def check_login
+    
+  end
+
+  def current_user
+    @current_user = User.first
+  end
   
 end

@@ -3,7 +3,7 @@
 <dl class="activity">
   <dd class="time"><%= ftime(activity.start_time) %> - <%= ftime(activity.start_time) %></dd>
   <dt>
-    <%= link_to activity.title, activity_path(activity), :class => 'title' %>
+    <%= link_to activity.title, activity_path(activity.id), :class => 'title' %>
     <%= link_to [activity.city.try(:name),activity.area.try(:name),activity.street.try(:name)].compact.join("-"),
         "#", :class => 'addr'  %>
   </dt>

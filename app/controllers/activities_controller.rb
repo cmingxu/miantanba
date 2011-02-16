@@ -21,6 +21,7 @@ class ActivitiesController < ApplicationController
   def create
     @activity=Activity.new params[:activity]
     @activity.user_id = current_user.id
+    @activity.city_id = current_city.id
     if @activity.save
       redirect_to "/"
     else
