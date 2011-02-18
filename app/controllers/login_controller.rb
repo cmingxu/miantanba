@@ -6,16 +6,13 @@ class LoginController < ApplicationController
   def auth
     @user = User.authorize(params[:email], params[:password])
     if @user
-      session[:user_id] = @user.id
-      session[:login] = @user.login
-      session[:city_id] = @user.city_id
+      CurrentUser.set(request, @user, @user.city)
       @user.update_attributes(:last_login_at => Time.now)
       if params[:persist] == "1"
         cookies[:p_session_id] = {:value => @user.password, :expires => Time.now + 7.months}
       else
         cookies[:p_session_id] = nil
       end
-      #      UserMailer.welcome_email(@user).deliver
       redirect_to "/"
     else
       flash.now[:error]="用户名或密码不正确"
@@ -34,6 +31,20 @@ class LoginController < ApplicationController
   end
 
   def signup
+    render :action => :signup
+  end
 
+  def post_signup
+    @user=User.new(params[:user])
+    @user.level=0
+    @user.mianzi=0
+    if @user.save
+      CurrentUser.set(request, @user, @user.city)
+      
+      #      UserMailer.welcome_email(@user).deliver
+      redirect_to '/'
+    else
+      render :action =>:signup
+    end
   end
 end

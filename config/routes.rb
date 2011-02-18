@@ -55,6 +55,9 @@ Mtb::Application.routes.draw do
   get '/login' => 'login#login'
   get '/logout' => 'login#logout'
   post '/auth' => 'login#auth', :via => :auth
+  
+  get '/signup' => 'login#signup', :via => :signup
+  post '/signup' => 'login#post_signup'
   # See how all your routes lay out with "rake routes"
 
   match ':city', :controller => 'activities', :action => 'index'

@@ -1,11 +1,13 @@
 class User < ActiveRecord::Base
   belongs_to :city
 
+  PASSWORD_SALT = "salt_it"
+
   #登录验证
-  def self.authorize(login_name, password)
-    user = User.find_by_login(login_name)
+  def self.authorize(login, password)
+    user = User.find_by_login(login)
     unless user.nil?
-      password_hashcode = Digest::SHA1.hexdigest(login_name + password)
+      password_hashcode = Digest::SHA1.hexdigest(login + password)
       return user if  password_hashcode == user.password
     end
     nil
@@ -15,6 +17,48 @@ class User < ActiveRecord::Base
     update_attributes(:last_login_at => Time.now)
   end
 
+  def encrypted_password
+    Digest::SHA1.hexdigest(login + password + PASSWORD_SALT)
+  end
+
+  #validates
+#  validates :email, :presence => true,
+#            :length => {:maximum =>50},
+#            :format=>{:with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i},
+##            :uniqueness => true,
+#            :message => '邮箱必须填写正确的格式',
+#            :on => :save
+#
+#  validates :password, :presence=>true,
+#            :length => {:minimum => 6, :maximum =>40},
+#            :confirmation => true,
+#            :message => '密码不能为空，最小长度为6位，两次输入密码必须一致'
+
+  validate do |user|
+    if user.login.blank?
+      user.errors.add(:login, "用户名不能为空")
+    end
+    if user.login && user.login.length < 6
+      user.errors.add(:login, "用户名不能少于6位")
+    end
+    if user.email.blank?
+      user.errors.add(:email, "邮箱不能为空")
+    end
+    if !user.email.match(/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i)
+      user.errors.add(:email, "邮箱格式不正确")
+    end
+    if user.password != user.password_confirmation
+      user.errors.add(:password, "密码两次输入不一致")
+    end
+  end
+  #设置激活码
+  def set_activate_code
+    self.activate_code = Digest::SHA1.hexdigest("--#{self.email}--#{self.password}--");
+  end
+
+  def before_create
+    self.password = encrypted_password
+  end
 #  #是否激活
 #  NOT_ACTIVE=0
 #  ACTIVED=1
@@ -41,36 +85,6 @@ class User < ActiveRecord::Base
 #  def city
 #    self.street.area.city
 #  end
-
-
-  #validates
-#  validates :email,:presence => true,
-#    :length => { :maximum =>50 },
-#    :format=>{ :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i},
-#    :uniqueness => true,
-#    :on => :save
-#
-#  validates :display_name,:presence=>true,
-#    :length => {  :minimum => 3,:maximum =>20 },
-#    :format=>{ :with => /^[A-Za-z\s0-9_-]{1,20}$/i},
-#    :uniqueness => true
-#
-#  validates :password, :presence=>true,
-#    :length => {  :minimum => 6,:maximum =>40 },
-#    :confirmation => true
-
-
-#  #密码加密
-#  def encrypted_password
-#    self.password = Digest::SHA1.hexdigest(self.email+self.password);
-#    self.password_confirmation = Digest::SHA1.hexdigest(self.email+self.password_confirmation);
-#  end
-#
-#  #设置激活码
-#  def set_active_code
-#    self.active_code=Digest::SHA1.hexdigest("--#{self.email}--#{self.password}--");
-#  end
-#
 
 
 end

@@ -1,0 +1,46 @@
+<%=errors_for @user %>
+<% form_for(:user,:url => signup_path,:html => {:id=>"reg_form",:class=>"",:method => :post}) do |f| %>
+  <ul>
+    <li>
+      <div class="desc">
+        用户名<span class="req">*</span>
+      </div>
+      <%=f.text_field :login,:class=>"field text required"%>
+    </li>
+    <li>
+      <div class="desc">
+        密码<span class="req">*</span>
+      </div>
+      <%=f.password_field :password,:class=>"field text required"%>
+    </li>
+    <li>
+      <div class="desc">
+        确认密码<span class="req">*</span>
+      </div>
+      <%=f.password_field :password_confirmation,:class=>"field text required"%>
+    </li>
+    <li>
+      <div class="desc">
+        邮箱<span class="req">*</span>
+      </div>
+      <%=f.text_field :email,:class=>"field text required"%>
+    </li>
+    <li>
+      <div class="desc">
+        真实姓名<span class="req"></span>
+      </div>
+      <%=f.text_field :real_name %>
+    </li>
+    <li>
+      <div class="desc">
+        所在地<span class="req">*</span>
+      </div>
+      <%=f.text_field :address_desc,:class=>"field text required"%>
+    </li>
+    <li>
+      <div class="desc">
+        <%= submit_tag  "注册",{:class=>"btTxt",:id=>"saveForm"} %>
+      </div>
+    </li>
+  </ul>
+<%end%>
