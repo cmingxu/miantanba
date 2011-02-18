@@ -5,8 +5,8 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'nokogiri'
 gem 'jquery-rails'
-#gem 'mysql2'
 gem 'mysql2'
+gem 'rest-client'
 
 # Use unicorn as the web server
 #gem "mongrel"

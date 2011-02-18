@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101206110926) do
+ActiveRecord::Schema.define(:version => 20110218050412) do
 
   create_table "activities", :force => true do |t|
     t.integer  "user_id"
@@ -39,6 +39,9 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
     t.integer  "aptitude"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "contact_person"
+    t.float    "lat",            :limit => 20
+    t.float    "lng",            :limit => 20
   end
 
   create_table "categories", :force => true do |t|
@@ -112,6 +115,8 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
     t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "lng",        :limit => 20
+    t.float    "lat",        :limit => 20
   end
 
   create_table "messages", :force => true do |t|
@@ -133,6 +138,14 @@ ActiveRecord::Schema.define(:version => 20101206110926) do
   create_table "persistent_logins", :force => true do |t|
     t.string  "uid",     :null => false
     t.integer "user_id", :null => false
+  end
+
+  create_table "sites", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "templates", :force => true do |t|
