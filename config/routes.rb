@@ -50,6 +50,11 @@ Mtb::Application.routes.draw do
   # just remember to delete public/index.html.
   #root :to => "login#index"
   root :to => redirect("/beijing")
+
+
+  get '/login' => 'login#login'
+  get '/logout' => 'login#logout'
+  post '/auth' => 'login#auth', :via => :auth
   # See how all your routes lay out with "rake routes"
 
   match ':city', :controller => 'activities', :action => 'index'
@@ -64,4 +69,6 @@ Mtb::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   match ':controller(/:action(/:id(.:format)))'
+
+
 end

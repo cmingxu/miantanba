@@ -1,8 +1,24 @@
 class User < ActiveRecord::Base
+  belongs_to :city
+
+  #登录验证
+  def self.authorize(login_name, password)
+    user = User.find_by_login(login_name)
+    unless user.nil?
+      password_hashcode = Digest::SHA1.hexdigest(login_name + password)
+      return user if  password_hashcode == user.password
+    end
+    nil
+  end
+
+  def touch_last_login_at
+    update_attributes(:last_login_at => Time.now)
+  end
+
 #  #是否激活
 #  NOT_ACTIVE=0
 #  ACTIVED=1
-  
+
 #  before_create :encrypted_password
 #  before_create :set_active_code
 
@@ -26,8 +42,6 @@ class User < ActiveRecord::Base
 #    self.street.area.city
 #  end
 
-  
-
 
   #validates
 #  validates :email,:presence => true,
@@ -45,7 +59,7 @@ class User < ActiveRecord::Base
 #    :length => {  :minimum => 6,:maximum =>40 },
 #    :confirmation => true
 
-  
+
 #  #密码加密
 #  def encrypted_password
 #    self.password = Digest::SHA1.hexdigest(self.email+self.password);
@@ -57,15 +71,6 @@ class User < ActiveRecord::Base
 #    self.active_code=Digest::SHA1.hexdigest("--#{self.email}--#{self.password}--");
 #  end
 #
-#  #登录验证
-#  def self.authorize(login_name, password)
-#    user = User.find_by_email(login_name)
-#    unless user.nil?
-#      email = user.email
-#      password_hashcode = Digest::SHA1.hexdigest(email+password);
-#      return user if  password_hashcode == user.password
-#    end
-#    nil
-#  end
-  
+
+
 end
