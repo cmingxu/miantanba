@@ -76,20 +76,6 @@
             mapTypeControl: false
         };
         map = new google.maps.Map(mapDom, initOptions);
-
-//        var marker = new google.maps.Marker({
-//            position: center,
-//            map: map,
-//            title: "这是活动标题"
-//        });
-//
-//        var infoWindow = new google.maps.InfoWindow({
-//            content: "这是<b>活动</b>内容"
-//        });
-//
-//        google.maps.event.addListener(marker, "click", function() {
-//            infoWindow.open(map, marker);
-//        });
         var infoWindow = new google.maps.InfoWindow();
         $(activities).each(function() {
             var activity = this.activity;
@@ -103,7 +89,7 @@
             '<div class="title"><a href="/activities/' + activity.id + '" target="_blank">' + activity.title + '</a></div>' +
             '<div class="address_desc">' + activity.address_desc + '</div>' +
             '<div class="time">' + activity.start_time + '-' + activity.end_time + '</div>' +
-            '<div class="buttons"><a href="/activities/' + activity.id + '" target="_blank">查看详情</a></div>'
+            '<div class="buttons"><a href="/activities/' + activity.id + '" target="_blank">查看详情</a></div>' +
             '</div>';
             google.maps.event.addListener(marker, "click", function() {
                 infoWindow.setContent(content);
