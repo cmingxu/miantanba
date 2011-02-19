@@ -42,7 +42,7 @@ module Crawler
 
       def update_activity(url, activity)
         doc = Crawler::Tool.fetch(url)
-        description = doc.search('.detailInfo > span').first.content
+        description = doc.search('.detailInfo > span').first.inner_html
         activity.update_attributes(:description => description)
       end
 

@@ -12,14 +12,11 @@ module Crawler
         site = Site.find_by_code('58')
         city = City.find_by_code('beijing')
         
-        doc.search('#infolist tr').each do |item|
-          puts '*'
-          item = item.search('td:nth-child(2)').first
-          puts '~'
+        doc.search('#infolist tr td:nth-child(2)' ).each do |item|
           attrs = {
               :title => item.search('a').first.text,
               :weblink => item.search('a').first.attr('href'),
-#              :start_time => Time.zone.parse(item.search('.slash').first.previous_sibling.first.gsub("活动时间：", '')),
+              :start_time => Time.zone.parse(item.search('.slash').first.previous_sibling.content.gsub("活动时间：", '')),
               :address_desc => item.search('.slash').first.next_sibling.content.gsub("地点:", "")
           }
 
@@ -43,7 +40,7 @@ module Crawler
 
       def update_activity(url, activity)
         doc = Crawler::Tool.fetch(url)
-        description = doc.search('.content > .conleft').first.content
+        description = doc.search('.content > .conleft').first.inner_html
         activity.update_attributes(:description => description)
       end
 

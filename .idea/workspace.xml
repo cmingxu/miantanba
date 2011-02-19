@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" afterPath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" afterPath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/tool.rb" afterPath="$PROJECT_DIR$/lib/crawler/tool.rb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,19 +63,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ganji.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ganji.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="61" selection-start="0" selection-end="2280" vertical-scroll-proportion="0.0">
+            <state line="44" column="71" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.41721854">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="s58.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="s58.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/s58.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="80" selection-start="798" selection-end="798" vertical-scroll-proportion="0.48392555">
+            <state line="42" column="72" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,11 +174,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/parser.rb" />
-        <option value="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/crawler.rake" />
         <option value="$PROJECT_DIR$/lib/crawler/tool.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
+        <option value="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
       </list>
     </option>
   </component>
@@ -684,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="61" selection-start="0" selection-end="2280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="64" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
@@ -721,7 +713,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/s58.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="80" selection-start="798" selection-end="798" vertical-scroll-proportion="0.48392555">
+        <state line="42" column="72" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="71" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.41721854">
           <folding />
         </state>
       </provider>
