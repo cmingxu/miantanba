@@ -1,7 +1,8 @@
 <div class="top_info">
   <ul>
-    <li><%=link_to "消息通知",{:controller=>"users",:action=>"message"}%></li>
-    <li><%=link_to "设置",{:controller=>"users",:action=>"setting"}%></li>
+    <% if current_user.logged? %>
+    <li><%=link_to "消息通知", message_path %></li>
+    <% end %>
     <li><%=link_to "帮助",{:controller=>"help",:action=>"index"}%></li>
     <% if current_user.logged? %>
     <li><%= current_user.user.login %>,进入<%= link_to "个人中心", profile_path %> <%=link_to "退出",{:controller=>"login",:action=>"logout"}%></li>

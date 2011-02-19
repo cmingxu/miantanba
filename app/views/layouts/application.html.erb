@@ -14,12 +14,14 @@
       <div class="header">
         <a href="/"><img src="/images/logo.png" /></a>
         <div class="changeCity">
-          <%= current_city.name %> <a href="#" id="changeCityLink">切换城市</a>
+          <span style="font-size:120%;"><%= current_city.name %></span><br /><a href="#" style="color:#666" id="changeCityLink">[切换城市]</a>
           <%= render :partial => 'layouts/cities' %>
         </div>
         <span class="title">走出门，面谈吧，活动等你来参加</span>
         <%=render :partial=>"layouts/top_info"%>
+        <div>
         <a class="newActivityLink" href="/activities/new">我要发起活动</a>
+        </div>
       </div>
       <div class="main">
         <%=yield %>
