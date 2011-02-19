@@ -10,19 +10,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110219025105) do
+ActiveRecord::Schema.define(:version => 20110219123018) do
 
   create_table "activities", :force => true do |t|
     t.integer  "user_id"
     t.string   "title"
     t.text     "description"
+    t.integer  "root_category_id"
     t.integer  "category_id"
     t.integer  "city_id"
     t.integer  "area_id"
     t.integer  "street_id"
     t.string   "address_desc"
+    t.string   "contact_person"
     t.string   "contact"
     t.text     "about"
+    t.integer  "site_id"
+    t.string   "site_code"
+    t.float    "lat"
+    t.float    "lng"
     t.integer  "status"
     t.datetime "start_time"
     t.datetime "end_time"
@@ -39,20 +45,14 @@ ActiveRecord::Schema.define(:version => 20110219025105) do
     t.integer  "aptitude"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "contact_person"
-    t.float    "lat",            :limit => 20
-    t.float    "lng",            :limit => 20
-    t.integer  "site_id"
-    t.string   "site_code",      :limit => 20
   end
 
   create_table "categories", :force => true do |t|
-    t.string   "name"
-    t.string   "code"
-    t.integer  "parent_id"
-    t.string   "type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string  "name"
+    t.string  "code"
+    t.integer "parent_id"
+    t.boolean "is_hot"
+    t.integer "hot_level", :default => 0
   end
 
   create_table "comments", :force => true do |t|
@@ -115,10 +115,10 @@ ActiveRecord::Schema.define(:version => 20110219025105) do
     t.string   "short_code"
     t.string   "type"
     t.integer  "parent_id"
+    t.float    "lng"
+    t.float    "lat"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.float    "lng",        :limit => 20
-    t.float    "lat",        :limit => 20
   end
 
   create_table "messages", :force => true do |t|

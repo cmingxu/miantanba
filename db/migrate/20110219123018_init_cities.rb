@@ -820,7 +820,8 @@ class InitCities < ActiveRecord::Migration
  (3280,'江南西',3273,'2010-11-11 09:37:54','2010-11-11 09:37:54','Street'),
  (3281,'江燕路',3273,'2010-11-11 09:37:55','2010-11-11 09:37:55','Street'),
  (3282,'东晓',3273,'2010-11-11 09:37:55','2010-11-11 09:37:55','Street');
-INSERT INTO `miantanba`.`locales`(id,name, parent_id,created_at, updated_at, type) VALUES  (3283,'工业大道北',3273,'2010-11-11 09:37:55','2010-11-11 09:37:55','Street'),
+"""
+execute """INSERT INTO `miantanba`.`locales`(id,name, parent_id,created_at, updated_at, type) VALUES  (3283,'工业大道北',3273,'2010-11-11 09:37:55','2010-11-11 09:37:55','Street'),
  (3284,'工业大道南',3273,'2010-11-11 09:37:55','2010-11-11 09:37:55','Street'),
  (3285,'前进路',3273,'2010-11-11 09:37:55','2010-11-11 09:37:55','Street'),
  (3286,'昌岗路',3273,'2010-11-11 09:37:55','2010-11-11 09:37:55','Street'),
@@ -1641,8 +1642,8 @@ INSERT INTO `miantanba`.`locales`(id,name, parent_id,created_at, updated_at, typ
  (4101,'友谊',4077,'2010-11-11 09:41:42','2010-11-11 09:41:42','Street'),
  (4102,'玉村',4077,'2010-11-11 09:41:42','2010-11-11 09:41:42','Street'),
  (4103,'裕西',4077,'2010-11-11 09:41:43','2010-11-11 09:41:43','Street'),
- (4104,'振头',4077,'2010-11-11 09:41:43','2010-11-11 09:41:43','Street');
-INSERT INTO `miantanba`.`locales`(id, name, parent_id, created_at, updated_at, type) VALUES  (4105,'中华南大街',4077,'2010-11-11 09:41:43','2010-11-11 09:41:43','Street'),
+ (4104,'振头',4077,'2010-11-11 09:41:43','2010-11-11 09:41:43','Street');"""
+execute """INSERT INTO `miantanba`.`locales`(id, name, parent_id, created_at, updated_at, type) VALUES  (4105,'中华南大街',4077,'2010-11-11 09:41:43','2010-11-11 09:41:43','Street'),
  (4106,'中山西路',4077,'2010-11-11 09:41:43','2010-11-11 09:41:43','Street'),
  (4107,'自强路',4077,'2010-11-11 09:41:43','2010-11-11 09:41:43','Street'),
  (4108,'新华',4011,'2010-11-11 09:41:43','2010-11-11 09:41:43','Area'),
@@ -2129,7 +2130,7 @@ INSERT INTO `miantanba`.`locales`(id, name, parent_id, created_at, updated_at, t
 """
     py = PinYin.instance
     Locale.all.each do |locale|
-      locale.update_attributes(:code => py.to_pinyin, :short_code => py.to_pinyin_abbr)
+      locale.update_attributes(:code => py.to_pinyin(locale.name), :short_code => py.to_pinyin_abbr(locale.name))
     end
   end
 
