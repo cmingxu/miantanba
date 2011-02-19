@@ -4,8 +4,8 @@ class CreateCategories < ActiveRecord::Migration
       t.string :name
       t.string :code
       t.integer :parent_id
-      t.string :type
-      t.timestamps
+      t.boolean :is_hot
+      t.integer :hot_level, :default => 0
     end
   end
 

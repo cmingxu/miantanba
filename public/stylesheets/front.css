@@ -33,8 +33,12 @@
 
 dl.activity {
   border: 1px solid #eee;
+  border-bottom: none;
   padding: 5px 0;
   font-size: 12px; }
+dl.activity:last-child{
+  border-bottom:1px solid #eee;
+}
   dl.activity:hover {
     background-color: #fafcff; }
   dl.activity dt {
