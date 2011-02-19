@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" afterPath="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
-    </list>
+    <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor" />
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,7 +81,7 @@
       <file leaf-file-name="20101206110926_create_activities.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="15" selection-start="843" selection-end="850" vertical-scroll-proportion="0.9470199">
+            <state line="33" column="13" selection-start="790" selection-end="790" vertical-scroll-proportion="0.8741722">
               <folding />
             </state>
           </provider>
@@ -648,7 +645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="15" selection-start="843" selection-end="850" vertical-scroll-proportion="0.9470199">
+        <state line="33" column="13" selection-start="790" selection-end="790" vertical-scroll-proportion="0.8741722">
           <folding />
         </state>
       </provider>
