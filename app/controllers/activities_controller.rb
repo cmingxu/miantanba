@@ -1,6 +1,9 @@
 class ActivitiesController < ApplicationController
-  def index
-    @activities = Activity.hot(current_city)
+  def city_home
+    @city = City.find_by_code(params[:city])
+    current_user.city = @city
+    response.cookies[:city] = @city.code
+    @activities = Activity.hot(@city).paginate(:page => params[:page])
   end
 
   def show

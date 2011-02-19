@@ -62,7 +62,7 @@ Mtb::Application.routes.draw do
 
   get '/profile' => 'profile#index', :via => :profile
 
-  match ':city', :controller => 'activities', :action => 'index'
+  match ':city', :controller => 'activities', :action => 'city_home'
 
 #  match "/activities" => 'activities#create', :via => :post
   
