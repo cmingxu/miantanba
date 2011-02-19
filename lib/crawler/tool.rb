@@ -1,23 +1,7 @@
 require 'open-uri'
 module Crawler
-  SITES_DOC = Nokogiri::XML(File.open(Site::SITES_FILE))
-
   module Tool
     class << self
-      # ENTRY
-      def crawl(site_name)
-        site    = Site.site(site_name)
-        setting = Site.settings(site_name).first
-        parser  = build_parser(setting, site)
-        if parser
-          parser.work
-        end
-      rescue Exception => e
-        puts "crawl #{site_name} error:"
-        puts e.message
-        puts e.backtrace
-      end
-
       def fetch(url)
 #        raise url.inspect
         puts url
@@ -46,31 +30,7 @@ module Crawler
 
         puts "created: #{created_num}, updated: #{updated_num}"
       end
-
-      def build_parser(setting, site)
-        return nil if !setting
-        parser_name       = setting['parser_name']
-        parser_class_name = "#{parser_name}_parser".camelcase
-        parser_clazz      = Crawler::Parsers.const_get(parser_class_name)
-        template_name     = setting['template_name'] || setting['site_name']
-        url               = setting['url']
-
-        parser_clazz.new(site, url, template_name)
-      end
-
-      def to_time(time)
-        return nil if time.nil?
-
-        if /^\d+$/ === time
-          Time.at(time.to_i)
-        else
-          begin
-            Time.zone.parse(time)
-          rescue
-            nil
-          end
-        end
-      end
+    
 
       protected
       def update_activity(activity)
