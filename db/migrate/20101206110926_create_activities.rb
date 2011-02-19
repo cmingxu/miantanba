@@ -13,6 +13,9 @@ class CreateActivities < ActiveRecord::Migration
       t.string :contact #联系方式
       t.text :about #参会须知
 
+      t.integer :site_id
+      t.string :site_code
+
       t.float :lat #纬度
       t.float :lng #经度
 
