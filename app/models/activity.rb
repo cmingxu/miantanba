@@ -2,6 +2,7 @@ class Activity < ActiveRecord::Base
   belongs_to :city
   belongs_to :area
   belongs_to :street
+  belongs_to :site
   
 #
 #  #发起身份
