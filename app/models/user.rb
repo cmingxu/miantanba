@@ -2,13 +2,15 @@ class User < ActiveRecord::Base
   belongs_to :city
 
   PASSWORD_SALT = "salt_it"
+  before_create :encrypt_password
+  attr_accessor :password, :password_confirmation
 
   #登录验证
   def self.authorize(login, password)
     user = User.find_by_login(login)
     unless user.nil?
-      password_hashcode = Digest::SHA1.hexdigest(login + password)
-      return user if  password_hashcode == user.password
+      password_hashcode = Digest::SHA1.hexdigest(login + password + PASSWORD_SALT)
+      return user if  password_hashcode == user.encrypted_password
     end
     nil
   end
@@ -17,9 +19,10 @@ class User < ActiveRecord::Base
     update_attributes(:last_login_at => Time.now)
   end
 
-  def encrypted_password
-    Digest::SHA1.hexdigest(login + password + PASSWORD_SALT)
+  def encrypt_password
+    self.encrypted_password = Digest::SHA1.hexdigest(login + password + PASSWORD_SALT)
   end
+
 
   #validates
 #  validates :email, :presence => true,
@@ -38,8 +41,8 @@ class User < ActiveRecord::Base
     if user.login.blank?
       user.errors.add(:login, "用户名不能为空")
     end
-    if user.login && user.login.length < 6
-      user.errors.add(:login, "用户名不能少于6位")
+    if user.login && user.login.length < 4
+      user.errors.add(:login, "用户名不能少于4位")
     end
     if user.email.blank?
       user.errors.add(:email, "邮箱不能为空")
@@ -51,14 +54,12 @@ class User < ActiveRecord::Base
       user.errors.add(:password, "密码两次输入不一致")
     end
   end
+
   #设置激活码
   def set_activate_code
     self.activate_code = Digest::SHA1.hexdigest("--#{self.email}--#{self.password}--");
   end
-
-  def before_create
-    self.password = encrypted_password
-  end
+  
 #  #是否激活
 #  NOT_ACTIVE=0
 #  ACTIVED=1

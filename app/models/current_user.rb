@@ -32,4 +32,8 @@ class CurrentUser
 
     current_user
   end
+
+  def self.logout(request)
+    request.reset_session
+  end
 end

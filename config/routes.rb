@@ -60,6 +60,8 @@ Mtb::Application.routes.draw do
   post '/signup' => 'login#post_signup'
   # See how all your routes lay out with "rake routes"
 
+  get '/profile' => 'profile#index', :via => :profile
+
   match ':city', :controller => 'activities', :action => 'index'
 
 #  match "/activities" => 'activities#create', :via => :post

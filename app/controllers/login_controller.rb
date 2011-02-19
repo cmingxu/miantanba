@@ -23,11 +23,8 @@ class LoginController < ApplicationController
 
   #退出登陆
   def logout
-    session[:user_id] = nil
-    session[:login] = nil
-    cookies[:p_session_id] = nil
-    Thread.current["user"] = nil
-    redirect_to :action => :login
+    CurrentUser.logout(request)
+    redirect_to '/'
   end
 
   def signup

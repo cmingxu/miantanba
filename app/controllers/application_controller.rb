@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  helper_method :current_city
+  helper_method :current_user, :current_city
 
   before_filter :load_current_user
 
