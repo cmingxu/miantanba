@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   PASSWORD_SALT = "salt_it"
   before_create :encrypt_password
   attr_accessor :password, :password_confirmation
+  validate :validate_duplicate_login, :on => :create
 
   #登录验证
   def self.authorize(login, password)
@@ -21,6 +22,12 @@ class User < ActiveRecord::Base
 
   def encrypt_password
     self.encrypted_password = Digest::SHA1.hexdigest(login + password + PASSWORD_SALT)
+  end
+
+  def validate_duplicate_login
+    if User.find_by_login(self.login)
+      self.errors.add(:login, "该用户名已存在")
+    end
   end
 
 
@@ -53,6 +60,9 @@ class User < ActiveRecord::Base
     if user.password != user.password_confirmation
       user.errors.add(:password, "密码两次输入不一致")
     end
+    if user.address_desc.blank?
+      user.errors.add(:address_desc, "所在地不能为空")
+    end
   end
 
   #设置激活码
@@ -64,7 +74,6 @@ class User < ActiveRecord::Base
 #  NOT_ACTIVE=0
 #  ACTIVED=1
 
-#  before_create :encrypted_password
 #  before_create :set_active_code
 
 #  #创建很多活动
@@ -83,9 +92,5 @@ class User < ActiveRecord::Base
 #  #属于某地
 #  belongs_to :street,:foreign_key=>"locale_id"
 #
-#  def city
-#    self.street.area.city
-#  end
-
 
 end

@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profile/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/login_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/login_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/current_user.rb" afterPath="$PROJECT_DIR$/app/models/current_user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_top_info.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_top_info.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/login/signup.html.erb" afterPath="$PROJECT_DIR$/app/views/login/signup.html.erb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,25 +40,43 @@
       <file leaf-file-name="current_user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/current_user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="25" selection-start="830" selection-end="837" vertical-scroll-proportion="0.0">
+            <state line="30" column="21" selection-start="775" selection-end="779" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="39" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.070626006">
+            <state line="63" column="45" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="validations.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Ruby187/lib/ruby/gems/1.8/gems/activemodel-3.0.3/lib/active_model/validations.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="22" selection-start="3150" selection-end="3154" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/login/signup.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="36" selection-end="40" vertical-scroll-proportion="-0.78571427">
+            <state line="2" column="34" selection-start="81" selection-end="81" vertical-scroll-proportion="0.07560138">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login/login.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +133,6 @@
         <option value="$PROJECT_DIR$/app/models/site.rb" />
         <option value="$PROJECT_DIR$/app/views/activities/map.html.erb" />
         <option value="$PROJECT_DIR$/app/views/login/login.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/login/signup.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20101106103334_create_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_top_info.html.erb" />
@@ -134,6 +143,7 @@
         <option value="$PROJECT_DIR$/app/controllers/login_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/current_user.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/login/signup.html.erb" />
       </list>
     </option>
   </component>
@@ -186,6 +196,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,18 +574,6 @@
         <state line="38" column="27" selection-start="1693" selection-end="1697" vertical-scroll-proportion="2.6254072" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login/login.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="42" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby187/lib/ruby/gems/1.8/gems/activemodel-3.0.3/lib/active_model/validations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="10" selection-start="4490" selection-end="4490" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20101106103334_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
@@ -592,20 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login/signup.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="36" selection-end="40" vertical-scroll-proportion="-0.78571427">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/current_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="830" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="18" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
@@ -613,9 +637,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Ruby187/lib/ruby/gems/1.8/gems/activemodel-3.0.3/lib/active_model/validations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="22" selection-start="3150" selection-end="3154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login/login.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="22" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="39" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.070626006">
+        <state line="63" column="45" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/current_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="21" selection-start="775" selection-end="779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login/signup.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="81" selection-end="81" vertical-scroll-proportion="0.07560138">
           <folding />
         </state>
       </provider>
