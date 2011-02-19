@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" afterPath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" afterPath="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/crawler.rake" afterPath="$PROJECT_DIR$/lib/tasks/crawler.rake" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="current_user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/current_user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="21" selection-start="775" selection-end="779" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="signup.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/login/signup.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,7 +41,7 @@
       <file leaf-file-name="20110219025105_init_sites.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+            <state line="3" column="64" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,16 +59,25 @@
       <file leaf-file-name="crawler.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/crawler.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="9" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+            <state line="18" column="28" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ganji.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ganji.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="61" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.41721854">
+            <state line="44" column="61" selection-start="0" selection-end="2280" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="s58.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/s58.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.5211506">
               <folding />
             </state>
           </provider>
@@ -111,10 +114,7 @@
         <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/parser.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="7" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1298086382671" expanded="true" signature="64:342" placeholder=" ... end" />
-                <marker date="1298086382671" expanded="true" signature="74:331" placeholder="begin ... end" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_top_info.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/profile/index.html.erb" />
@@ -174,13 +173,14 @@
         <option value="$PROJECT_DIR$/app/models/current_user.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/login/signup.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/parser.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/crawler.rake" />
         <option value="$PROJECT_DIR$/lib/crawler/tool.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/crawler.rake" />
+        <option value="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
       </list>
     </option>
   </component>
@@ -264,6 +264,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="crawler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -301,34 +319,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mtb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mtb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mtb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mtb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -625,13 +615,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_top_info.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="22" selection-start="291" selection-end="291" vertical-scroll-proportion="-2.5">
@@ -681,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="13" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
@@ -709,19 +685,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/parser.rb">
+    <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1298086382671" expanded="true" signature="64:342" placeholder=" ... end" />
-            <marker date="1298086382671" expanded="true" signature="74:331" placeholder="begin ... end" />
-          </folding>
+        <state line="44" column="61" selection-start="0" selection-end="2280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="64" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/crawler.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="9" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+        <state line="18" column="28" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -733,9 +713,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
+    <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/parser.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="61" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.41721854">
+        <state line="17" column="7" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/s58.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.5211506">
           <folding />
         </state>
       </provider>
