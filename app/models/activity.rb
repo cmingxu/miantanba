@@ -3,6 +3,8 @@ class Activity < ActiveRecord::Base
   belongs_to :area
   belongs_to :street
   belongs_to :site
+  belongs_to :activity
+  belongs_to :root_activity, :class_name => 'Activity', :foreign_key => 'root_activity_id'
   
 #
 #  #发起身份

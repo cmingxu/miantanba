@@ -4,6 +4,7 @@ class CreateActivities < ActiveRecord::Migration
       t.integer :user_id
       t.string :title #主题
       t.text :description #详细内容
+      t.integer :root_category_id
       t.integer :category_id
       t.integer :city_id #城市
       t.integer :area_id #区
