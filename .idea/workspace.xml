@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" afterPath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" afterPath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/show.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/show.html.erb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,15 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="signup.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/login/signup.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="34" selection-start="81" selection-end="81" vertical-scroll-proportion="-1.5714285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="20110219025105_init_sites.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,10 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ganji.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ganji.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="71" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.41721854">
+            <state line="44" column="71" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/activities/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="16" selection-start="916" selection-end="916" vertical-scroll-proportion="0.65625">
               <folding />
             </state>
           </provider>
@@ -163,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/profile/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -179,6 +177,7 @@
         <option value="$PROJECT_DIR$/lib/crawler/tool.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
+        <option value="$PROJECT_DIR$/app/views/activities/show.html.erb" />
       </list>
     </option>
   </component>
@@ -316,7 +315,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mtb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,13 +652,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="291" selection-end="291" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="18" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
@@ -720,7 +752,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="71" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.41721854">
+        <state line="44" column="71" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="16" selection-start="916" selection-end="916" vertical-scroll-proportion="0.65625">
           <folding />
         </state>
       </provider>
