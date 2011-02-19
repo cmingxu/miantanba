@@ -17,7 +17,7 @@ module Crawler
               :title => item.search('a').first.text,
               :weblink => item.search('a').first.attr('href'),
               :start_time => Time.zone.parse(item.search('.slash').first.previous_sibling.content.gsub("活动时间：", '')),
-              :address_desc => item.search('.slash').first.next_sibling.content.gsub("地点:", "")
+              :address_desc => item.search('.slash').first.next_sibling.content.gsub("场地：", "")
           }
 
           a = Activity.find_by_weblink(attrs[:weblink])
