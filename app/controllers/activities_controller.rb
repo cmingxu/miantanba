@@ -1,9 +1,21 @@
 class ActivitiesController < ApplicationController
   def city_home
     @city = City.find_by_code(params[:city])
+    @area = params[:area].blank? ? nil : (@city.areas.where(:code => params[:area]).first || nil)
+    @category = params[:category].blank? ? nil : Category.find_by_code(params[:category])
+
     current_user.city = @city
     response.cookies[:city] = @city.code
-    @activities = Activity.hot(@city).paginate(:page => params[:page])
+
+    @activities = Activity.where(:city_id => @city.id)
+    if @category
+      @activities = @activities.where(:category_id => @category.id)
+    end
+    if @area
+      @activities = @activities.where(:area_id => @area.id)
+    end
+    @activities = @activities.paginate(:page => params[:page])
+    
   end
 
   def show

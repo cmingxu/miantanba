@@ -49,33 +49,30 @@ Mtb::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   #root :to => "login#index"
-  root :to => redirect("/beijing")
+  # See how all your routes lay out with "rake routes"
+  root :to => 'home#index'
 
 
   get '/login' => 'login#login'
   get '/logout' => 'login#logout'
-  post '/auth' => 'login#auth', :via => :auth
-  
-  get '/signup' => 'login#signup', :via => :signup
+  post '/auth' => 'login#auth', :as => :auth
+  get '/signup' => 'login#signup', :as => :signup
   post '/signup' => 'login#post_signup'
-  # See how all your routes lay out with "rake routes"
 
-  get '/profile' => 'profile#index', :via => :profile
+
+  get '/profile' => 'profile#index', :as => :profile
 
   resources :messages
-
-  match ':city', :controller => 'activities', :action => 'city_home'
-
-#  match "/activities" => 'activities#create', :via => :post
   
-  resources :activities do
+ resources :activities do
     get :map, :on => :collection
-  end
-#  match "/activities" => 'activities#create', :via => :post
+ end
+  
+  get '/:city/(:category)' => 'activities#city_home', :as => :city_home
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  match ':controller(/:action(/:id(.:format)))'
+  #match ':controller(/:action(/:id(.:format)))'
 
 
 end

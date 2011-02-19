@@ -1,4 +1,15 @@
-
+<div>
+  活动区域：全<%= current_city.name %>
+  <% current_city.areas.each do |area| %>
+  <%= link_to area.name, city_home_path(:city => current_city.code, :area => area.code) %>
+  <% end %>
+</div>
+<div>
+  活动类型：全部活动
+  <% Category.top_categories.each do |category| %>
+  <%= link_to category.name, city_home_path(:category => category.code, :city => current_city.code) %>
+  <% end %>
+</div>
 <div class="activities">
 <% @activities.each do |activity| %>
 <dl class="activity">

@@ -20,7 +20,7 @@ class CreateActivities < ActiveRecord::Migration
       t.float :lat #纬度
       t.float :lng #经度
 
-      t.integer :status #活动状态(审核通过，未通过)
+      t.integer :status #活动状态(0: pending待审核 1: published审核通过,发布状态 2: denied审核不通过 3: expired超期 4. deleted删除)
 
       t.timestamp :start_time #开始时间
       t.timestamp :end_time #结束时间

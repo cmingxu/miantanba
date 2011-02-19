@@ -23,15 +23,20 @@ class Activity < ActiveRecord::Base
 #  SPECIAL = 2 #特殊人（实名认证的人）
 #  APTITUDE={ALL=>"所有人",SPECIAL=>"实名认证会员"}
 #
-#  #活动状态
-#  PASS=1 #审核通过
-#  UPPASS=2 #审核未通过
 #
 #  validates :title,:topic,:contact,:about,:price,:price_return,:price_intro,:reserve_intro,:reserve_num,:presence=>true
 #  validates :price,:price_return,:numericality => true
-#
-  def self.hot(city)
-    where(:city_id => city)
+
+
+  #  活动状态(0: pending待审核 1: published审核通过,发布状态 2: denied审核不通过 3: expired超期 4. deleted删除)
+  STATUS_PENDING = 0
+  STATUS_PUBLISHED = 1
+  STATUS_DENIED = 2
+  STATUS_EXPIRED = 3
+  STATUS_DELETED = 4
+  
+  def self.published
+    where(:status => STATUS_PUBLISHED)
   end
   
 end
