@@ -11,14 +11,16 @@ module Crawler
         doc = Crawler::Tool.fetch(url)
         site = Site.find_by_code('58')
         city = City.find_by_code('beijing')
-
-        doc.search('#infolist tr:nth-child(2)').each do |item|
+        
+        doc.search('#infolist tr').each do |item|
           puts '*'
+          item = item.search('td:nth-child(2)').first
+          puts '~'
           attrs = {
               :title => item.search('a').first.text,
-              :weblink => item.search('a').first.attr('href').text,
-              :start_time => Time.zone.parse(item.search('.slash').previous_sibling.first.text.gsub("活动时间："), ""),
-              :address_desc => item.search('.slash').next_sibling.text.gsub("地点:", "")
+              :weblink => item.search('a').first.attr('href'),
+#              :start_time => Time.zone.parse(item.search('.slash').first.previous_sibling.first.gsub("活动时间：", '')),
+              :address_desc => item.search('.slash').first.next_sibling.content.gsub("地点:", "")
           }
 
           a = Activity.find_by_weblink(attrs[:weblink])

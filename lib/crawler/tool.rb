@@ -6,7 +6,7 @@ module Crawler
 #        raise url.inspect
         puts url
 #        xml = open(url).read
-        xml = RestClient.get(url)
+        xml = RestClient.get(url, {'User-Agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 ( .NET CLR 3.5.30729)'})
 #        xml = File.open(Rails.root.join("crawler_data", "shiketuan.xml"))
 #        puts url
 #        puts xml

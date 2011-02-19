@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" afterPath="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/crawler.rake" afterPath="$PROJECT_DIR$/lib/tasks/crawler.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" afterPath="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/tool.rb" afterPath="$PROJECT_DIR$/lib/crawler/tool.rb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,7 +76,7 @@
       <file leaf-file-name="s58.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/s58.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.5211506">
+            <state line="22" column="80" selection-start="798" selection-end="798" vertical-scroll-proportion="0.48392555">
               <folding />
             </state>
           </provider>
@@ -104,7 +103,7 @@
       <file leaf-file-name="tool.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/crawler/tool.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="11" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,10 +175,10 @@
         <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/parser.rb" />
-        <option value="$PROJECT_DIR$/lib/crawler/tool.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110219025105_init_sites.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/crawler.rake" />
+        <option value="$PROJECT_DIR$/lib/crawler/tool.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/s58.rb" />
       </list>
     </option>
@@ -706,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/crawler/tool.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="11" selection-start="1370" selection-end="1370" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/parser.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="7" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
@@ -720,9 +712,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/crawler/tool.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/s58.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.5211506">
+        <state line="22" column="80" selection-start="798" selection-end="798" vertical-scroll-proportion="0.48392555">
           <folding />
         </state>
       </provider>
