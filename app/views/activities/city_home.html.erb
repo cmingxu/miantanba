@@ -1,28 +1,38 @@
+<%
+   path_hash = {:city => current_city.code}
+   path_hash[:area] = @area.code if @area
+   path_hash[:category] = @category.code if @category
+%>
+<style>
+  a.current{
+      color:#f00;
+      font-weight:bold;
+  }
+</style>
 <div>
-  活动区域：全<%= current_city.name %>
+  活动区域：<%= link_to "全#{current_city.name}", city_home_path(path_hash.merge(:area => nil)), (@area.nil? ? {:class => 'current'} : nil) %>
   <% current_city.areas.each do |area| %>
-  <%= link_to area.name, city_home_path(:city => current_city.code, :area => area.code) %>
+      <%= link_to area.name, city_home_path(path_hash.merge(:area => area.code)), (area == @area ? {:class => 'current'} : nil) %>
   <% end %>
 </div>
 <div>
-  活动类型：全部活动
+  活动类型：<%= link_to "全部活动", city_home_path(path_hash.merge(:category => nil)), (@category.nil? ? {:class => 'current'} : nil) %>
   <% Category.top_categories.each do |category| %>
-  <%= link_to category.name, city_home_path(:category => category.code, :city => current_city.code) %>
+      <%= link_to category.name, city_home_path(path_hash.merge(:category => category.code)), (category == @category ? {:class => 'current'} : nil) %>
   <% end %>
 </div>
 <div class="activities">
-<% @activities.each do |activity| %>
-<dl class="activity">
-  <dd class="time"><%= ftime(activity.start_time) %> - <%= ftime(activity.start_time) %></dd>
-  <dt>
-    <%= link_to activity.title, activity_path(activity.id), :class => 'title' %>
-    <%= link_to [activity.city.try(:name),activity.area.try(:name),activity.street.try(:name)].compact.join("-"),
-        "#", :class => 'addr'  %>
-  </dt>
+  <% @activities.each do |activity| %>
+      <dl class="activity">
+        <dd class="time"><%= ftime(activity.start_time) %> - <%= ftime(activity.start_time) %></dd>
+        <dt>
+          <%= link_to activity.title, activity_path(activity.id), :class => 'title' %>
+          <%= link_to [activity.city.try(:name), activity.area.try(:name), activity.street.try(:name)].compact.join("-"),
+                      "#", :class => 'addr' %>
+        </dt>
 
-
-  <dd class="address_desc">地点：<%= activity.address_desc %></dd>
-  <dd style="clear:both"></dd>
-</dl>
-<% end %>
+        <dd class="address_desc">地点：<%= activity.address_desc %></dd>
+        <dd style="clear:both"></dd>
+      </dl>
+  <% end %>
 </div>

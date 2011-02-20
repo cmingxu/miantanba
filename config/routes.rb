@@ -52,6 +52,8 @@ Mtb::Application.routes.draw do
   # See how all your routes lay out with "rake routes"
   root :to => 'home#index'
 
+  get '/help' => 'help#index'
+
 
   get '/login' => 'login#login'
   get '/logout' => 'login#logout'
