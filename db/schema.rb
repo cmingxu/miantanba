@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(:version => 20110219123018) do
     t.string   "address_desc"
     t.string   "contact_person"
     t.string   "contact"
+    t.string   "contact_phone"
+    t.string   "contact_qq"
     t.text     "about"
     t.integer  "site_id"
     t.string   "site_code"

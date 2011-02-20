@@ -12,6 +12,8 @@ class CreateActivities < ActiveRecord::Migration
       t.string   :address_desc #用户输入的地址信息
       t.string :contact_person
       t.string :contact #联系方式
+      t.string :contact_phone #联系人电话
+      t.string :contact_qq #联系人QQ
       t.text :about #参会须知
 
       t.integer :site_id
@@ -25,7 +27,6 @@ class CreateActivities < ActiveRecord::Migration
       t.timestamp :start_time #开始时间
       t.timestamp :end_time #结束时间
 
-      
       t.integer :price #费用
       t.integer :price_return #返还费用
       t.text :price_intro #返还费用

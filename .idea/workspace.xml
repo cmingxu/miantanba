@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" afterPath="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" afterPath="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parser.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/parser.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tool.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/crawler/tool.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,6 +74,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="20101206110926_create_activities.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="16" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="20110219115235_init_categories.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20110219115235_init_categories.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,7 +95,7 @@
       <file leaf-file-name="20110219123018_init_cities.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2136" column="13" selection-start="154725" selection-end="154725" vertical-scroll-proportion="0.5">
+            <state line="2137" column="54" selection-start="154769" selection-end="154769" vertical-scroll-proportion="0.7692308">
               <folding />
             </state>
           </provider>
@@ -165,7 +168,6 @@
         <option value="$PROJECT_DIR$/app/controllers/help_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_cities.html.erb" />
@@ -177,6 +179,7 @@
         <option value="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/app/views/activities/city_home.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" />
       </list>
     </option>
@@ -558,13 +561,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="28" selection-start="1589" selection-end="1599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="6" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" />
@@ -645,11 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20101106112218_create_categories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110219115235_init_categories.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="26" selection-start="4109" selection-end="4109" vertical-scroll-proportion="0.0">
@@ -657,9 +648,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20101106112218_create_categories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="16" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2136" column="13" selection-start="154725" selection-end="154725" vertical-scroll-proportion="0.5">
+        <state line="2137" column="54" selection-start="154769" selection-end="154769" vertical-scroll-proportion="0.7692308">
           <folding />
         </state>
       </provider>
