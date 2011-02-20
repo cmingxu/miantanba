@@ -2134,7 +2134,7 @@ execute """INSERT INTO `miantanba`.`locales`(id, name, parent_id, created_at, up
     end
     #fix bug
     guangzhou = City.find_by_code('guangzhou')
-    guanzhou.update_attributes(:short_code => 'gz')
+    guangzhou.update_attributes(:short_code => 'gz')
   end
 
   def self.down

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/activities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/city_home.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/city_home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/show.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" afterPath="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/crawler/tool.rb" afterPath="$PROJECT_DIR$/lib/crawler/tool.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/crawler.rake" afterPath="$PROJECT_DIR$/lib/tasks/crawler.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" afterPath="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,15 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ganji.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/ganji.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="35" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="parser.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/crawler/parsers/parser.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,10 +80,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20110219115235_init_categories.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20110219115235_init_categories.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20110219115235_init_categories.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="32" selection-start="4111" selection-end="4115" vertical-scroll-proportion="0.7649007">
+            <state line="57" column="26" selection-start="4109" selection-end="4109" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20110219123018_init_cities.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2136" column="13" selection-start="154725" selection-end="154725" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
@@ -175,7 +168,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_cities.html.erb" />
         <option value="$PROJECT_DIR$/app/models/city.rb" />
         <option value="$PROJECT_DIR$/lib/crawler/tool.rb" />
@@ -185,6 +177,7 @@
         <option value="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/app/views/activities/city_home.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" />
       </list>
     </option>
   </component>
@@ -582,13 +575,6 @@
         <state line="5" column="8" selection-start="134" selection-end="134" vertical-scroll-proportion="-3.9285715" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2134" column="12" selection-start="154664" selection-end="154664" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_cities.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="6" selection-start="248" selection-end="248" vertical-scroll-proportion="-5.5">
@@ -666,7 +652,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110219115235_init_categories.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="32" selection-start="4111" selection-end="4115" vertical-scroll-proportion="0.7649007">
+        <state line="57" column="26" selection-start="4109" selection-end="4109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2136" column="13" selection-start="154725" selection-end="154725" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>
