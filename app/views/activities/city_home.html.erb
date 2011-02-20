@@ -1,7 +1,7 @@
 <%
    path_hash = {:city => current_city.code}
    path_hash[:area] = @area.code if @area
-   path_hash[:category] = @category.code if @category
+   path_hash[:root_category] = @root_category.code if @root_category
 %>
 <style>
   a.current{
@@ -16,9 +16,9 @@
   <% end %>
 </div>
 <div>
-  活动类型：<%= link_to "全部活动", city_home_path(path_hash.merge(:category => nil)), (@category.nil? ? {:class => 'current'} : nil) %>
-  <% Category.top_categories.each do |category| %>
-      <%= link_to category.name, city_home_path(path_hash.merge(:category => category.code)), (category == @category ? {:class => 'current'} : nil) %>
+  活动类型：<%= link_to "全部活动", city_home_path(path_hash.merge(:root_category => nil)), (@root_category.nil? ? {:class => 'current'} : nil) %>
+  <% Category.root_categories.each do |root_category| %>
+      <%= link_to root_category.name, city_home_path(path_hash.merge(:root_category => root_category.code)), (root_category == @root_category ? {:class => 'current'} : nil) %>
   <% end %>
 </div>
 <div class="activities">

@@ -1,5 +1,5 @@
 class Category < ActiveRecord::Base
-  def self.top_categories
+  def self.root_categories
     where(:parent_id => nil)
   end
 #  scope :sup,:conditions => ["parent_id is null"],:order => "id asc"

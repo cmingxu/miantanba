@@ -4,29 +4,37 @@
         color: #666;
     }
 
-    ul.meta{
+    ul.meta {
         list-style: none;
     }
-    ul.meta dt, ul.meta dd{
+
+    ul.meta dt, ul.meta dd {
         display: inline;
     }
-    ul.meta dt{
+
+    ul.meta dt {
         width: 100px;
         display: inline-block;
     }
-    h1{
+
+    h1 {
         color: #00f;
     }
-    .title{
+
+    .title {
         border-bottom: 1px solid #ccc;
         margin-bottom: 4px;
     }
 </style>
 <div class="title">
-<h1><%= @activity.title %></h1>
-<div class="pub_time">
-  生效时间：<%= ftime(@activity.start_time) %> - <%= ftime(@activity.end_time) %>
-</div>
+  <h1><%= @activity.title %></h1>
+
+  <div class="pub_time">
+    生效时间：<%= ftime(@activity.start_time) %> - <%= ftime(@activity.end_time) %>
+  </div>
+  <% if !@activity.weblink.blank? %>
+  <%= link_to "查看详情", @activity.weblink, :rel => 'nofollow', :target => '_blank' %>
+  <% end %>
 </div>
 
 <ul class="meta">
@@ -52,7 +60,8 @@
 
 <div>
   <h3>详细信息</h3>
+
   <div>
-    <pre><%= raw @activity.description%></pre>
+    <pre><%= raw @activity.description %></pre>
   </div>
 </div>

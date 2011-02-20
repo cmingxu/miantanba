@@ -15,8 +15,8 @@ namespace :crawler do
 
 #    site.effect
 #    Crawler::Tool.crawl(args[:site])
-#    c = Crawler::Parsers::Ganji.new
-    c = Crawler::Parsers::S58.new
+    c = Crawler::Parsers::Ganji.new
+#    c = Crawler::Parsers::S58.new
     c.run
   end
 #

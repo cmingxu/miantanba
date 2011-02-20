@@ -2,14 +2,14 @@ class ActivitiesController < ApplicationController
   def city_home
     @city = City.find_by_code(params[:city])
     @area = params[:area].blank? ? nil : (@city.areas.where(:code => params[:area]).first || nil)
-    @category = params[:category].blank? ? nil : Category.find_by_code(params[:category])
+    @root_category = params[:root_category].blank? ? nil : Category.find_by_code(params[:root_category])
 
     current_user.city = @city
     response.cookies[:city] = @city.code
 
     @activities = Activity.where(:city_id => @city.id)
-    if @category
-      @activities = @activities.where(:category_id => @category.id)
+    if @root_category
+      @activities = @activities.where(:root_category_id => @root_category.id)
     end
     if @area
       @activities = @activities.where(:area_id => @area.id)
