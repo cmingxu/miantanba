@@ -1,6 +1,7 @@
 class ActivitiesController < ApplicationController
   def city_home
    find_activities
+   @activities = @activities.paginate(:page => params[:page], :per_page => 20)
   end
 
   def show
@@ -9,6 +10,7 @@ class ActivitiesController < ApplicationController
 
   def map
     find_activities
+    @activities = @activities.paginate(:page => params[:page], :per_page => 8)
   end
 
   # need login
@@ -47,6 +49,6 @@ class ActivitiesController < ApplicationController
     if @area
       @activities = @activities.where(:area_id => @area.id)
     end
-    @activities = @activities.paginate(:page => params[:page])
+
   end
 end

@@ -52,9 +52,23 @@ module Crawler
       end
 
       def update_activity(url, activity)
+        data = {}
         doc = Crawler::Tool.fetch(url)
         description = doc.search('.detailInfo > span').first.inner_html
-        activity.update_attributes(:description => description)
+        data[:description] = description
+        doc.search('.detal_left dt').each { |dt|
+          if dt.text == "区域:"
+            region = dt.parent.search('dd').first.text
+            r = region.split("-").collect { |it| it.strip }
+            if r
+              area = Locale.where(:parent_id => activity.city_id, :name => r.first).first
+              if area
+                data[:area_id] = area.id
+              end
+            end
+          end
+        }
+        activity.update_attributes(data)
       end
 
       def index_pages

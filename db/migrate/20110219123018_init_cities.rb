@@ -2138,6 +2138,9 @@ execute """INSERT INTO `miantanba`.`locales`(id, name, parent_id, created_at, up
     guangzhou.update_attributes(:code => 'guangzhou', :short_code => 'gz')
     rescue
     end
+
+    City.find_by_name('北京').update_attributes(:lng => 116.41667, :lat => 39.91667)
+    City.find_by_name('上海').update_attributes(:lng => 121.43333, :lat => 34.50000)
   end
 
   def self.down

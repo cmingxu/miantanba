@@ -17,7 +17,10 @@
           <span style="font-size:120%;"><%= current_city.name %></span><br /><a href="#" style="color:#666" id="changeCityLink">[切换城市]</a>
           <%= render :partial => 'layouts/cities' %>
         </div>
-
+        <div>
+          <%= link_to "列表模式", city_home_path(current_city.code) %>
+          <%= link_to "地图模式", map_path(current_city.code) %>
+        </div>
 
         <% if false %>
             <%= render :partial=>"layouts/top_info"%>
