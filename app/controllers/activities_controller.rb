@@ -1,6 +1,6 @@
 class ActivitiesController < ApplicationController
   def city_home
-    
+   find_activities
   end
 
   def show

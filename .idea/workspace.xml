@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/activities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/city_home.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/city_home.html.erb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,19 +45,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activities_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activities_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="29" selection-start="1200" selection-end="1210" vertical-scroll-proportion="0.6380256">
+            <state line="1" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="-0.88">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="city_home.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="city_home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/activities/city_home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="10" selection-start="959" selection-end="959" vertical-scroll-proportion="-5.8867927">
+            <state line="38" column="32" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.78805393">
               <folding />
             </state>
           </provider>
@@ -175,10 +175,10 @@
         <option value="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
         <option value="$PROJECT_DIR$/app/views/activities/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
-        <option value="$PROJECT_DIR$/app/views/activities/city_home.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110219123018_init_cities.rb" />
         <option value="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/activities/city_home.html.erb" />
       </list>
     </option>
   </component>
@@ -502,7 +502,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="778" extended-state="7" />
+    <frame x="-4" y="-4" width="1288" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -625,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/activities/city_home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="959" selection-end="959" vertical-scroll-proportion="-5.8867927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110219115235_init_categories.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="26" selection-start="4109" selection-end="4109" vertical-scroll-proportion="0.0">
@@ -660,7 +653,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="29" selection-start="1200" selection-end="1210" vertical-scroll-proportion="0.6380256">
+        <state line="1" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="-0.88">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/city_home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="32" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.78805393">
           <folding />
         </state>
       </provider>
