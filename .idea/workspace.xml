@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d418269-f234-4779-b603-9ae0804b2dad" name="Default" comment="refactor">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/map.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/map.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/show.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/show.html.erb" />
     </list>
     <ignored path="mtb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,10 +80,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/activities/map.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="19" selection-start="1970" selection-end="1974" vertical-scroll-proportion="0.39076376">
+            <state line="70" column="19" selection-start="1970" selection-end="1974" vertical-scroll-proportion="11.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/activities/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="136" selection-start="734" selection-end="734" vertical-scroll-proportion="0.76021314">
               <folding />
             </state>
           </provider>
@@ -93,15 +102,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/activities/city_home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="20" selection-start="45" selection-end="45" vertical-scroll-proportion="-0.78571427">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="333" selection-end="333" vertical-scroll-proportion="-2.357143">
               <folding />
             </state>
           </provider>
@@ -164,7 +164,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20101206110926_create_activities.rb" />
-        <option value="$PROJECT_DIR$/app/views/activities/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/site.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/front.css" />
         <option value="$PROJECT_DIR$/app/views/activities/city_home.html.erb" />
@@ -178,6 +177,7 @@
         <option value="$PROJECT_DIR$/lib/tasks/crawler.rake" />
         <option value="$PROJECT_DIR$/lib/crawler/parsers/ganji.rb" />
         <option value="$PROJECT_DIR$/app/views/activities/map.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/activities/show.html.erb" />
       </list>
     </option>
   </component>
@@ -613,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/activities/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="36" selection-start="1088" selection-end="1088" vertical-scroll-proportion="-12.821428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_selector.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="6" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
@@ -699,7 +692,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/activities/map.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="1970" selection-end="1974" vertical-scroll-proportion="0.39076376">
+        <state line="70" column="19" selection-start="1970" selection-end="1974" vertical-scroll-proportion="11.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="136" selection-start="734" selection-end="734" vertical-scroll-proportion="0.76021314">
           <folding />
         </state>
       </provider>

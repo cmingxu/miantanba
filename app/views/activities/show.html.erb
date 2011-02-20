@@ -33,7 +33,7 @@
     生效时间：<%= ftime(@activity.start_time) %> - <%= ftime(@activity.end_time) %>
   </div>
   <% if !@activity.weblink.blank? %>
-  <%= link_to "查看详情", @activity.weblink, :rel => 'nofollow', :target => '_blank' %>
+  <%= link_to "查看详情", @activity.weblink, :rel => 'nofollow', :target => '_blank',:style => 'padding:4px;font-size:120%;font-weight:bold;' %>
   <% end %>
 </div>
 
