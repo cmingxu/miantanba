@@ -15,9 +15,13 @@ namespace :crawler do
 
 #    site.effect
 #    Crawler::Tool.crawl(args[:site])
+    puts 'crawl ganji.com...'
     c = Crawler::Parsers::Ganji.new
-#    c = Crawler::Parsers::S58.new
     c.run
+
+    puts 'crawl 58.com...'
+    c = Crawler::Parsers::S58.new
+    c.run    
   end
 #
 #  task :all => :environment do

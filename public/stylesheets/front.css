@@ -30,11 +30,17 @@
 }
 
 
+.activities{
+    padding: 4px;
+}
 
 dl.activity {
   border: 1px solid #eee;
   border-bottom: none;
-  padding: 5px 0;
+  padding: 5px 5px;
+  float: left;
+  display: block;
+  width: 100%;
   font-size: 12px; }
 dl.activity:last-child{
   border-bottom:1px solid #eee;
