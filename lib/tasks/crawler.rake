@@ -19,9 +19,9 @@ namespace :crawler do
     c = Crawler::Parsers::Ganji.new
     c.run
 
-#    puts 'crawl 58.com...'
-#    c = Crawler::Parsers::S58.new
-#    c.run
+    puts 'crawl 58.com...'
+    c = Crawler::Parsers::S58.new
+    c.run
   end
 #
 #  task :all => :environment do
