@@ -2132,6 +2132,9 @@ execute """INSERT INTO `miantanba`.`locales`(id, name, parent_id, created_at, up
     Locale.all.each do |locale|
       locale.update_attributes(:code => py.to_pinyin(locale.name), :short_code => py.to_pinyin_abbr(locale.name))
     end
+    #fix bug
+    guangzhou = City.find_by_code('guangzhou')
+    guanzhou.update_attributes(:short_code => 'gz')
   end
 
   def self.down

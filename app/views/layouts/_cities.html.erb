@@ -1,7 +1,7 @@
 <div class="cities">
-  <% City.all.each_with_index do |city, index| %>
+  <% City.opened.each_with_index do |city, index| %>
       <a href="#" onclick="changeCity('<%= city.code %>');return false;"><%= city.name %></a>
-      <% if index % 5 == 4 %>
+      <% if index % 3 == 2 %>
           <br/>
       <% end %>
   <% end %>
