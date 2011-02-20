@@ -69,7 +69,8 @@ Mtb::Application.routes.draw do
  resources :activities do
     get :map, :on => :collection
  end
-  
+
+  get '/:city/map' => 'activities#map', :as => :map
   get '/:city/(:category)' => 'activities#city_home', :as => :city_home
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
