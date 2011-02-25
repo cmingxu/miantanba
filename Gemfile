@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'mysql2'
 gem 'rest-client'
 gem 'will_paginate'
+gem 'builder'
 
 # Use unicorn as the web server
 #gem "mongrel"
