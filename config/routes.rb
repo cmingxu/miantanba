@@ -70,6 +70,15 @@ Mtb::Application.routes.draw do
     get :map, :on => :collection
  end
 
+  scope "api" do
+    get 'cities' => 'api#cities'
+    get 'categories' => 'api#categories'
+    get '/search' => 'api#search'
+    get '/activities/:id' => 'api#activity'
+    post 'login' => 'api#login'
+    get '(/:city)' => 'api#activities'
+  end
+
   get '/:city/map' => 'activities#map', :as => :map
   get '/:city/(:category)' => 'activities#city_home', :as => :city_home
 

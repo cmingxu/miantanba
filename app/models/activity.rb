@@ -4,8 +4,11 @@ class Activity < ActiveRecord::Base
   belongs_to :street
   belongs_to :site
   belongs_to :activity
-  belongs_to :root_activity, :class_name => 'Activity', :foreign_key => 'root_activity_id'
-  
+  belongs_to :root_category, :class_name => 'Category', :foreign_key => 'root_category_id'
+
+  def full_url
+    ApiController::API_ROOT + "activities/#{self.id}"
+  end
 #
 #  #发起身份
 #  REAL_NAME = 1
@@ -34,9 +37,52 @@ class Activity < ActiveRecord::Base
   STATUS_DENIED = 2
   STATUS_EXPIRED = 3
   STATUS_DELETED = 4
-  
+
   def self.published
     where(:status => STATUS_PUBLISHED)
   end
-  
+
+  def summary
+    return nil if self.description.nil?
+    doc = Nokogiri::XML(self.description)
+    doc.text[0..80]
+  end
+
+  def to_xml(options={})
+#    {
+#        :id => self.id,
+#        :title => self.title
+#    }.to_xml
+    options[:indent] ||= 2
+    options[:builder] ||= Builder::XmlMarkup.new(:indent => options[:indent])
+    builder = options[:builder]
+    builder.activity :url => self.full_url do
+      builder.id self.id
+      builder.title self.title
+      builder.url self.full_url
+      builder.summary self.summary
+      builder.category self.root_category && self.root_category.name
+      builder.latitude self.lat
+      builder.longitude self.lng
+      builder.venue "" #TODO
+      builder.address self.address_desc
+      builder.city self.city.name
+      builder.tag!('contact-name', self.contact_person)
+      builder.tag!('contact-phone', self.contact_phone)
+      builder.start_time ftime(self.start_time)
+      builder.end_time ftime(self.end_time)
+      builder.price self.price
+      builder.tag!('original-price', '')
+      builder.status 'open'
+      builder.description self.description
+      builder.weblink self.weblink
+    end
+  end
+
+  protected
+  def ftime(time)
+    return nil if time.nil?
+    time.strftime("%Y-%m-%d %H:%M:%S")
+  end
+
 end
