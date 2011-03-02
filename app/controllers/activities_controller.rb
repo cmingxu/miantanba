@@ -17,7 +17,7 @@ class ActivitiesController < ApplicationController
   def new
     @activity = Activity.new
 
-    @categories=Category.all
+    @root_categories=Category.root_categories
   end
 
   def create

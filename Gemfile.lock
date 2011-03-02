@@ -96,6 +96,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bond
+  builder
   calendar_date_select
   jquery-rails
   map_by_method

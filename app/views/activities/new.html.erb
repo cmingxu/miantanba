@@ -24,10 +24,7 @@
         <div class="desc">
           类型<span class="req">*</span>
         </div>
-        <%= select(nil, :sup, @categories.collect { |sup| [sup.name, sup.id] }, {}, {:id=>:sup, :name=>:sup_id, :onchange => remote_function(
-                :method => "put",
-                :with => "'parent_id=' + value",
-                :url => {:action => :change_category})}) %>
+        <%= select(nil, :categories, @root_categories.collect{|category| [category.name, category.id]}) %>
       </li>
       <li>
         <div class="desc">
