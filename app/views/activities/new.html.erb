@@ -1,5 +1,5 @@
 <%= errors_for @activity %>
-<% form_for(:activity, :url => "/activities/create", :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f| %>
+<% form_for(:activity, :url => activities_path, :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f| %>
     <ul>
       <li>
         <div class="desc">

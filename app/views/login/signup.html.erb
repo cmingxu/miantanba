@@ -2,7 +2,7 @@
 <div class="errorMsg">
   <strong>注册出错，请按下列提示修改后进行</strong>
   <ul>
-    <% @user.errors.each do |error| %>
+    <% @user && @user.errors.each do |error| %>
         <li><%= error.last %></li>
     <% end %>
   </ul>

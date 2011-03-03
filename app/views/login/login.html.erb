@@ -16,7 +16,7 @@
         密码
       </div>
       <%= password_field_tag :password, params[:password],:class=>"field text required"%>
-      <%= link_to "忘记密码", {:controller => :pages, :action => :forgot_password} %>
+      <%#= link_to "忘记密码", {:controller => :pages, :action => :forgot_password} %>
     </li>
     <li>
       <%= check_box_tag 'persist', 1, true %>在这台电脑上记住我
