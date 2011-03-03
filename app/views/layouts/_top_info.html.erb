@@ -1,7 +1,7 @@
 <div class="top_info">
   <ul>
     <% if current_user.logged? %>
-    <li><%=link_to "消息通知", message_path %></li>
+    <li><%#=link_to "消息通知", message_path %></li>
     <% end %>
     <li><%=link_to "帮助",{:controller=>"help",:action=>"index"}%></li>
     <% if current_user.logged? %>
