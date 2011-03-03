@@ -52,6 +52,9 @@ GEM
     mysql2 (0.2.6-x86-mingw32)
     nokogiri (1.4.4)
     nokogiri (1.4.4-x86-mingw32)
+    paperclip (2.3.4)
+      activerecord
+      activesupport
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -102,6 +105,7 @@ DEPENDENCIES
   map_by_method
   mysql2
   nokogiri
+  paperclip
   rails (= 3.0.3)
   rest-client
   thin

@@ -9,6 +9,7 @@ gem 'mysql2'
 gem 'rest-client'
 gem 'will_paginate'
 gem 'builder'
+gem 'paperclip'
 
 # Use unicorn as the web server
 #gem "mongrel"

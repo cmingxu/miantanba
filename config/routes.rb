@@ -1,4 +1,14 @@
 Mtb::Application.routes.draw do
+  get 'kindeditor/images_list'
+
+  post 'kindeditor/upload'
+
+  resources :pages,:only => [:show]
+
+  namespace :admin do |admin|
+    resources :pages
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -65,10 +75,10 @@ Mtb::Application.routes.draw do
   get '/profile' => 'profile#index', :as => :profile
 
   resources :messages
-  
- resources :activities do
+
+  resources :activities do
     get :map, :on => :collection
- end
+  end
 
   scope "api" do
     get 'cities' => 'api#cities'

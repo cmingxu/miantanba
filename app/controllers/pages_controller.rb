@@ -1,4 +1,12 @@
 class PagesController < ApplicationController
-  
-  
+  # GET /pages/1
+  # GET /pages/1.xml
+  def show
+    @page = Page.find_by_slug!(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
 end

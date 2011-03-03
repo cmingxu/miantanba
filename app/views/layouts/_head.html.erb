@@ -1,7 +1,7 @@
 <div class="clear"></div>
 <div class="navigation">
   <div class="action">
-    <%=link_to "发起活动",{:controller=>"activity",:action=>"new"},:class=>"green_btn"%>
+    <%=link_to "发起活动",new_activity_path,:class=>"green_btn"%>
   </div>
   <ul>
     <% Category.sup.each do |cate| %>

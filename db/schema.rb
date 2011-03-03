@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110219123018) do
+ActiveRecord::Schema.define(:version => 20110303151043) do
 
   create_table "activities", :force => true do |t|
     t.integer  "user_id"
@@ -111,6 +111,15 @@ ActiveRecord::Schema.define(:version => 20110219123018) do
     t.datetime "updated_at"
   end
 
+  create_table "kindeditor_images", :force => true do |t|
+    t.string   "data_file_name"
+    t.string   "data_content_type"
+    t.integer  "data_file_size"
+    t.datetime "data_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "locales", :force => true do |t|
     t.string   "name"
     t.string   "code"
@@ -127,6 +136,14 @@ ActiveRecord::Schema.define(:version => 20110219123018) do
     t.integer  "user_id"
     t.integer  "template_id"
     t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", :force => true do |t|
+    t.text     "content"
+    t.string   "state"
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
