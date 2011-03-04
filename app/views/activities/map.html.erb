@@ -71,7 +71,33 @@
     function toFullMap(){
         map.setCenter(new google.maps.LatLng(lat, lng));    
     }
-    
+
+    function ftime(time){
+        if(!time){
+            return "";
+        }
+        var date = new Date(Date.parse(time));
+        var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+        if(date.getHours() != 0 || date.getMinutes() != 0){
+            str += " " + date.getHours() + ":" + date.getMinutes();
+        }
+        return str;
+    }
+
+    function frange(start_time,end_time){
+        var s = ftime(start_time);
+        var e = ftime(end_time);
+        if(!s && !e){
+            return "";
+        }else if(s && e){
+            return s + "至" + e;
+        }else if(s && !e){
+            return "开始时间：" + s;
+        }else if(!s && e){
+            return "截止时间：" + e;
+        }
+
+    }
     function initMap() {
         var mapDom = document.getElementById("map");
         var center = new google.maps.LatLng(lat, lng);
@@ -94,7 +120,7 @@
             var content = '<div class="mapActivity">' +
             '<div class="title"><a href="/activities/' + activity.id + '" target="_blank">' + activity.title + '</a></div>' +
             '<div class="address_desc">' + activity.address_desc + '</div>' +
-            '<div class="time">' + activity.start_time + '-' + activity.end_time + '</div>' +
+            '<div class="time">' + frange(activity.start_time, activity.end_time) + '</div>' +
             '<div class="buttons"><a href="/activities/' + activity.id + '" target="_blank">查看详情</a></div>' +
             '</div>';
             google.maps.event.addListener(marker, "click", function() {
