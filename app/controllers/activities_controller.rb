@@ -1,4 +1,6 @@
 class ActivitiesController < ApplicationController
+  before_filter :need_login, :only => [:new]
+  
   def city_home
    find_activities
    @activities = @activities.paginate(:page => params[:page], :per_page => 20)

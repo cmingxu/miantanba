@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => '92d95606680c0ccf692470918c78acc4'
 
+  protected
   def load_current_user
     @current_user ||= CurrentUser.get(request)
   end
@@ -21,5 +22,13 @@ class ApplicationController < ActionController::Base
 
   def current_city
     current_user.city
+  end
+
+  def need_login
+    if !current_user.logged?
+      redirect_to("/login")
+      return false
+    end
+    true
   end
 end

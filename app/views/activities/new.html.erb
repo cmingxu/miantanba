@@ -1,3 +1,5 @@
+<%= javascript_include_tag "jquery-ui-1.8.10.custom.min.js" %>
+<%= stylesheet_link_tag "jquery-ui-1.8.10.custom.css" %>
 <%= errors_for @activity %>
 <% form_for(:activity, :url => activities_path, :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f| %>
     <ul>
@@ -71,3 +73,10 @@
       </li>
     </ul>
 <% end %>
+
+<script>
+  $(function(){
+    $('#activity_start_time').datepicker();
+    $('#activity_end_time').datepicker();
+  });
+</script>
