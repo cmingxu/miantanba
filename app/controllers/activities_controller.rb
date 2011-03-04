@@ -50,5 +50,7 @@ class ActivitiesController < ApplicationController
       @activities = @activities.where(:area_id => @area.id)
     end
 
+    @activities = @activities.order("created_at DESC")
+
   end
 end
