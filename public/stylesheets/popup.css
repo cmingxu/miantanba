@@ -1,0 +1,21 @@
+ul{list-style:none;}
+a.closeBtn{position:absolute;top:10px;right:10px;display:block;width:60px;padding:4px 0;text-align:center;background:#fff;border:1px solid #85B6E2;color:#333;}
+/*a.closeBtn:hover{color:#fff;border:1px solid #85B6E2;background:#85B6E2;}*/
+
+.blk{width:650px;position:relative;}
+/*.blk .head, .blk .head-right, .blk .foot, .blk .foot-right{background:url(/images/pop_up_bg.png);overflow:hidden;height:4px;}*/
+/*.blk .head{padding-left:4px;}*/
+.blk .head-right{background-position:right top;}
+/*.blk .foot{padding-left:4px;background-position:left bottom;_height:3px;}*/
+.blk .foot-right{background-position:right bottom;}
+.blk .popup-main{position:relative;background:#fff; border:2px solid #005EAC;}
+.blk .popup-main h2{font:bold 16px;padding:10px 20px 2px;color:#85B6E2;}
+.blk .popup-main ul{padding:10px;zoom:1;overflow:hidden;font-size:12px;}
+.blk .popup-main ul li{float:left;width:300px;text-align:center;line-height:20px;margin-bottom:0px;}
+.blk .popup-main ul input{float:left}
+.blk .popup-main ul li a{color:#333;display:block;float:left}
+/*.blk .main ul li a:hover{background:#85B6E2;color:#fff;font-weight:bold;font-size:12px;}*/
+
+
+
+

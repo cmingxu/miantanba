@@ -48,10 +48,7 @@ GEM
       treetop (~> 1.4.8)
     map_by_method (0.8.3)
     mime-types (1.16)
-    mysql2 (0.2.6)
-    mysql2 (0.2.6-x86-mingw32)
-    nokogiri (1.4.4)
-    nokogiri (1.4.4-x86-mingw32)
+    mysql (2.8.1-x86-mingw32)
     paperclip (2.3.4)
       activerecord
       activesupport
@@ -103,8 +100,7 @@ DEPENDENCIES
   calendar_date_select
   jquery-rails
   map_by_method
-  mysql2
-  nokogiri
+  mysql
   paperclip
   rails (= 3.0.3)
   rest-client

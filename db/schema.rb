@@ -157,8 +157,8 @@ ActiveRecord::Schema.define(:version => 20110303151043) do
   end
 
   create_table "persistent_logins", :force => true do |t|
-    t.string  "uid",     :null => false
-    t.integer "user_id", :null => false
+    t.string  "uid",     :default => "", :null => false
+    t.integer "user_id",                 :null => false
   end
 
   create_table "sites", :force => true do |t|

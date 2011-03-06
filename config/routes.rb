@@ -75,10 +75,18 @@ Mtb::Application.routes.draw do
   get '/profile' => 'profile#index', :as => :profile
 
   resources :messages
+  
+  resources :groups
+	resources :industries
 
   resources :activities do
-    get :map, :on => :collection
+		collection do 
+			get :map
+			get :act_add
+		end
   end
+  
+  
 
   scope "api" do
     get 'cities' => 'api#cities'

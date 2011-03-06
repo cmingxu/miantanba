@@ -1,0 +1,62 @@
+<%= javascript_include_tag "jquery-ui-1.8.10.custom.min.js" %>
+<%= stylesheet_link_tag "jquery-ui-1.8.10.custom.css" %>
+<%= errors_for @activity %>
+<% form_for(:activity, :url => activities_path, :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f| %>
+    <ul>
+      <li>
+        <div class="desc">
+          主题<span class="req">*</span>
+        </div>
+        <%= f.text_field :title, :class=>"field text required" %>
+      </li>
+      <li>
+        <div class="desc">
+          时间<span class="req">*</span>
+        </div>
+        <%= f.text_field :start_time %>
+        <%= f.text_field :end_time %>
+      </li>
+
+      <li>
+        <div class="desc">
+          类型<span class="req">*</span>
+        </div>
+        <%= select(nil, :categories, @root_categories.collect { |category| [category.name, category.id] }) %>
+      </li>
+      <li>
+        <div class="desc">
+          主办方<span class="req">*</span>
+        </div>
+        <%= f.text_field :contact %>
+      </li>
+      <li>
+        <div class="desc">
+          联系方式<span class="req">*</span>
+        </div>
+        <%= f.text_area :contact %>
+      </li>
+      
+      <li>
+        <div class="desc">
+          参加须知<span class="req">*</span>
+        </div>
+        <%= f.text_area :about %>
+      </li>      
+      <li>
+        <div class="desc">
+          详细描述<span class="req">*</span>
+        </div>
+        <%= f.text_area :description %>
+      </li>
+
+      <li>
+        <div class="desc">
+          <%= submit_tag "提交", {:class=>"btTxt", :id=>"saveForm"} %>
+        </div>
+      </li>
+    </ul>
+<% end %>
+
+<button onclick="test()">test</button>
+
+

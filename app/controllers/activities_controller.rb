@@ -22,6 +22,10 @@ class ActivitiesController < ApplicationController
     @root_categories=Category.root_categories
   end
 
+	def act_add
+    new
+	end
+
   def create
     @activity=Activity.new params[:activity]
     @activity.user_id = current_user.id

@@ -1,0 +1,113 @@
+﻿
+<%#= javascript_include_tag "jquery.min.js" %>
+<%= javascript_include_tag "popup_layer.js" %>
+<%= stylesheet_link_tag "popup.css" %>
+
+<script>
+	$(document).ready(function(){
+		
+		var popup = new PopupLayer({trigger:"#select_induestry",popupBlk:"#industry",closeBtn:"#close6",offsets:{x:0,y:-141}});	
+		$("#closeBtn").click(function(){
+			var checked = $("input:radio[name=industry]:checked");
+			if(checked.length == 0) {
+				alert("请选择行业类型");
+				return;
+			}
+			
+			var name = checked.attr("desc");
+			var id   = checked.val();
+			$("#group_industry_id").attr("value", id);
+			$("#industry_name").val(name);
+			popup.close();
+		});
+
+			
+		// 弹出窗口内的连接绑定
+		$(".children").live("click",function(){
+			var id = $(this).attr("id");
+			var title = $(this).html();
+			$.getJSON("/industries",{"id": id}, function(data){
+				var items = [];
+				if(data.length == 0) return;
+				$.each(data, function(index, value){
+					industry = value.industry;
+					var str = "<li><input name='industry' type='radio' value='" + industry.id + "' desc='" + industry.name +  "'/>" + "<a class='children' href='javascript:void(0)' id='" + industry.id + "'>" + industry.name + "</a></li>"
+					items.push(str);
+				});
+					
+				var back = "<a href='javascript:void(0)' class='children' id='0'> <<< </a>&nbsp;&nbsp;"
+				if($.trim(title) == "&lt;&lt;&lt;") {
+					$("#industry_title").html("选择行业");
+				}else{
+					$("#industry_title").html(back + title);
+				}
+
+				$("#industry_content").html(items.join(""));
+			});
+		});
+	});
+</script>
+    <ul>
+      <li>
+        <div class="desc">
+          名称<span class="req">*</span>
+        </div>
+        <%= f.text_field :name, :class=>"field text required" %>
+      </li>
+      <li>
+        <div class="desc">
+          全称<span class="req">*</span>
+        </div>
+        <%= f.text_field :real_name %>
+      </li>
+      
+      <li>
+        <div class="desc">
+          描述<span class="req">*</span>
+        </div>
+        <%= f.text_area :description %>
+      </li>
+    
+      <li>
+        <div class="desc">
+          联系人电话<span class="req">*</span>
+        </div>
+        <%= f.text_field :contact %>
+      </li>
+      
+      
+      <li>
+        <div class="desc">
+          所属行业*</span>
+        </div>
+
+					<%= f.hidden_field "industry_id"%>
+					<input type="text" id='industry_name' readonly="readonly"/>
+					<a href="javascript:void(0);" id="select_induestry">选择行业</a>
+					
+	        <div id="industry" class="blk" style="display:none;">
+	            <div class="popup-head"><div class="head-right"></div></div>
+	            <div class="popup-main">
+	                <h2 id="industry_title">选择行业</h2>
+	                <a href="javascript:void(0)" id="closeBtn" class="closeBtn">确定</a>
+	                <ul id="industry_content">
+										<% Industry.root.each do |industry| %>
+											<li>
+												<input type='radio' desc='<%= industry.name %>' name='industry' value='<%= industry.id %>'/>
+												<a id="<%= industry.id %>" class='children' href="javascript:void(0)"><%= industry.name %></a>
+											</li>
+										<% end %>
+	                </ul>
+	            </div>
+	            <div class="foot"><div class="foot-right"></div></div>
+	        </div>
+      </li>
+      
+
+      <li>
+        <div class="desc">
+          <%= submit_tag "提交", {:class=>"btTxt", :id=>"saveForm"} %>
+        </div>
+      </li>
+
+    </ul>
