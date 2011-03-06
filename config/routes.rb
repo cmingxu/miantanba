@@ -64,6 +64,8 @@ Mtb::Application.routes.draw do
 
   get '/help' => 'help#index'
 
+  get '/admin' => "admin/home#index"
+
 
   get '/login' => 'login#login'
   get '/logout' => 'login#logout'

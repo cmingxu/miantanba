@@ -1,11 +1,12 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
+gem 'mysql'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'nokogiri'
 gem 'jquery-rails'
-gem 'mysql2'
 gem 'rest-client'
 gem 'will_paginate'
 gem 'builder'

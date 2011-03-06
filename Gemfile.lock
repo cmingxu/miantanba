@@ -41,17 +41,15 @@ GEM
     jquery-rails (0.2.6)
       rails (~> 3.0)
       thor (~> 0.14.4)
-    mail (2.2.11)
+    mail (2.2.15)
       activesupport (>= 2.3.6)
-      i18n (~> 0.5.0)
+      i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     map_by_method (0.8.3)
     mime-types (1.16)
-    mysql2 (0.2.6)
-    mysql2 (0.2.6-x86-mingw32)
+    mysql (2.8.1)
     nokogiri (1.4.4)
-    nokogiri (1.4.4-x86-mingw32)
     paperclip (2.3.4)
       activerecord
       activesupport
@@ -59,7 +57,7 @@ GEM
     rack (1.2.1)
     rack-mount (0.6.13)
       rack (>= 1.0.0)
-    rack-test (0.5.6)
+    rack-test (0.5.7)
       rack (>= 1.0)
     rails (3.0.3)
       actionmailer (= 3.0.3)
@@ -81,10 +79,6 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    thin (1.2.7-x86-mingw32)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -94,7 +88,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86-mingw32
 
 DEPENDENCIES
   awesome_print
@@ -103,7 +96,7 @@ DEPENDENCIES
   calendar_date_select
   jquery-rails
   map_by_method
-  mysql2
+  mysql
   nokogiri
   paperclip
   rails (= 3.0.3)

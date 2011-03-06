@@ -1,0 +1,279 @@
+/* -----------------------------------------------------------------------
+ Insub CSS Framework 0.9
+ http://insub.me
+   * Copyright (c) 2009.
+----------------------------------------------------------------------- */
+/*
+KISSY CSS Reset
+*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { margin: 0;padding: 0;}
+/* 设置默认字体 */
+body,button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+h1,h2,h3,h4, h5, h6 { font-size: 100%; }
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+ /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+abbr[title], acronym[title] {border-bottom: 1px dotted;cursor: help;}
+q:before, q:after { content: ''; }
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea {font-size: 100%; }
+/* 重置表格元素 */
+table {border-collapse: collapse;border-spacing: 0;}
+/* 重置 hr */
+hr {border: none;height: 1px;}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+/* add my reset*/
+body{ line-height:1.5; }  /* 垂直居中对齐，需要重置行高为1 */
+label{vertialc-align:-3px; margin-left: 3px;}
+
+/* global set */
+body{
+	color: #333;
+	text-align:left;
+}
+
+h1 {font-size:22px;}
+h2 {font-size:18px;}
+h3 {font-size:16px;}
+h4 {font-size:14px;}
+h5 {font-size:12px;}
+h6 {font-size:11px;}
+h1,h2,h3,h4,h5,h6{color: #000;}
+table, td, th {vertical-align:middle;}
+
+/* 通用样式 */
+.t_red{color: #c30;}
+.t_gray{color: #a7a7a7;}
+.t_orange{color: #ff6600;}
+.price_f{font-family: Helvetica,arial,sans-serif;color: #ff5500;}
+.notice,.message,.warning{float: left;margin-bottom: 10px;width: 100%;}
+.notice p,.message p,.warning p{margin: 5px 5px 5px 20px;}
+.notice {background-color: #ffffee;border: solid 1px #ffcc55; background-position: 0px -122px;}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+ * html .clearfix {height: 1%;} 
+.clearfix {display: block;} 
+/* End hide from IE-mac */
+.clear {clear:both;}
+.hide {display:none;}
+.show {display:block;}
+.normal{font-size: 12px;font-weight: normal;font-style: normal;}
+.small {font-size: 11px;}
+#overlay{
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+	display: none;
+	background: #000;
+	filter:alpha(opacity=5);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+#modal_box{
+	background: #ccc;
+	border: solid 2px #000;
+	position: absolute;
+	margin: auto;
+}
+.formbtn{
+background:none repeat scroll 0 0 #ff6600;
+border-color:#ffb969 #dc5000 #dc5000 #ffb969;
+border-style:solid;
+border-width:2px;
+color:#FFFFFF;
+font-size: 14px;
+cursor:pointer;
+}
+input.formbtn {letter-spacing:0.1em;padding:4px 1em;}
+a.formbtn{padding:5px 12px;color: #fff;text-decoration: none;line-height: 28px;}
+input, textarea, select {font-family:inherit;font-size:inherit;font-weight:inherit;}
+.btn_box{float: left;width: 100%;text-align: right;margin: 10px 0;}
+/* 我的分页 */
+.digg_pagination {
+  background: white;
+  float: right;
+  text-align: right;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span {
+	font-size: 14px;
+    padding: 0px 5px;
+    display: block;
+    float: left;
+    line-height: 20px;
+    margin-right: 10px; }
+  .digg_pagination span.disabled {
+    color: #999;
+    display: none;
+   }
+  .digg_pagination span.current {
+    font-weight: bold;
+    background: #ccc;
+    color: #fff; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: #105CB6;}
+    .digg_pagination a:hover, .digg_pagination a:focus {
+	    text-decoration: none;
+	    background: #ccc;
+    	color: white;}
+  .digg_pagination .page_info {
+    background: #2E6AB1;
+    color: white;
+    padding: 4px 6px;
+    width: 220px;
+    margin-bottom: 3px;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: #003;
+      background: #6aa6ed;
+      padding: 1px 3px; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child+html .digg_pagination {
+    overflow: hidden; }
+
+/* digg分页 */
+.digg_pagination {
+  background: white;
+  float: right;
+  text-align: right;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span {
+    padding: 0px 5px;
+    display: block;
+    float: left;
+    line-height: 20px;
+    margin-right: 1px; }
+  .digg_pagination span.disabled {
+    color: #999;
+    border: 1px solid #DDD; }
+  .digg_pagination span.current {
+    font-weight: bold;
+    background: #2E6AB1;
+    color: white;
+    border: 1px solid #2E6AB1; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: #105CB6;
+    border: 1px solid #9AAFE5; }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+	    text-decoration: none;
+	    background: #2E6AB1;
+    	color: white;
+    	border: 1px solid #2E6AB1; }
+  .digg_pagination .page_info {
+    background: #2E6AB1;
+    color: white;
+    padding: 4px 6px;
+    width: 22em;
+    margin-bottom: 3px;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: #003;
+      background: #6aa6ed;
+      padding: 1px 3px; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child+html .digg_pagination {
+    overflow: hidden; }
+    
+
+
+/* tabs */
+ul.tabs {
+	margin: 10px 0 0 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px; /*--Set height of tabs--*/
+	border-bottom: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 31px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #bbb;
+	border-left: none;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	overflow: hidden;
+	position: relative;
+	background: #f1f7fc;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 14px;
+	padding: 0 20px;
+	border: 1px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #f1f7fc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background: #fff;
+	border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+}
+.tab_container {
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #fff;
+}
+.tab_content {
+	display: none;
+	padding: 0px;
+}
+.tab_container_old {
+	border: 1px solid #bbb;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; width: 100%;
+	background: #fff;
+}
+.tab_content_old {
+	padding: 20px;
+	font-size: 1.2em;
+}
