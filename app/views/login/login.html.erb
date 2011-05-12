@@ -3,7 +3,7 @@
     <%=flash[:error] %>
   <% end %>
 </div>
-<% form_for(:user ,:url => auth_path,:html => {:id=>"login_form",:class=>"",:method => :post}) do  %>
+<%= form_for(:user ,:url => auth_path,:html => {:id=>"login_form",:class=>"",:method => :post}) do  %>
   <ul>
     <li>
       <div class="desc">

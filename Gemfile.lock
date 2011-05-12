@@ -48,12 +48,7 @@ GEM
       treetop (~> 1.4.8)
     map_by_method (0.8.3)
     mime-types (1.16)
-<<<<<<< HEAD
-    mysql (2.8.1-x86-mingw32)
-=======
     mysql (2.8.1)
-    nokogiri (1.4.4)
->>>>>>> 17fb127cdd0411675d94c8edfdef9e8b4fe40126
     paperclip (2.3.4)
       activerecord
       activesupport
@@ -101,10 +96,6 @@ DEPENDENCIES
   jquery-rails
   map_by_method
   mysql
-<<<<<<< HEAD
-=======
-  nokogiri
->>>>>>> 17fb127cdd0411675d94c8edfdef9e8b4fe40126
   paperclip
   rails (= 3.0.3)
   rest-client
