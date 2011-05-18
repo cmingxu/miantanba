@@ -9,7 +9,9 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 module Mtb
   class Application < Rails::Application
     config.generators do |g|
-        g.template_engine :haml
+      g.template_engine :haml
+      g.test_framework :rspec
+      g.fixture_replacement :factory_girl
     end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -36,7 +38,7 @@ module Mtb
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-#    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    #    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
     config.action_view.javascript_expansions[:defaults] = %w(jquery)
 
     # Configure the default encoding used in templates for Ruby 1.9.

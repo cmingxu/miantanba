@@ -5,6 +5,9 @@ gem 'mysql'
 gem 'compass'
 gem 'haml'
 gem "erb2haml" 
+gem 'rails3-generators'
+gem 'simple_form'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -50,6 +53,7 @@ end
 # and rake tasks are available in development mode:
 group :development, :test do
 gem 'rspec'
+gem 'rspec-rails','~> 2.4'
 gem 'factory_girl_rails'
 gem 'shoulda'
 end
