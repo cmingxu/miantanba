@@ -24,8 +24,8 @@ class CurrentUser
     end
 
     city = request.cookies[:city] && City.find_by_code(request.cookies[:city]) ||
-        user && user.city ||
-        City.find_by_code('beijing')
+      user && user.city ||
+      City.find_by_code('beijing')
 
     current_user = CurrentUser.new
     current_user.user = user
