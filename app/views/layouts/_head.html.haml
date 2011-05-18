@@ -1,0 +1,22 @@
+.clear
+.navigation
+  .action
+    = link_to "发起活动",new_activity_path,:class=>"green_btn"
+  %ul
+    - Category.sup.each do |cate|
+      <li
+      - if @sup_category.id==cate.id
+        class="selected"
+      >
+      \#{link_to cate.name,{:action=>"index",:category_id=>cate.id}}
+  .clear
+.sub_navigation
+  %ul
+    - @sub_categories.each do |cate|
+      <li
+      - if @sub_category_id.to_i==cate.id
+        class="selected"
+      >
+      \#{link_to cate.name,{:action=>"index",:category_id=>@sup_category.id,:sub_category_id=>cate.id}}
+  .clear
+  .clear

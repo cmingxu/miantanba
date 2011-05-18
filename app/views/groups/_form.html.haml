@@ -1,0 +1,88 @@
+  = javascript_include_tag "popup_layer.js"
+  = stylesheet_link_tag "popup.css"
+  :javascript
+    $(document).ready(function(){
+    	
+    	var popup = new PopupLayer({trigger:"#select_induestry",popupBlk:"#industry",closeBtn:"#close6",offsets:{x:0,y:-141}});	
+    	$("#closeBtn").click(function(){
+    		var checked = $("input:radio[name=industry]:checked");
+    		if(checked.length == 0) {
+    			alert("请选择行业类型");
+    			return;
+    		}
+    		
+    		var name = checked.attr("desc");
+    		var id   = checked.val();
+    		$("#group_industry_id").attr("value", id);
+    		$("#industry_name").val(name);
+    		popup.close();
+    	});
+
+    		
+    	// 弹出窗口内的连接绑定
+    	$(".children").live("click",function(){
+    		var id = $(this).attr("id");
+    		var title = $(this).html();
+    		$.getJSON("/industries",{"id": id}, function(data){
+    			var items = [];
+    			if(data.length == 0) return;
+    			$.each(data, function(index, value){
+    				industry = value.industry;
+    				var str = "<li><input name='industry' type='radio' value='" + industry.id + "' desc='" + industry.name +  "'/>" + "<a class='children' href='javascript:void(0)' id='" + industry.id + "'>" + industry.name + "</a></li>"
+    				items.push(str);
+    			});
+    				
+    			var back = "<a href='javascript:void(0)' class='children' id='0'> <<< </a>&nbsp;&nbsp;"
+    			if($.trim(title) == "<<<") {
+    				$("#industry_title").html("选择行业");
+    			}else{
+    				$("#industry_title").html(back + title);
+    			}
+
+    			$("#industry_content").html(items.join(""));
+    		});
+    	});
+    });
+  %ul
+    %li
+      .desc
+        名称
+        %span.req *
+      = f.text_field :name, :class=>"field text required"
+    %li
+      .desc
+        全称
+        %span.req *
+      = f.text_field :real_name
+    %li
+      .desc
+        描述
+        %span.req *
+      = f.text_area :description
+    %li
+      .desc
+        联系人电话
+        %span.req *
+      = f.text_field :contact
+    %li
+      .desc
+        所属行业*
+      = f.hidden_field "industry_id"
+      %input#industry_name{:readonly => "readonly", :type => "text"}/
+      %a#select_induestry{:href => "javascript:void(0);"} 选择行业
+      #industry.blk{:style => "display:none;"}
+        .popup-head
+          .head-right
+        .popup-main
+          %h2#industry_title 选择行业
+          %a#closeBtn.closeBtn{:href => "javascript:void(0)"} 确定
+          %ul#industry_content
+            - Industry.root.each do |industry|
+              %li
+                %input{:desc => industry.name, :name => "industry", :type => "radio", :value => industry.id}/
+                %a.children{:href => "javascript:void(0)", :id => industry.id}= industry.name
+        .foot
+          .foot-right
+    %li
+      .desc
+        = submit_tag "提交", {:class=>"btTxt", :id=>"saveForm"}

@@ -1,0 +1,11 @@
+#page_left_nav
+  %ul
+    %li= link_to "关于本站","/pages/about"
+    %li= link_to "联系我们","/pages/contacts"
+    %li= link_to "使用帮助","/pages/help"
+    %li= link_to "隐私声明","/pages/privacy"
+    %li= link_to "服务条款","/pages/term"
+    %li= link_to "意见反馈", "/pages/feedbak"
+#page_right_content
+  %p
+    = raw @page.content

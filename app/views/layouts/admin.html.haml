@@ -1,0 +1,107 @@
+!!!
+%html{:lang => "zh-CN", "xml:lang" => "zh-CN", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+  %meta{:content => "utf-8", "http-equiv" => "Content-Language"}/
+  %link{:href => "favicon.ico", :rel => "bookmark"}/
+  %link{:href => "favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+  %link{:href => "http://www.jumaimai.com/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+  %title 面谈吧后台管理
+  = stylesheet_link_tag 'css_reset.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'miantanba_admin.css', :media => 'screen, projection'
+  = javascript_include_tag "jquery"
+    - if protect_against_forgery?
+      :javascript
+      //
+    window._auth_token_name = "\#{request_forgery_protection_token}";
+    window._auth_token = "\#{form_authenticity_token}";
+    //
+        - javascript_tag do
+      - if flash[:notice]
+        alert(#{flash[:notice]});
+    %body
+      #header
+        #logo
+          %a{:href => "/", :style => "float:left;"}
+            %img{:src => "/images/logo.png"}/
+        #user_nav.t_gray
+          = render(:partial => "layouts/top_info")
+      - if @navtag
+        %script{:charset => "utf-8", :type => "text/javascript"}
+          $('#nav .current').removeClass('current');
+          $('#<haml:loud> @navtag </haml:loud>').addClass('current');
+      #content
+        #sider
+          .menutit
+            %span> &nbsp;&nbsp;
+            后台管理菜单
+          .menu_mod
+            %ul.menu
+              %li
+                %a{:href => "/admin"} 活动审核
+              %li
+                %a{:href => "/admin/base/system"} 群组审核
+              %li
+                %a{:href => "/admin/orders"} 品论审核
+              %li
+                %a{:href => "/admin/products"} 实名认证
+              %li
+                %a{:href => "/admin/deals"} 群组认证
+          .menutit
+            %span> &nbsp;&nbsp;
+            活动信息
+          .menu_mod
+            %ul.menu
+              %li
+                %a{:href => "/admin"} 活动列表
+              %li
+                %a{:href => "/admin/base/system"} 活动状态
+          .menutit
+            %span> &nbsp;&nbsp;
+            用户信息
+          .menu_mod
+            %ul.menu
+              %li
+                %a{:href => "/admin"} 新注册
+              %li
+                %a{:href => "/admin/base/system"} 群组审核
+          .menutit
+            %span> &nbsp;&nbsp;
+            群组信息
+          .menu_mod
+            %ul.menu
+              %li
+                %a{:href => "/admin"} 群组成员
+              %li
+                %a{:href => "/admin/base/system"} 群组活动
+              %li
+                %a{:href => "/admin/orders"} 群组通知
+          .menutit
+            %span> &nbsp;&nbsp;
+            广告管理
+          .menu_mod
+            %ul.menu
+              %li
+                %a{:href => "/admin"} 热门活动
+              %li
+                %a{:href => "/admin/base/system"} 活跃场馆
+          .menutit
+            %span> &nbsp;&nbsp;
+            广播消息
+          .menutit
+            %span> &nbsp;&nbsp;
+            用户反馈
+        #cont
+          = yield :layout
+      .clear
+      #footer.clear
+        %span.copyright
+          Copyright © 2010-2011 Jumaimai.com. All rights reserved. 京ICP证10215661号
+      = yield :javascript
+      - if @navtag
+        %script{:charset => "utf-8", :type => "text/javascript"}
+          $('#nav .current').removeClass('current');
+          $('#<haml:loud> @navtag </haml:loud>').addClass('current');
+      - if @menutag
+        %script{:charset => "utf-8", :type => "text/javascript"}
+          $('.user_menu .current').removeClass('current');
+          $('#<haml:loud> @menutag </haml:loud>').addClass('current');

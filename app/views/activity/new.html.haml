@@ -1,0 +1,101 @@
+- content_for :head do
+  = calendar_date_select_includes
+= errors_for @activity
+- form_for(:activity,:url => {:action => :create},:html => {:id=>"reg_form",:class=>"",:method => :post}) do |f|
+  %ul
+    %li
+      .desc
+        主题
+        %span.req *
+      = f.text_field :title,:class=>"field text required"
+    %li
+      .desc
+        时间
+        %span.req *
+      = calendar_date_select_tag "activity[start_time]", "", :time => true
+      = calendar_date_select_tag "activity[end_time]", "", :time => true
+    %li
+      .desc
+        地点
+        %span.req *
+      = select(nil,:city,@cities.collect{|city| [city.name,city.id]},{},{:name=>:city_id,:onchange =>remote_function( |
+        :method => "put",                                                                                             |
+        :with => "'parent_id=' + value",                                                                              |
+        :url => {:controller=>:users,:action => :change_area})})                                                      |
+      -#
+      = select(nil,:area,@areas.collect{|area| [area.name,area.id]},{},{:id=>:area,:name=>:area_id,:onchange => remote_function( |
+        :method => "put",                                                                                                        |
+        :with => "'parent_id=' + value",                                                                                         |
+        :url => {:controller=>:users,:action => :change_street})})                                                               |
+      = select(nil,:street,@streets.collect{|street| [street.name,street.id]},{},{:id=>:street,:name=>"activity[locale_id]"})
+    %li
+      .desc
+        类型
+        %span.req *
+      = select(nil,:sup,@sup_categories.collect{|sup| [sup.name,sup.id]},{},{:id=>:sup,:name=>:sup_id,:onchange => remote_function( |
+        :method => "put",                                                                                                           |
+        :with => "'parent_id=' + value",                                                                                            |
+        :url => {:action => :change_category})})                                                                                    |
+      = select(nil,:sub,@sub_categories.collect{|sub| [sub.name,sub.id]},{},{:id=>:sub,:name=>"activity[category_id]"})
+    %li
+      .desc
+        主要议题
+        %span.req *
+      = f.text_area :topic
+    %li
+      .desc
+        联系方式
+        %span.req *
+      = f.text_field :contact
+    %li
+      .desc
+        参会须知
+        %span.req *
+      = f.text_area :about
+    %li
+      .desc
+        发起身份
+        %span.req *
+      - Activity::IDENTITY.each do |key,value|
+        %input{:type => "radio", :value => key}/
+        = value
+    %li
+      .desc
+        举办形式
+        %span.req *
+      %div
+        - Activity::FORM.each do |key,value|
+          %input{:name => "activity[form]", :type => "radio", :value => key}/
+          = value
+    %li
+      .desc
+        参会资质
+        %span.req *
+      %div
+        - Activity::APTITUDE.each do |key,value|
+          %input{:name => "activity[aptitude]", :type => "radio", :value => key}/
+          = value
+    %li
+      .desc
+        预约说明
+        %span.req *
+      = f.text_area :reserve_intro
+    %li
+      .desc
+        预约人数限制
+        %span.req *
+      = f.text_field :reserve_num,:value=>0
+      %span.gray 0为不限人数
+    %li
+      .desc
+        参加费用
+        %span.req *
+      %div
+        标准定价：#{f.text_field :price,:value=>0} 个面子/人/次
+      %div
+        签到返还：#{f.text_field :price_return,:value=>0} 个面子/人/次
+      %div
+        相关说明：#{f.text_area :price_intro}
+    %li
+      .desc
+        = submit_tag  "提交",{:class=>"btTxt",:id=>"saveForm"}

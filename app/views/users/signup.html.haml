@@ -1,0 +1,40 @@
+= errors_for @user
+- form_for(:user,:url => {:action => :create},:html => {:id=>"reg_form",:class=>"",:method => :post}) do |f|
+  %ul
+    %li
+      .desc
+        邮箱
+        %span.req *
+      = f.text_field :email,:class=>"field text required"
+    %li
+      .desc
+        密码
+        %span.req *
+      = f.password_field :password,:class=>"field text required"
+    %li
+      .desc
+        确认密码
+        %span.req *
+      = f.password_field :password_confirmation,:class=>"field text required"
+    %li
+      .desc
+        用户名
+        %span.req *
+      = f.text_field :display_name
+    %li
+      .desc
+        所在地
+        %span.req *
+      = select(nil,:city,@cities.collect{|city| [city.name,city.id]},{},{:name=>:city_id,:onchange =>remote_function( |
+        :method => "put",                                                                                             |
+        :with => "'parent_id=' + value",                                                                              |
+        :url => {:action => :change_area})})                                                                          |
+      -#
+      = select(nil,:area,@areas.collect{|area| [area.name,area.id]},{},{:id=>:area,:name=>:area_id,:onchange => remote_function( |
+        :method => "put",                                                                                                        |
+        :with => "'parent_id=' + value",                                                                                         |
+        :url => {:action => :change_street})})                                                                                   |
+      = select(nil,:street,@streets.collect{|street| [street.name,street.id]},{},{:id=>:street,:name=>"user[locale_id]"})
+    %li
+      .desc
+        = submit_tag  "注册",{:class=>"btTxt",:id=>"saveForm"}

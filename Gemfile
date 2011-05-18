@@ -2,6 +2,9 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
 gem 'mysql'
+gem 'compass'
+gem 'haml'
+gem "erb2haml" 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -23,10 +26,10 @@ gem 'thin'
 gem "calendar_date_select"
 
 group :development do
-  gem 'bond'
-  gem 'wirble'
-  gem "awesome_print"
-  gem "map_by_method"
+gem 'bond'
+gem 'wirble'
+gem "awesome_print"
+gem "map_by_method"
 end
 
 # Deploy with Capistrano
@@ -45,6 +48,8 @@ end
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :development, :test do
+gem 'rspec'
+gem 'factory_girl_rails'
+gem 'shoulda'
+end

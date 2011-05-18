@@ -1,0 +1,45 @@
+= javascript_include_tag "jquery-ui-1.8.10.custom.min.js"
+= stylesheet_link_tag "jquery-ui-1.8.10.custom.css"
+= errors_for @activity
+- form_for(:activity, :url => activities_path, :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f|
+  %ul
+    %li
+      .desc
+        主题
+        %span.req *
+      = f.text_field :title, :class=>"field text required"
+    %li
+      .desc
+        时间
+        %span.req *
+      = f.text_field :start_time
+      = f.text_field :end_time
+    %li
+      .desc
+        类型
+        %span.req *
+      = select(nil, :categories, @root_categories.collect { |category| [category.name, category.id] })
+    %li
+      .desc
+        主办方
+        %span.req *
+      = f.text_field :contact
+    %li
+      .desc
+        联系方式
+        %span.req *
+      = f.text_area :contact
+    %li
+      .desc
+        参加须知
+        %span.req *
+      = f.text_area :about
+    %li
+      .desc
+        详细描述
+        %span.req *
+      = f.text_area :description
+    %li
+      .desc
+        = submit_tag "提交", {:class=>"btTxt", :id=>"saveForm"}
+%button{:onclick => "test()"} test

@@ -1,0 +1,20 @@
+.errorMsg
+  - if flash[:error]
+    = flash[:error]
+= form_for(:user ,:url => auth_path,:html => {:id=>"login_form",:class=>"",:method => :post}) do
+  %ul
+    %li
+      .desc
+        邮箱
+      = text_field_tag :email, params[:email],:class=>"field text required"
+    %li
+      .desc
+        密码
+      = password_field_tag :password, params[:password],:class=>"field text required"
+  %li
+    = check_box_tag 'persist', 1, true
+    在这台电脑上记住我
+  %li
+    = submit_tag  "登录",{:class=>"btTxt",:id=>"saveForm"}
+  %li.extra
+    还不是会员？#{link_to "立刻加入", signup_path}

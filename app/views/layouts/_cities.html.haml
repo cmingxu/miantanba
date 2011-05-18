@@ -1,0 +1,5 @@
+.cities{:style => "_zoom:1;width: 100px;"}
+  - City.opened.each_with_index do |city, index|
+    %a{:href => "#", :onclick => "changeCity('#{city.code}');return false;"}= city.name
+    - if index % 3 == 2
+      %br/

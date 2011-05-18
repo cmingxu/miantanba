@@ -1,0 +1,20 @@
+= kindeditor_javacript_include_tag
+= form_for(@page,:url => admin_page_url(@page)) do |f|
+  - if @page.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@page.errors.count, "error")
+        prohibited this page from being saved:
+      %ul
+        - @page.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    = f.label :content
+    %br/
+    = f.text_area :content ,:id => "kindeditor"
+  .field
+    = f.label :slug
+    %br/
+    = f.text_field :slug
+  .actions
+    = f.submit

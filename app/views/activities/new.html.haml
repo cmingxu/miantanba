@@ -1,0 +1,108 @@
+= javascript_include_tag "jquery-ui-1.8.10.custom.min.js"
+= stylesheet_link_tag "jquery-ui-1.8.10.custom.css"
+%script{:src => "http://maps.google.com/maps/api/js?sensor=false&language=zh-CN", :type => "text/javascript"}
+= errors_for @activity
+- form_for(:activity, :url => activities_path, :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f|
+  %ul
+    %li
+      .desc
+        主题
+        %span.req *
+      = f.text_field :title, :class=>"field text required"
+    %li
+      .desc
+        时间
+        %span.req *
+      = f.text_field :start_time
+      = f.text_field :end_time
+    %li{:style => "overflow:auto;"}
+      .desc
+        地点
+        %span.req *
+      = f.text_field :address_desc, :class=>"field text required"
+      = f.hidden_field :lng
+      = f.hidden_field :lat
+      拖动地图中的泡泡，设定活动场所的位置：
+      #map{:style => "width:500px;height:500px; "}
+    %li
+      .desc
+        类型
+        %span.req *
+      = select(nil, :categories, @root_categories.collect { |category| [category.name, category.id] })
+    %li
+      .desc
+        详细描述
+        %span.req *
+      = f.text_area :description
+    %li
+      .desc
+        联系方式
+        %span.req *
+      = f.text_field :contact
+    %li
+      .desc
+        参会须知
+        %span.req *
+      = f.text_area :about
+    %li
+      .desc
+        预约说明
+        %span.req *
+      = f.text_area :reserve_intro
+    %li
+      .desc
+        预约人数限制
+        %span.req *
+      = f.text_field :reserve_num, :value=>0
+      %span.gray 0为不限人数
+    %li
+      .desc
+        参加费用
+        %span.req *
+      %div
+        标准定价：#{f.text_field :price, :value=>0} 个面子/人/次
+      %div
+        签到返还：#{f.text_field :price_return, :value=>0} 个面子/人/次
+      %div
+        相关说明：#{f.text_area :price_intro}
+    %li
+      .desc
+        = submit_tag "提交", {:class=>"btTxt", :id=>"saveForm"}
+%button{:onclick => "test()"} test
+:javascript
+  function test(){
+      alert($('#activity_lat').val() + "**" + $('#activity_lng').val());
+  }
+    var lat = #{current_city.lat};
+    var lng = #{current_city.lng};
+    var map = null;
+    var marker = null;
+    $(function() {
+        $('#activity_start_time').datepicker();
+        $('#activity_end_time').datepicker();
+    });
+
+    function initMap() {
+        var mapDom = document.getElementById("map");
+        var center = new google.maps.LatLng(lat, lng);
+        var initOptions = {
+            zoom: 11,
+            center: center,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControl: false
+        };
+        map = new google.maps.Map(mapDom, initOptions);
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(lat, lng),
+            map: map,
+            title: "通过拖拽标记活动地点",
+            draggable: true
+        });
+
+        google.maps.event.addListener(marker, 'dragend', function(){
+            var pos = marker.getPosition();
+            $('#activity_lat').val(pos.lat());
+            $('#activity_lng').val(pos.lng());
+        })
+    }
+    $(document).ready(initMap);
