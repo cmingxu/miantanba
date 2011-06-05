@@ -1,8 +1,8 @@
-  .errorMsg
-    %strong 注册出错，请按下列提示修改后进行
-    %ul
-      - @user && @user.errors.each do |error|
-        %li= error.last
+.errorMsg
+  %strong 注册出错，请按下列提示修改后进行
+  %ul
+    - @user && @user.errors.each do |error|
+      %li= error.last
   - form_for(:user, :url => signup_path, :html => {:id=>"reg_form", :class=>"", :method => :post}) do |f|
     %ul
       %li
@@ -29,7 +29,7 @@
         .desc
           真实姓名
           %span.req
-        = f.text_field :real_name
+            = f.text_field :real_name
       %li
         .desc
           所在地

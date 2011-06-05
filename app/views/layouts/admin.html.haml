@@ -11,11 +11,10 @@
   = javascript_include_tag "jquery"
     - if protect_against_forgery?
       :javascript
-      //
-    window._auth_token_name = "\#{request_forgery_protection_token}";
-    window._auth_token = "\#{form_authenticity_token}";
-    //
-        - javascript_tag do
+        window._auth_token_name = "\#{request_forgery_protection_token}";
+        window._auth_token = "\#{form_authenticity_token}";
+
+      - javascript_tag do
       - if flash[:notice]
         alert(#{flash[:notice]});
     %body
@@ -93,9 +92,9 @@
         #cont
           = yield :layout
       .clear
-      #footer.clear
-        %span.copyright
-          Copyright © 2010-2011 Jumaimai.com. All rights reserved. 京ICP证10215661号
+        #footer.clear
+          %span.copyright
+            Copyright © 2010-2011 Jumaimai.com. All rights reserved. 京ICP证10215661号
       = yield :javascript
       - if @navtag
         %script{:charset => "utf-8", :type => "text/javascript"}
