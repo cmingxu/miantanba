@@ -2,11 +2,13 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
 gem 'mysql'
+gem 'ruby-mysql'
 gem 'compass'
 gem 'haml'
 gem "erb2haml" 
 gem 'rails3-generators'
 gem 'simple_form'
+gem 'nokogiri'
 
 
 # Bundle edge Rails instead:
